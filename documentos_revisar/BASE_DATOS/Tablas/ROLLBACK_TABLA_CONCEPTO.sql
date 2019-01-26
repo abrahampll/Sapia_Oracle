@@ -1,0 +1,2 @@
+ALTER TABLE PCLUB.admpt_concepto
+ DROP COLUMN ADMPC_PROC;

@@ -1,0 +1,3 @@
+DROP VIEW PCLUB.v_equipo;
+
+DROP VIEW PCLUB.v_plan;

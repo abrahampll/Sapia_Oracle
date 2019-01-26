@@ -1,0 +1,3 @@
+ALTER TABLE PCLUB.admpt_concepto 
+ADD ADMPC_PROC CHAR(1) DEFAULT '1';
+

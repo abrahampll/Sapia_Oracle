@@ -1,0 +1,5 @@
+alter table PCLUB.SYSFT_LATAM_LOTE_CANJE_KM_CC
+  drop constraint PK_SLLCKC cascade;
+
+DROP table PCLUB.SYSFT_LATAM_LOTE_CANJE_KM_CC;
+

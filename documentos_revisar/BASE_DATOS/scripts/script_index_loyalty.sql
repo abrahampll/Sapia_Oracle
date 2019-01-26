@@ -1,0 +1,5 @@
+create index PCLUB.idx_canje_loyalty on PCLUB.ADMPT_CANJE(ADMPV_ID_LOYALTY);
+
+create index PCLUB.idx_kardex_loyalty on PCLUB.ADMPT_KARDEX(ADMPV_IDTRANSLOY);
+
+create index PCLUB.IDX_CLI_CICFACT on PCLUB.ADMPT_CLIENTE(ADMPV_CICL_FACT);

@@ -1,0 +1,55 @@
+
+SQL*Loader: Release 10.2.0.1.0 - Production on Wed Aug 2 16:28:53 2017
+
+Copyright (c) 1982, 2005, Oracle.  All rights reserved.
+
+Control File:   /home/usrclaroclub/CLAROCLUB/Interno/Prepago/Ctl/CTL006_DESAFIL_NORECARGA.ctl
+Data File:      /home/usrclaroclub/CLAROCLUB/Interno/Prepago/Jar/SH_DESAFILIACION_NO_RECARGA/LOG/TEMP01_20170802_162537.TMP
+  Bad File:     /home/usrclaroclub/CLAROCLUB/Interno/Prepago/Fallos/SH006_DESAFILIACION_NOREC_20170802_162537.bad
+  Discard File:  none specified
+ 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 50
+Bind array:     1000 rows, maximum of 200000 bytes
+Continuation:    none specified
+Path used:      Conventional
+
+Table PCLUB.ADMPT_TMP_PRESINRECARGA, loaded from every logical record.
+Insert option in effect for this table: APPEND
+TRAILING NULLCOLS option in effect
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+ADMPV_COD_CLI                       FIRST     *   |  O(;) CHARACTER            
+ADMPV_NOMARCHIVO                     NEXT     *   |  O(;) CHARACTER            
+ADMPN_SEC                                                 SEQUENCE (MAX, 1)
+ADMPD_FEC_OPER                       NEXT     *   |  O(;) CHARACTER            
+    SQL string for column : "TO_DATE(TO_CHAR(SYSDATE,'DD/MM/YYYY'),'DD/MM/YYYY')"
+ADMPD_FEC_REG                        NEXT     *   |  O(;) CHARACTER            
+    SQL string for column : "SYSDATE"
+
+value used for ROWS parameter changed from 1000 to 189
+
+Table PCLUB.ADMPT_TMP_PRESINRECARGA:
+  209027 Rows successfully loaded.
+  0 Rows not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+
+Space allocated for bind array:                 199395 bytes(189 rows)
+Read   buffer bytes:  200000
+
+Total logical records skipped:          0
+Total logical records read:        209027
+Total logical records rejected:         0
+Total logical records discarded:        0
+
+Run began on Wed Aug 02 16:28:53 2017
+Run ended on Wed Aug 02 16:29:22 2017
+
+Elapsed time was:     00:00:28.69
+CPU time was:         00:00:00.90

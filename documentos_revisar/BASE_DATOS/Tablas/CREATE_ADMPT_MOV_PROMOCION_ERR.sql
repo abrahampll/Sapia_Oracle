@@ -1,0 +1,33 @@
+create table PCLUB.ADMPT_MOV_PROMOCION_ERR
+(
+  ADMPN_CORRELATIVO   NUMBER not null,
+  ADMPN_ID_CANJE      NUMBER,
+  ADMPV_NUM_LINEA     VARCHAR2(20),
+  ADMPN_ID_PROMO      NUMBER,
+  ADMPV_ID_RULETA     VARCHAR2(100),
+  ADMPV_ID_PREMIO     VARCHAR2(40),
+  ADMPV_TIPO_LINEA    VARCHAR2(40),
+  ADMPD_FEC_ENVIO_SMS DATE,
+  ADMPD_FEC_PREMIO    DATE,
+  ADMPV_ASESOR        VARCHAR2(100),
+  ADMPV_CAC           VARCHAR2(40),
+  ADMPV_NUM_DOC       VARCHAR2(30),
+  ADMPV_TIPO_DOC      VARCHAR2(20),
+  ADMPD_FEC_REG       DATE,
+  ADMPV_USU_REG       VARCHAR2(20),
+  ADMPD_FEC_MOD       DATE,
+  ADMPV_USU_MOD       VARCHAR2(20),
+  ADMPV_COID          VARCHAR2(200)
+)
+tablespace PCLUB_DATA
+  pctfree 10
+  pctused 40
+  initrans 1
+  maxtrans 255
+  storage
+  (
+    initial 64K
+    next 1M
+    minextents 1
+    maxextents unlimited
+  );

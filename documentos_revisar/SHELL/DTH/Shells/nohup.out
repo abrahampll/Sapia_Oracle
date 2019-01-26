@@ -1,0 +1,2536 @@
+NO
+(01-03-2018 17:39:06) *************************************
+(01-03-2018 17:39:06) Iniciando proceso              
+(01-03-2018 17:39:06) Fecha y Hora : 01-03-2018 17:39:06               
+(01-03-2018 17:39:06) *************************************
+(01-03-2018 17:39:06) 
+Iniciando proceso ....01-03-2018 17:39:06
+
+(01-03-2018 17:39:06) procesando...
+Archivo: 'ALTA_DTH_20180301.CCL'
+Fecha : 'L'
+(01-03-2018 17:39:06) Se convierte el archivo de entrada al formato UNIX
+dos2unix: converting file /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Alta/ALTA_DTH_20180301.CCL to UNIX format ...
+(01-03-2018 17:39:06) Se procede a importar los datos del archivo de entrada a la tabla de alta de clientes
+
+SQL*Loader: Release 10.2.0.1.0 - Production on Thu Mar 1 17:39:06 2018
+
+Copyright (c) 1982, 2005, Oracle.  All rights reserved.
+
+Commit point reached - logical record count 45
+Commit point reached - logical record count 90
+Commit point reached - logical record count 135
+Commit point reached - logical record count 180
+Commit point reached - logical record count 225
+Commit point reached - logical record count 270
+Commit point reached - logical record count 315
+Commit point reached - logical record count 344
+(01-03-2018 17:39:06) El proceso de importacion culmino satisfactoriamente
+20180301
+(01-03-2018 17:39:06) Se procede a ejecutar el SP PKG_CC_PTOSFIJA.ADMPSI_ALTACLIENTEDTH
+(01-03-2018 17:39:07) Hubo un error durante la ejeción del SP PKG_CC_PTOSFIJA.ADMPSI_ALTACLIENTEDTH
+(01-03-2018 17:39:07) A continuación se enviará un correo a SoporteAplicacionesAtencionVirtual@claro.com.pe,carlos.bruno@claro.com.pe,E700584@claro.com.pe,soportepostventafactory@claro.com.pe con el asunto de IMPORTACION DE ALTA DE clientes – Se encontraron errores
+(01-03-2018 17:39:07) *************************************
+(01-03-2018 17:39:07) Iniciando proceso de Importación              
+(01-03-2018 17:39:07) Fecha y Hora : 01-03-2018 17:39:07               
+(01-03-2018 17:39:07) *************************************
+find: /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Pagos/PAGOS_DTH_20180301.OAC: No such file or directory
+cat: /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Pagos/PAGOS_DTH_20180301.OAC: No such file or directory
+(01-03-2018 17:39:07)  01-03-2018 17:39:07: Error: No se encontro el archivo de datos...
+(01-03-2018 17:39:07) Termino proceso
+(01-03-2018 17:39:07) ************************************
+(01-03-2018 17:39:07)  FINALIZANDO PROCESO...............
+(01-03-2018 17:39:07) 2018-03-01@17:39:07 Fin de proceso 
+(01-03-2018 17:39:07) ************************************
+(01-03-2018 17:39:07) No existe ninguno de estos archivos PAGOS_DTH_20180301.OAC
+(01-03-2018 17:39:07) A continuación se enviará un correo a SoporteAplicacionesAtencionVirtual@claro.com.pe,carlos.bruno@claro.com.pe,E700584@claro.com.pe,soportepostventafactory@claro.com.pe con el asunto de El Archivo de pagos no se encuentra en la ruta
+(01-03-2018 17:39:07) Ruta del Archivo log :  /home/usrclaroclub/CLAROCLUB/Interno/DTH/Logs/SH002_PROC_PAGOS_20180301_173907.log
+
+
+(01-03-2018 17:39:07) *************************************
+(01-03-2018 17:39:07) Iniciando proceso               
+(01-03-2018 17:39:07) Fecha y Hora : 01-03-2018 17:39:07               
+(01-03-2018 17:39:07) *************************************
+find: /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Baja/BAJA_DTH_20180301.CCL: No such file or directory
+cat: /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Baja/BAJA_DTH_20180301.CCL: No such file or directory
+(01-03-2018 17:39:07) No se encontro el archivo de datos...
+(01-03-2018 17:39:07) Termino proceso
+(01-03-2018 17:39:07) ************************************
+(01-03-2018 17:39:07)  FINALIZANDO PROCESO...............
+(01-03-2018 17:39:07) 2018-03-01@17:39:07 Fin de proceso 
+(01-03-2018 17:39:07) ************************************
+(01-03-2018 17:39:07) No existe ninguno de estos archivos BAJA_DTH_20180301.CCL
+(01-03-2018 17:39:07) A continuación se enviará un correo a SoporteAplicacionesAtencionVirtual@claro.com.pe,carlos.bruno@claro.com.pe,E700584@claro.com.pe,soportepostventafactory@claro.com.pe con el asunto de El Archivo de Baja no se encuentra en la ruta
+(01-03-2018 17:39:07) Ruta del Archivo log :  /home/usrclaroclub/CLAROCLUB/Interno/DTH/Logs/SH003_PROC_BAJADTH_20180301_173907.log
+
+
+NO
+NO
+NO
+NO
+NO
+NO
+NO
+(13-03-2018 10:35:39) *************************************
+(13-03-2018 10:35:39) Iniciando proceso               
+(13-03-2018 10:35:39) Fecha y Hora : 13-03-2018 10:35:39               
+(13-03-2018 10:35:39) *************************************
+find: /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Baja/BAJA_DTH_20180313.CCL: No such file or directory
+cat: /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Baja/BAJA_DTH_20180313.CCL: No such file or directory
+(13-03-2018 10:35:39) Error: No se encontro el archivo de datos...
+(13-03-2018 10:35:39) Termino proceso
+(13-03-2018 10:35:39) ************************************
+(13-03-2018 10:35:39)  FINALIZANDO PROCESO...............
+(13-03-2018 10:35:39) 2018-03-13@10:35:39 Fin de proceso 
+(13-03-2018 10:35:39) ************************************
+(13-03-2018 10:35:39) No existe ninguno de estos archivos BAJA_DTH_20180313.CCL
+(13-03-2018 10:35:39) A continuación se enviará un correo a SoporteAplicacionesAtencionVirtual@claro.com.pe,carlos.bruno@claro.com.pe,E700584@claro.com.pe,soportepostventafactory@claro.com.pe con el asunto de El Archivo de Baja no se encuentra en la ruta
+(13-03-2018 10:35:39) Ruta del Archivo log :  /home/usrclaroclub/CLAROCLUB/Interno/DTH/Logs/SH003_PROC_BAJADTH_20180313_103539.log
+
+
+(13-03-2018 10:36:35) *************************************
+(13-03-2018 10:36:35) Iniciando proceso               
+(13-03-2018 10:36:35) Fecha y Hora : 13-03-2018 10:36:35               
+(13-03-2018 10:36:35) *************************************
+find: /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Baja/BAJA_DTH_20180313.CCL: No such file or directory
+cat: /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Baja/BAJA_DTH_20180313.CCL: No such file or directory
+(13-03-2018 10:36:36) No se encontro el archivo de datos...
+(13-03-2018 10:36:36) Termino proceso
+(13-03-2018 10:36:36) ************************************
+(13-03-2018 10:36:36)  FINALIZANDO PROCESO...............
+(13-03-2018 10:36:36) 2018-03-13@10:36:36 Fin de proceso 
+(13-03-2018 10:36:36) ************************************
+(13-03-2018 10:36:36) No existe ninguno de estos archivos BAJA_DTH_20180313.CCL
+(13-03-2018 10:36:36) A continuación se enviará un correo a SoporteAplicacionesAtencionVirtual@claro.com.pe,carlos.bruno@claro.com.pe,E700584@claro.com.pe,soportepostventafactory@claro.com.pe con el asunto de El Archivo de Baja no se encuentra en la ruta
+(13-03-2018 10:36:36) Ruta del Archivo log :  /home/usrclaroclub/CLAROCLUB/Interno/DTH/Logs/SH003_PROC_BAJADTH_20180313_103635.log
+
+
+(04-04-2018 16:34:30) *************************************
+(04-04-2018 16:34:30) Iniciando proceso              
+(04-04-2018 16:34:30) Fecha y Hora : 04-04-2018 16:34:30               
+(04-04-2018 16:34:30) *************************************
+(04-04-2018 16:34:30) 
+Iniciando proceso ....04-04-2018 16:34:30
+
+(04-04-2018 16:34:30) procesando...
+Archivo: 'ALTA_DTH_20180404.CCL'
+Fecha : 'L'
+(04-04-2018 16:34:30) Se convierte el archivo de entrada al formato UNIX
+dos2unix: converting file /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Alta/ALTA_DTH_20180404.CCL to UNIX format ...
+(04-04-2018 16:34:30) Se procede a importar los datos del archivo de entrada a la tabla de alta de clientes
+
+SQL*Loader: Release 10.2.0.1.0 - Production on Wed Apr 4 16:34:30 2018
+
+Copyright (c) 1982, 2005, Oracle.  All rights reserved.
+
+Commit point reached - logical record count 45
+Commit point reached - logical record count 90
+Commit point reached - logical record count 135
+Commit point reached - logical record count 180
+Commit point reached - logical record count 225
+Commit point reached - logical record count 270
+Commit point reached - logical record count 315
+Commit point reached - logical record count 360
+Commit point reached - logical record count 405
+Commit point reached - logical record count 421
+(04-04-2018 16:34:31) El proceso de importacion culmino satisfactoriamente
+20180404
+(04-04-2018 16:34:31) Se procede a ejecutar el SP PKG_CC_PTOSFIJA.ADMPSI_ALTACLIENTEDTH
+(04-04-2018 16:34:32) Hubo un error durante la ejeción del SP PKG_CC_PTOSFIJA.ADMPSI_ALTACLIENTEDTH
+(04-04-2018 16:34:32) A continuación se enviará un correo a SoporteAplicacionesAtencionVirtual@claro.com.pe,carlos.bruno@claro.com.pe,E700584@claro.com.pe,soportepostventafactory@claro.com.pe con el asunto de IMPORTACION DE ALTA DE clientes – Se encontraron errores
+(16-04-2018 17:15:12) *************************************
+(16-04-2018 17:15:12) Iniciando proceso de Importación              
+(16-04-2018 17:15:12) Fecha y Hora : 16-04-2018 17:15:12               
+(16-04-2018 17:15:12) *************************************
+(16-04-2018 17:15:12) Se convierte el archivo de entrada al formato UNIX
+dos2unix: converting file /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Pagos/PAGOS_DTH_20180416.OAC to UNIX format ...
+(16-04-2018 17:15:12) Se procede a importar los datos del archivo de entrada a la tabla de pagos
+
+SQL*Loader: Release 10.2.0.1.0 - Production on Mon Apr 16 17:15:12 2018
+
+Copyright (c) 1982, 2005, Oracle.  All rights reserved.
+
+Commit point reached - logical record count 85
+Commit point reached - logical record count 170
+Commit point reached - logical record count 180
+(16-04-2018 17:15:12) El proceso de importacion culmino satisfactoriamente
+(16-04-2018 17:15:12) Se ejecuta el SP PKG_CC_PTOSFIJA.ADMPSI_FACTURADTH
+(16-04-2018 17:15:16) Ejecución de SP fue satisfactorio
+(16-04-2018 17:15:16) El archivo de entrada fue copiado en /home/usrclaroclub/CLAROCLUB/Interno/DTH/Procesados/Pagos/PAGOS_DTH_20180416.OAC
+(16-04-2018 17:15:16) Se ejecuta el SP PKG_CC_PTOSFIJA.ADMPSI_EFACTURADTH y se exporta los datos obtenidos
+(16-04-2018 17:15:17) Se ha generado el archivo /home/usrclaroclub/CLAROCLUB/Interno/DTH/Error/Pagos/PAGOS_DTH_20180416.ERR
+(16-04-2018 17:15:17) A continuación se enviará un correo a SoporteAplicacionesAtencionVirtual@claro.com.pe,carlos.bruno@claro.com.pe,E700584@claro.com.pe,soportepostventafactory@claro.com.pe con el asunto de Errores en el proceso de facturacion
+  adding: PAGOS_DTH_20180416.ERR (deflated 75%)
+(24-04-2018 12:36:25) *************************************
+(24-04-2018 12:36:25) Iniciando proceso de Importación              
+(24-04-2018 12:36:25) Fecha y Hora : 24-04-2018 12:36:25               
+(24-04-2018 12:36:25) *************************************
+(24-04-2018 12:36:26) Se convierte el archivo de entrada al formato UNIX
+dos2unix: converting file /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Pagos/PAGOS_DTH_20180424.OAC to UNIX format ...
+(24-04-2018 12:36:26) Se procede a importar los datos del archivo de entrada a la tabla de pagos
+
+SQL*Loader: Release 10.2.0.1.0 - Production on Tue Apr 24 12:36:26 2018
+
+Copyright (c) 1982, 2005, Oracle.  All rights reserved.
+
+Commit point reached - logical record count 85
+Commit point reached - logical record count 170
+Commit point reached - logical record count 233
+(24-04-2018 12:36:26) El proceso de importacion culmino satisfactoriamente
+(24-04-2018 12:36:27) Se ejecuta el SP PKG_CC_PTOSFIJA.ADMPSI_FACTURADTH
+(24-04-2018 12:36:31) Ejecución de SP fue satisfactorio
+(24-04-2018 12:36:31) El archivo de entrada fue copiado en /home/usrclaroclub/CLAROCLUB/Interno/DTH/Procesados/Pagos/PAGOS_DTH_20180424.OAC
+(24-04-2018 12:36:32) Se ejecuta el SP PKG_CC_PTOSFIJA.ADMPSI_EFACTURADTH y se exporta los datos obtenidos
+(24-04-2018 12:36:32) Se ha generado el archivo /home/usrclaroclub/CLAROCLUB/Interno/DTH/Error/Pagos/PAGOS_DTH_20180424.ERR
+(24-04-2018 12:36:32) A continuación se enviará un correo a SoporteAplicacionesAtencionVirtual@claro.com.pe,carlos.bruno@claro.com.pe,E700584@claro.com.pe,soportepostventafactory@claro.com.pe con el asunto de Errores en el proceso de facturacion
+  adding: PAGOS_DTH_20180424.ERR (deflated 81%)
+(30-04-2018 14:55:28) *************************************
+(30-04-2018 14:55:28) Iniciando proceso              
+(30-04-2018 14:55:28) Fecha y Hora : 30-04-2018 14:55:28               
+(30-04-2018 14:55:28) *************************************
+(30-04-2018 14:55:28) 
+Iniciando proceso ....30-04-2018 14:55:28
+
+(30-04-2018 14:55:28) procesando...
+Archivo: 'ALTA_DTH_20180430.CCL'
+Fecha : 'L'
+(30-04-2018 14:55:28) Se convierte el archivo de entrada al formato UNIX
+dos2unix: converting file /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Alta/ALTA_DTH_20180430.CCL to UNIX format ...
+(30-04-2018 14:55:28) Se procede a importar los datos del archivo de entrada a la tabla de alta de clientes
+
+SQL*Loader: Release 10.2.0.1.0 - Production on Mon Apr 30 14:55:28 2018
+
+Copyright (c) 1982, 2005, Oracle.  All rights reserved.
+
+Commit point reached - logical record count 45
+Commit point reached - logical record count 70
+(30-04-2018 14:55:29) El proceso de importacion culmino satisfactoriamente
+20180430
+(30-04-2018 14:55:29) Se procede a ejecutar el SP PKG_CC_PTOSFIJA.ADMPSI_ALTACLIENTEDTH
+(30-04-2018 14:55:29) Hubo un error durante la ejeción del SP PKG_CC_PTOSFIJA.ADMPSI_ALTACLIENTEDTH
+(30-04-2018 14:55:29) A continuación se enviará un correo a SoporteAplicacionesAtencionVirtual@claro.com.pe,carlos.bruno@claro.com.pe,E700584@claro.com.pe,soportepostventafactory@claro.com.pe con el asunto de IMPORTACION DE ALTA DE clientes – Se encontraron errores
+(05-06-2018 10:20:36) *************************************
+(05-06-2018 10:20:36) Iniciando proceso              
+(05-06-2018 10:20:36) Fecha y Hora : 05-06-2018 10:20:36               
+(05-06-2018 10:20:36) *************************************
+(05-06-2018 10:20:36) 
+Iniciando proceso ....05-06-2018 10:20:36
+
+(05-06-2018 10:20:36) procesando...
+find: /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Alta/ALTA_DTH_20180605.CCL: No such file or directory
+cat: /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Alta/ALTA_DTH_20180605.CCL: No such file or directory
+(05-06-2018 10:20:36) Error: No se encontro el archivo de datos...
+
+(05-06-2018 10:20:36) Termino proceso
+(05-06-2018 10:20:36) ************************************
+(05-06-2018 10:20:36)  FINALIZANDO PROCESO...............
+(05-06-2018 10:20:36) 2018-06-05@10:20:36 Fin de proceso 
+(05-06-2018 10:20:36) ************************************
+(05-06-2018 10:20:36) No existe ninguno de estos archivos ALTA_DTH_20180605.CCL
+(05-06-2018 10:20:36) A continuación se enviará un correo a SoporteAplicacionesAtencionVirtual@claro.com.pe,carlos.bruno@claro.com.pe,E700584@claro.com.pe,soportepostventafactory@claro.com.pe con el asunto de El Archivo de Alta de clientes no se encuentra en la ruta
+(05-06-2018 10:20:36) Ruta del Archivo log :  /home/usrclaroclub/CLAROCLUB/Interno/DTH/Logs/SH001_PROC_ALTACLIDTH_20180605_102036.log
+(14-06-2018 16:57:48) *************************************
+(14-06-2018 16:57:48) Iniciando proceso              
+(14-06-2018 16:57:48) Fecha y Hora : 14-06-2018 16:57:48               
+(14-06-2018 16:57:48) *************************************
+(14-06-2018 16:57:48) 
+Iniciando proceso ....14-06-2018 16:57:48
+
+(14-06-2018 16:57:48) procesando...
+Archivo: 'ALTA_DTH_20180614.CCL'
+Fecha : 'L'
+(14-06-2018 16:57:48) Se convierte el archivo de entrada al formato UNIX
+dos2unix: converting file /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Alta/ALTA_DTH_20180614.CCL to UNIX format ...
+(14-06-2018 16:57:48) Se procede a importar los datos del archivo de entrada a la tabla de alta de clientes
+
+SQL*Loader: Release 10.2.0.1.0 - Production on Thu Jun 14 16:57:48 2018
+
+Copyright (c) 1982, 2005, Oracle.  All rights reserved.
+
+Commit point reached - logical record count 45
+Commit point reached - logical record count 90
+Commit point reached - logical record count 135
+Commit point reached - logical record count 180
+Commit point reached - logical record count 225
+Commit point reached - logical record count 270
+Commit point reached - logical record count 315
+Commit point reached - logical record count 360
+Commit point reached - logical record count 405
+Commit point reached - logical record count 450
+Commit point reached - logical record count 488
+(14-06-2018 16:57:48) El proceso de importacion culmino satisfactoriamente
+20180614
+(14-06-2018 16:57:48) Se procede a ejecutar el SP PKG_CC_PTOSFIJA.ADMPSI_ALTACLIENTEDTH
+(14-06-2018 16:57:48) Hubo un error durante la ejeción del SP PKG_CC_PTOSFIJA.ADMPSI_ALTACLIENTEDTH
+(14-06-2018 16:57:48) A continuación se enviará un correo a SoporteAplicacionesAtencionVirtual@claro.com.pe,carlos.bruno@claro.com.pe,E700584@claro.com.pe,soportepostventafactory@claro.com.pe con el asunto de IMPORTACION DE ALTA DE clientes – Se encontraron errores
+(14-06-2018 17:02:52) *************************************
+(14-06-2018 17:02:52) Iniciando proceso              
+(14-06-2018 17:02:52) Fecha y Hora : 14-06-2018 17:02:52               
+(14-06-2018 17:02:52) *************************************
+(14-06-2018 17:02:52) 
+Iniciando proceso ....14-06-2018 17:02:52
+
+(14-06-2018 17:02:52) procesando...
+Archivo: 'ALTA_DTH_20180614.CCL'
+Fecha : 'L'
+(14-06-2018 17:02:52) Se convierte el archivo de entrada al formato UNIX
+dos2unix: converting file /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Alta/ALTA_DTH_20180614.CCL to UNIX format ...
+(14-06-2018 17:02:52) Se procede a importar los datos del archivo de entrada a la tabla de alta de clientes
+
+SQL*Loader: Release 10.2.0.1.0 - Production on Thu Jun 14 17:02:52 2018
+
+Copyright (c) 1982, 2005, Oracle.  All rights reserved.
+
+Commit point reached - logical record count 45
+Commit point reached - logical record count 90
+Commit point reached - logical record count 135
+Commit point reached - logical record count 180
+Commit point reached - logical record count 225
+Commit point reached - logical record count 270
+Commit point reached - logical record count 315
+Commit point reached - logical record count 360
+Commit point reached - logical record count 405
+Commit point reached - logical record count 450
+Commit point reached - logical record count 488
+(14-06-2018 17:02:52) El proceso de importacion culmino satisfactoriamente
+20180614
+(14-06-2018 17:02:52) Se procede a ejecutar el SP PKG_CC_PTOSFIJA.ADMPSI_ALTACLIENTEDTH
+(14-06-2018 17:02:53) Hubo un error durante la ejeción del SP PKG_CC_PTOSFIJA.ADMPSI_ALTACLIENTEDTH
+(14-06-2018 17:02:53) A continuación se enviará un correo a SoporteAplicacionesAtencionVirtual@claro.com.pe,carlos.bruno@claro.com.pe,E700584@claro.com.pe,soportepostventafactory@claro.com.pe con el asunto de IMPORTACION DE ALTA DE clientes – Se encontraron errores
+(14-06-2018 20:41:34) *************************************
+(14-06-2018 20:41:34) Iniciando proceso              
+(14-06-2018 20:41:34) Fecha y Hora : 14-06-2018 20:41:34               
+(14-06-2018 20:41:34) *************************************
+(14-06-2018 20:41:34) 
+Iniciando proceso ....14-06-2018 20:41:34
+
+(14-06-2018 20:41:34) procesando...
+find: /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Alta/ALTA_DTH_20180614.CCL: No such file or directory
+cat: /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Alta/ALTA_DTH_20180614.CCL: No such file or directory
+(14-06-2018 20:41:34) Error: No se encontro el archivo de datos...
+
+(14-06-2018 20:41:34) Termino proceso
+(14-06-2018 20:41:34) ************************************
+(14-06-2018 20:41:34)  FINALIZANDO PROCESO...............
+(14-06-2018 20:41:34) 2018-06-14@20:41:34 Fin de proceso 
+(14-06-2018 20:41:34) ************************************
+(14-06-2018 20:41:34) No existe ninguno de estos archivos ALTA_DTH_20180614.CCL
+(14-06-2018 20:41:34) A continuación se enviará un correo a SoporteAplicacionesAtencionVirtual@claro.com.pe,carlos.bruno@claro.com.pe,E700584@claro.com.pe,soportepostventafactory@claro.com.pe con el asunto de El Archivo de Alta de clientes no se encuentra en la ruta
+(14-06-2018 20:41:34) Ruta del Archivo log :  /home/usrclaroclub/CLAROCLUB/Interno/DTH/Logs/SH001_PROC_ALTACLIDTH_20180614_204134.log
+(09-10-2018 15:28:31) *************************************
+(09-10-2018 15:28:31) Iniciando proceso              
+(09-10-2018 15:28:31) Fecha y Hora : 09-10-2018 15:28:31               
+(09-10-2018 15:28:31) *************************************
+(09-10-2018 15:28:31) 
+Iniciando proceso ....09-10-2018 15:28:31
+
+(09-10-2018 15:28:31) procesando...
+Archivo: 'ALTA_DTH_20181009.CCL'
+Fecha : 'L'
+(09-10-2018 15:28:31) Se convierte el archivo de entrada al formato UNIX
+dos2unix: converting file /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Alta/ALTA_DTH_20181009.CCL to UNIX format ...
+(09-10-2018 15:28:31) Se procede a importar los datos del archivo de entrada a la tabla de alta de clientes
+
+SQL*Loader: Release 10.2.0.1.0 - Production on Tue Oct 9 15:28:31 2018
+
+Copyright (c) 1982, 2005, Oracle.  All rights reserved.
+
+Commit point reached - logical record count 45
+Commit point reached - logical record count 90
+Commit point reached - logical record count 135
+Commit point reached - logical record count 137
+(09-10-2018 15:28:31) El proceso de importacion culmino satisfactoriamente
+20181009
+(09-10-2018 15:28:31) Se procede a ejecutar el SP PKG_CC_PTOSFIJA.ADMPSI_ALTACLIENTEDTH
+(09-10-2018 15:28:35) Hubo un error durante la ejeción del SP PKG_CC_PTOSFIJA.ADMPSI_ALTACLIENTEDTH
+(09-10-2018 15:28:35) A continuación se enviará un correo a SoporteAplicacionesAtencionVirtual@claro.com.pe,carlos.bruno@claro.com.pe,E700584@claro.com.pe,soportepostventafactory@claro.com.pe con el asunto de IMPORTACION DE ALTA DE clientes – Se encontraron errores
+(09-10-2018 15:32:17) *************************************
+(09-10-2018 15:32:17) Iniciando proceso              
+(09-10-2018 15:32:17) Fecha y Hora : 09-10-2018 15:32:17               
+(09-10-2018 15:32:17) *************************************
+(09-10-2018 15:32:17) 
+Iniciando proceso ....09-10-2018 15:32:17
+
+(09-10-2018 15:32:17) procesando...
+Archivo: 'ALTA_DTH_20181009.CCL'
+Fecha : 'L'
+(09-10-2018 15:32:17) Se convierte el archivo de entrada al formato UNIX
+dos2unix: converting file /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Alta/ALTA_DTH_20181009.CCL to UNIX format ...
+(09-10-2018 15:32:17) Se procede a importar los datos del archivo de entrada a la tabla de alta de clientes
+
+SQL*Loader: Release 10.2.0.1.0 - Production on Tue Oct 9 15:32:17 2018
+
+Copyright (c) 1982, 2005, Oracle.  All rights reserved.
+
+Commit point reached - logical record count 27
+(09-10-2018 15:32:17) El proceso de importacion culmino satisfactoriamente
+20181009
+(09-10-2018 15:32:18) Se procede a ejecutar el SP PKG_CC_PTOSFIJA.ADMPSI_ALTACLIENTEDTH
+(09-10-2018 15:32:18) Hubo un error durante la ejeción del SP PKG_CC_PTOSFIJA.ADMPSI_ALTACLIENTEDTH
+(09-10-2018 15:32:18) A continuación se enviará un correo a SoporteAplicacionesAtencionVirtual@claro.com.pe,carlos.bruno@claro.com.pe,E700584@claro.com.pe,soportepostventafactory@claro.com.pe con el asunto de IMPORTACION DE ALTA DE clientes – Se encontraron errores
+(09-10-2018 15:35:22) *************************************
+(09-10-2018 15:35:22) Iniciando proceso              
+(09-10-2018 15:35:22) Fecha y Hora : 09-10-2018 15:35:22               
+(09-10-2018 15:35:22) *************************************
+(09-10-2018 15:35:22) 
+Iniciando proceso ....09-10-2018 15:35:22
+
+(09-10-2018 15:35:22) procesando...
+Archivo: 'ALTA_DTH_20181009.CCL'
+Fecha : 'L'
+(09-10-2018 15:35:22) Se convierte el archivo de entrada al formato UNIX
+dos2unix: converting file /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Alta/ALTA_DTH_20181009.CCL to UNIX format ...
+(09-10-2018 15:35:22) Se procede a importar los datos del archivo de entrada a la tabla de alta de clientes
+
+SQL*Loader: Release 10.2.0.1.0 - Production on Tue Oct 9 15:35:22 2018
+
+Copyright (c) 1982, 2005, Oracle.  All rights reserved.
+
+Commit point reached - logical record count 45
+Commit point reached - logical record count 90
+Commit point reached - logical record count 135
+Commit point reached - logical record count 180
+Commit point reached - logical record count 207
+(09-10-2018 15:35:23) El proceso de importacion culmino satisfactoriamente
+20181009
+(09-10-2018 15:35:23) Se procede a ejecutar el SP PKG_CC_PTOSFIJA.ADMPSI_ALTACLIENTEDTH
+(09-10-2018 15:35:27) Ejecución de SP fue satisfactorio
+(09-10-2018 15:35:27) El archivo de entrada fue copiado en /home/usrclaroclub/CLAROCLUB/Interno/DTH/Procesados/Alta/ALTA_DTH_20181009.CCL
+'20181009'
+(09-10-2018 15:35:27) Se procede a ejecutar el SP PKG_CC_PTOSFIJA.ADMPSI_EALTACLIENTEDTH y exportar los datos obtenidos
+(09-10-2018 15:35:28) Se ha generado el archivo /home/usrclaroclub/CLAROCLUB/Interno/DTH/Error/Alta/ALTA_DTH_20181009.ERR
+(09-10-2018 15:35:28) A continuación se enviará un correo a SoporteAplicacionesAtencionVirtual@claro.com.pe,carlos.bruno@claro.com.pe,E700584@claro.com.pe,soportepostventafactory@claro.com.pe con el asunto de Errores en el proceso de baja
+  adding: ALTA_DTH_20181009.ERR (deflated 47%)
+(09-10-2018 15:41:03) *************************************
+(09-10-2018 15:41:03) Iniciando proceso              
+(09-10-2018 15:41:03) Fecha y Hora : 09-10-2018 15:41:03               
+(09-10-2018 15:41:03) *************************************
+(09-10-2018 15:41:03) 
+Iniciando proceso ....09-10-2018 15:41:03
+
+(09-10-2018 15:41:03) procesando...
+Archivo: 'ALTA_DTH_20181009.CCL'
+Fecha : 'L'
+(09-10-2018 15:41:03) Se convierte el archivo de entrada al formato UNIX
+dos2unix: converting file /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Alta/ALTA_DTH_20181009.CCL to UNIX format ...
+(09-10-2018 15:41:03) Se procede a importar los datos del archivo de entrada a la tabla de alta de clientes
+
+SQL*Loader: Release 10.2.0.1.0 - Production on Tue Oct 9 15:41:03 2018
+
+Copyright (c) 1982, 2005, Oracle.  All rights reserved.
+
+Commit point reached - logical record count 27
+(09-10-2018 15:41:03) El proceso de importacion culmino satisfactoriamente
+20181009
+(09-10-2018 15:41:03) Se procede a ejecutar el SP PKG_CC_PTOSFIJA.ADMPSI_ALTACLIENTEDTH
+(09-10-2018 15:41:03) Ejecución de SP fue satisfactorio
+(09-10-2018 15:41:03) El archivo de entrada fue copiado en /home/usrclaroclub/CLAROCLUB/Interno/DTH/Procesados/Alta/ALTA_DTH_20181009.CCL
+'20181009'
+(09-10-2018 15:41:03) Se procede a ejecutar el SP PKG_CC_PTOSFIJA.ADMPSI_EALTACLIENTEDTH y exportar los datos obtenidos
+(09-10-2018 15:41:05) Se ha generado el archivo /home/usrclaroclub/CLAROCLUB/Interno/DTH/Error/Alta/ALTA_DTH_20181009.ERR
+(09-10-2018 15:41:05) A continuación se enviará un correo a SoporteAplicacionesAtencionVirtual@claro.com.pe,carlos.bruno@claro.com.pe,E700584@claro.com.pe,soportepostventafactory@claro.com.pe con el asunto de Errores en el proceso de baja
+  adding: ALTA_DTH_20181009.ERR (deflated 87%)
+(09-10-2018 15:45:23) *************************************
+(09-10-2018 15:45:23) Iniciando proceso              
+(09-10-2018 15:45:23) Fecha y Hora : 09-10-2018 15:45:23               
+(09-10-2018 15:45:23) *************************************
+(09-10-2018 15:45:23) 
+Iniciando proceso ....09-10-2018 15:45:23
+
+(09-10-2018 15:45:23) procesando...
+Archivo: 'ALTA_DTH_20181009.CCL'
+Fecha : 'L'
+(09-10-2018 15:45:23) Se convierte el archivo de entrada al formato UNIX
+dos2unix: converting file /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Alta/ALTA_DTH_20181009.CCL to UNIX format ...
+(09-10-2018 15:45:23) Se procede a importar los datos del archivo de entrada a la tabla de alta de clientes
+
+SQL*Loader: Release 10.2.0.1.0 - Production on Tue Oct 9 15:45:23 2018
+
+Copyright (c) 1982, 2005, Oracle.  All rights reserved.
+
+Commit point reached - logical record count 45
+Commit point reached - logical record count 90
+Commit point reached - logical record count 135
+Commit point reached - logical record count 137
+(09-10-2018 15:45:23) El proceso de importacion culmino satisfactoriamente
+20181009
+(09-10-2018 15:45:23) Se procede a ejecutar el SP PKG_CC_PTOSFIJA.ADMPSI_ALTACLIENTEDTH
+(09-10-2018 15:45:23) Ejecución de SP fue satisfactorio
+(09-10-2018 15:45:23) El archivo de entrada fue copiado en /home/usrclaroclub/CLAROCLUB/Interno/DTH/Procesados/Alta/ALTA_DTH_20181009.CCL
+'20181009'
+(09-10-2018 15:45:23) Se procede a ejecutar el SP PKG_CC_PTOSFIJA.ADMPSI_EALTACLIENTEDTH y exportar los datos obtenidos
+(09-10-2018 15:45:23) Se ha generado el archivo /home/usrclaroclub/CLAROCLUB/Interno/DTH/Error/Alta/ALTA_DTH_20181009.ERR
+(09-10-2018 15:45:23) A continuación se enviará un correo a SoporteAplicacionesAtencionVirtual@claro.com.pe,carlos.bruno@claro.com.pe,E700584@claro.com.pe,soportepostventafactory@claro.com.pe con el asunto de Errores en el proceso de baja
+  adding: ALTA_DTH_20181009.ERR (deflated 90%)
+(12-10-2018 10:45:00) *************************************
+(12-10-2018 10:45:00) Iniciando proceso              
+(12-10-2018 10:45:00) Fecha y Hora : 12-10-2018 10:45:00               
+(12-10-2018 10:45:00) *************************************
+(12-10-2018 10:45:00) 
+Iniciando proceso ....12-10-2018 10:45:00
+
+(12-10-2018 10:45:00) procesando...
+find: /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Alta/ALTA_DTH_20181012.CCL: No such file or directory
+cat: /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Alta/ALTA_DTH_20181012.CCL: No such file or directory
+(12-10-2018 10:45:00) Error: No se encontro el archivo de datos...
+
+(12-10-2018 10:45:00) Termino proceso
+(12-10-2018 10:45:00) ************************************
+(12-10-2018 10:45:00)  FINALIZANDO PROCESO...............
+(12-10-2018 10:45:00) 2018-10-12@10:45:00 Fin de proceso 
+(12-10-2018 10:45:00) ************************************
+(12-10-2018 10:45:00) No existe ninguno de estos archivos ALTA_DTH_20181012.CCL
+(12-10-2018 10:45:00) A continuación se enviará un correo a SoporteAplicacionesAtencionVirtual@claro.com.pe,carlos.bruno@claro.com.pe,E700584@claro.com.pe,soportepostventafactory@claro.com.pe con el asunto de El Archivo de Alta de clientes no se encuentra en la ruta
+(12-10-2018 10:45:00) Ruta del Archivo log :  /home/usrclaroclub/CLAROCLUB/Interno/DTH/Logs/SH001_PROC_ALTACLIDTH_20181012_104500.log
+(12-10-2018 10:46:04) *************************************
+(12-10-2018 10:46:04) Iniciando proceso              
+(12-10-2018 10:46:04) Fecha y Hora : 12-10-2018 10:46:04               
+(12-10-2018 10:46:04) *************************************
+(12-10-2018 10:46:04) 
+Iniciando proceso ....12-10-2018 10:46:04
+
+(12-10-2018 10:46:04) procesando...
+find: /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Alta/ALTA_DTH_20181012.CCL: No such file or directory
+cat: /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Alta/ALTA_DTH_20181012.CCL: No such file or directory
+(12-10-2018 10:46:04) Error: No se encontro el archivo de datos...
+
+(12-10-2018 10:46:04) Termino proceso
+(12-10-2018 10:46:04) ************************************
+(12-10-2018 10:46:04)  FINALIZANDO PROCESO...............
+(12-10-2018 10:46:04) 2018-10-12@10:46:04 Fin de proceso 
+(12-10-2018 10:46:04) ************************************
+(12-10-2018 10:46:04) No existe ninguno de estos archivos ALTA_DTH_20181012.CCL
+(12-10-2018 10:46:04) A continuación se enviará un correo a SoporteAplicacionesAtencionVirtual@claro.com.pe,carlos.bruno@claro.com.pe,E700584@claro.com.pe,soportepostventafactory@claro.com.pe con el asunto de El Archivo de Alta de clientes no se encuentra en la ruta
+(12-10-2018 10:46:04) Ruta del Archivo log :  /home/usrclaroclub/CLAROCLUB/Interno/DTH/Logs/SH001_PROC_ALTACLIDTH_20181012_104604.log
+(12-10-2018 10:49:21) *************************************
+(12-10-2018 10:49:21) Iniciando proceso              
+(12-10-2018 10:49:21) Fecha y Hora : 12-10-2018 10:49:21               
+(12-10-2018 10:49:21) *************************************
+(12-10-2018 10:49:21) 
+Iniciando proceso ....12-10-2018 10:49:21
+
+(12-10-2018 10:49:21) procesando...
+find: /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Alta/ALTA_DTH_20181012.CCL: No such file or directory
+cat: /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Alta/ALTA_DTH_20181012.CCL: No such file or directory
+(12-10-2018 10:49:21) Error: No se encontro el archivo de datos...
+
+(12-10-2018 10:49:21) Termino proceso
+(12-10-2018 10:49:21) ************************************
+(12-10-2018 10:49:21)  FINALIZANDO PROCESO...............
+(12-10-2018 10:49:21) 2018-10-12@10:49:21 Fin de proceso 
+(12-10-2018 10:49:21) ************************************
+(12-10-2018 10:49:21) No existe ninguno de estos archivos ALTA_DTH_20181012.CCL
+(12-10-2018 10:49:21) A continuación se enviará un correo a SoporteAplicacionesAtencionVirtual@claro.com.pe,carlos.bruno@claro.com.pe,E700584@claro.com.pe,soportepostventafactory@claro.com.pe con el asunto de El Archivo de Alta de clientes no se encuentra en la ruta
+(12-10-2018 10:49:21) Ruta del Archivo log :  /home/usrclaroclub/CLAROCLUB/Interno/DTH/Logs/SH001_PROC_ALTACLIDTH_20181012_104921.log
+(12-10-2018 11:08:28) *************************************
+(12-10-2018 11:08:28) Iniciando proceso              
+(12-10-2018 11:08:28) Fecha y Hora : 12-10-2018 11:08:28               
+(12-10-2018 11:08:28) *************************************
+(12-10-2018 11:08:28) 
+Iniciando proceso ....12-10-2018 11:08:28
+
+(12-10-2018 11:08:28) procesando...
+find: /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Alta/ALTA_DTH_20181012.CCL: No such file or directory
+cat: /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Alta/ALTA_DTH_20181012.CCL: No such file or directory
+(12-10-2018 11:08:28) Error: No se encontro el archivo de datos...
+
+(12-10-2018 11:08:28) Termino proceso
+(12-10-2018 11:08:28) ************************************
+(12-10-2018 11:08:28)  FINALIZANDO PROCESO...............
+(12-10-2018 11:08:28) 2018-10-12@11:08:28 Fin de proceso 
+(12-10-2018 11:08:28) ************************************
+(12-10-2018 11:08:28) No existe ninguno de estos archivos ALTA_DTH_20181012.CCL
+(12-10-2018 11:08:28) A continuación se enviará un correo a SoporteAplicacionesAtencionVirtual@claro.com.pe,carlos.bruno@claro.com.pe,E700584@claro.com.pe,soportepostventafactory@claro.com.pe con el asunto de El Archivo de Alta de clientes no se encuentra en la ruta
+(12-10-2018 11:08:28) Ruta del Archivo log :  /home/usrclaroclub/CLAROCLUB/Interno/DTH/Logs/SH001_PROC_ALTACLIDTH_20181012_110828.log
+(12-10-2018 11:10:07) *************************************
+(12-10-2018 11:10:07) Iniciando proceso              
+(12-10-2018 11:10:07) Fecha y Hora : 12-10-2018 11:10:07               
+(12-10-2018 11:10:07) *************************************
+(12-10-2018 11:10:07) 
+Iniciando proceso ....12-10-2018 11:10:07
+
+(12-10-2018 11:10:07) procesando...
+find: /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Alta/ALTA_DTH_20181012.CCL: No such file or directory
+cat: /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Alta/ALTA_DTH_20181012.CCL: No such file or directory
+(12-10-2018 11:10:08) Error: No se encontro el archivo de datos...
+
+(12-10-2018 11:10:08) Termino proceso
+(12-10-2018 11:10:08) ************************************
+(12-10-2018 11:10:08)  FINALIZANDO PROCESO...............
+(12-10-2018 11:10:08) 2018-10-12@11:10:08 Fin de proceso 
+(12-10-2018 11:10:08) ************************************
+(12-10-2018 11:10:08) No existe ninguno de estos archivos ALTA_DTH_20181012.CCL
+(12-10-2018 11:10:08) A continuación se enviará un correo a SoporteAplicacionesAtencionVirtual@claro.com.pe,carlos.bruno@claro.com.pe,E700584@claro.com.pe,soportepostventafactory@claro.com.pe con el asunto de El Archivo de Alta de clientes no se encuentra en la ruta
+(12-10-2018 11:10:08) Ruta del Archivo log :  /home/usrclaroclub/CLAROCLUB/Interno/DTH/Logs/SH001_PROC_ALTACLIDTH_20181012_111007.log
+(12-10-2018 11:18:28) *************************************
+(12-10-2018 11:18:28) Iniciando proceso              
+(12-10-2018 11:18:28) Fecha y Hora : 12-10-2018 11:18:28               
+(12-10-2018 11:18:28) *************************************
+(12-10-2018 11:18:28) 
+Iniciando proceso ....12-10-2018 11:18:28
+
+(12-10-2018 11:18:28) procesando...
+Archivo: 'ALTA_DTH_20181012.CCL'
+Fecha : 'L'
+(12-10-2018 11:18:28) Se convierte el archivo de entrada al formato UNIX
+dos2unix: converting file /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Alta/ALTA_DTH_20181012.CCL to UNIX format ...
+(12-10-2018 11:18:28) Se procede a importar los datos del archivo de entrada a la tabla de alta de clientes
+
+SQL*Loader: Release 10.2.0.1.0 - Production on Fri Oct 12 11:18:28 2018
+
+Copyright (c) 1982, 2005, Oracle.  All rights reserved.
+
+Commit point reached - logical record count 45
+Commit point reached - logical record count 90
+Commit point reached - logical record count 135
+Commit point reached - logical record count 180
+Commit point reached - logical record count 225
+Commit point reached - logical record count 270
+Commit point reached - logical record count 315
+Commit point reached - logical record count 360
+Commit point reached - logical record count 377
+(12-10-2018 11:18:29) El proceso de importacion culmino satisfactoriamente
+20181012
+(12-10-2018 11:18:29) Se procede a ejecutar el SP PKG_CC_PTOSFIJA.ADMPSI_ALTACLIENTEDTH
+(12-10-2018 11:18:29) Hubo un error durante la ejeción del SP PKG_CC_PTOSFIJA.ADMPSI_ALTACLIENTEDTH
+(12-10-2018 11:18:29) A continuación se enviará un correo a SoporteAplicacionesAtencionVirtual@claro.com.pe,carlos.bruno@claro.com.pe,E700584@claro.com.pe,soportepostventafactory@claro.com.pe con el asunto de IMPORTACION DE ALTA DE clientes – Se encontraron errores
+(12-10-2018 11:23:18) *************************************
+(12-10-2018 11:23:18) Iniciando proceso              
+(12-10-2018 11:23:18) Fecha y Hora : 12-10-2018 11:23:18               
+(12-10-2018 11:23:18) *************************************
+(12-10-2018 11:23:18) 
+Iniciando proceso ....12-10-2018 11:23:18
+
+(12-10-2018 11:23:18) procesando...
+Archivo: 'ALTA_DTH_20181012.CCL'
+Fecha : 'L'
+(12-10-2018 11:23:18) Se convierte el archivo de entrada al formato UNIX
+dos2unix: converting file /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Alta/ALTA_DTH_20181012.CCL to UNIX format ...
+(12-10-2018 11:23:18) Se procede a importar los datos del archivo de entrada a la tabla de alta de clientes
+
+SQL*Loader: Release 10.2.0.1.0 - Production on Fri Oct 12 11:23:18 2018
+
+Copyright (c) 1982, 2005, Oracle.  All rights reserved.
+
+Commit point reached - logical record count 45
+Commit point reached - logical record count 90
+Commit point reached - logical record count 135
+Commit point reached - logical record count 180
+Commit point reached - logical record count 225
+Commit point reached - logical record count 270
+Commit point reached - logical record count 315
+Commit point reached - logical record count 360
+Commit point reached - logical record count 377
+(12-10-2018 11:23:18) El proceso de importacion culmino satisfactoriamente
+20181012
+(12-10-2018 11:23:18) Se procede a ejecutar el SP PKG_CC_PTOSFIJA.ADMPSI_ALTACLIENTEDTH
+(12-10-2018 11:23:22) Ejecución de SP fue satisfactorio
+(12-10-2018 11:23:22) El archivo de entrada fue copiado en /home/usrclaroclub/CLAROCLUB/Interno/DTH/Procesados/Alta/ALTA_DTH_20181012.CCL
+'20181012'
+(12-10-2018 11:23:22) Se procede a ejecutar el SP PKG_CC_PTOSFIJA.ADMPSI_EALTACLIENTEDTH y exportar los datos obtenidos
+(12-10-2018 11:23:24) Se ha generado el archivo /home/usrclaroclub/CLAROCLUB/Interno/DTH/Error/Alta/ALTA_DTH_20181012.ERR
+(12-10-2018 11:23:24) A continuación se enviará un correo a SoporteAplicacionesAtencionVirtual@claro.com.pe,carlos.bruno@claro.com.pe,E700584@claro.com.pe,soportepostventafactory@claro.com.pe con el asunto de Errores en el proceso de baja
+  adding: ALTA_DTH_20181012.ERR (deflated 92%)
+(12-10-2018 11:26:18) *************************************
+(12-10-2018 11:26:18) Iniciando proceso              
+(12-10-2018 11:26:18) Fecha y Hora : 12-10-2018 11:26:18               
+(12-10-2018 11:26:18) *************************************
+(12-10-2018 11:26:18) 
+Iniciando proceso ....12-10-2018 11:26:18
+
+(12-10-2018 11:26:18) procesando...
+find: /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Alta/ALTA_DTH_20181012.CCL: No such file or directory
+cat: /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Alta/ALTA_DTH_20181012.CCL: No such file or directory
+(12-10-2018 11:26:18) Error: No se encontro el archivo de datos...
+
+(12-10-2018 11:26:18) Termino proceso
+(12-10-2018 11:26:18) ************************************
+(12-10-2018 11:26:18)  FINALIZANDO PROCESO...............
+(12-10-2018 11:26:18) 2018-10-12@11:26:18 Fin de proceso 
+(12-10-2018 11:26:18) ************************************
+(12-10-2018 11:26:18) No existe ninguno de estos archivos ALTA_DTH_20181012.CCL
+(12-10-2018 11:26:18) A continuación se enviará un correo a SoporteAplicacionesAtencionVirtual@claro.com.pe,carlos.bruno@claro.com.pe,E700584@claro.com.pe,soportepostventafactory@claro.com.pe con el asunto de El Archivo de Alta de clientes no se encuentra en la ruta
+(12-10-2018 11:26:18) Ruta del Archivo log :  /home/usrclaroclub/CLAROCLUB/Interno/DTH/Logs/SH001_PROC_ALTACLIDTH_20181012_112618.log
+(12-10-2018 11:29:08) *************************************
+(12-10-2018 11:29:08) Iniciando proceso              
+(12-10-2018 11:29:08) Fecha y Hora : 12-10-2018 11:29:08               
+(12-10-2018 11:29:08) *************************************
+(12-10-2018 11:29:08) 
+Iniciando proceso ....12-10-2018 11:29:08
+
+(12-10-2018 11:29:08) procesando...
+find: /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Alta/ALTA_DTH_20181012.CCL: No such file or directory
+cat: /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Alta/ALTA_DTH_20181012.CCL: No such file or directory
+(12-10-2018 11:29:08) Error: No se encontro el archivo de datos...
+
+(12-10-2018 11:29:08) Termino proceso
+(12-10-2018 11:29:08) ************************************
+(12-10-2018 11:29:08)  FINALIZANDO PROCESO...............
+(12-10-2018 11:29:08) 2018-10-12@11:29:08 Fin de proceso 
+(12-10-2018 11:29:08) ************************************
+(12-10-2018 11:29:08) No existe ninguno de estos archivos ALTA_DTH_20181012.CCL
+(12-10-2018 11:29:08) A continuación se enviará un correo a SoporteAplicacionesAtencionVirtual@claro.com.pe,carlos.bruno@claro.com.pe,E700584@claro.com.pe,soportepostventafactory@claro.com.pe con el asunto de El Archivo de Alta de clientes no se encuentra en la ruta
+(12-10-2018 11:29:08) Ruta del Archivo log :  /home/usrclaroclub/CLAROCLUB/Interno/DTH/Logs/SH001_PROC_ALTACLIDTH_20181012_112908.log
+(12-10-2018 11:34:10) *************************************
+(12-10-2018 11:34:10) Iniciando proceso              
+(12-10-2018 11:34:10) Fecha y Hora : 12-10-2018 11:34:10               
+(12-10-2018 11:34:10) *************************************
+(12-10-2018 11:34:10) 
+Iniciando proceso ....12-10-2018 11:34:10
+
+(12-10-2018 11:34:10) procesando...
+find: /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Alta/ALTA_DTH_20181012.CCL: No such file or directory
+cat: /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Alta/ALTA_DTH_20181012.CCL: No such file or directory
+(12-10-2018 11:34:10) Error: No se encontro el archivo de datos...
+
+(12-10-2018 11:34:10) Termino proceso
+(12-10-2018 11:34:10) ************************************
+(12-10-2018 11:34:10)  FINALIZANDO PROCESO...............
+(12-10-2018 11:34:10) 2018-10-12@11:34:10 Fin de proceso 
+(12-10-2018 11:34:10) ************************************
+(12-10-2018 11:34:10) No existe ninguno de estos archivos ALTA_DTH_20181012.CCL
+(12-10-2018 11:34:10) A continuación se enviará un correo a SoporteAplicacionesAtencionVirtual@claro.com.pe,carlos.bruno@claro.com.pe,E700584@claro.com.pe,soportepostventafactory@claro.com.pe con el asunto de El Archivo de Alta de clientes no se encuentra en la ruta
+(12-10-2018 11:34:10) Ruta del Archivo log :  /home/usrclaroclub/CLAROCLUB/Interno/DTH/Logs/SH001_PROC_ALTACLIDTH_20181012_113410.log
+(12-10-2018 11:40:32) *************************************
+(12-10-2018 11:40:32) Iniciando proceso               
+(12-10-2018 11:40:32) Fecha y Hora : 12-10-2018 11:40:32               
+(12-10-2018 11:40:32) *************************************
+find: /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Baja/BAJA_DTH_20181012.CCL: No such file or directory
+cat: /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Baja/BAJA_DTH_20181012.CCL: No such file or directory
+(12-10-2018 11:40:32) No se encontro el archivo de datos...
+(12-10-2018 11:40:32) Termino proceso
+(12-10-2018 11:40:32) ************************************
+(12-10-2018 11:40:32)  FINALIZANDO PROCESO...............
+(12-10-2018 11:40:32) 2018-10-12@11:40:32 Fin de proceso 
+(12-10-2018 11:40:32) ************************************
+(12-10-2018 11:40:32) No existe ninguno de estos archivos BAJA_DTH_20181012.CCL
+(12-10-2018 11:40:32) A continuación se enviará un correo a SoporteAplicacionesAtencionVirtual@claro.com.pe,carlos.bruno@claro.com.pe,E700584@claro.com.pe,soportepostventafactory@claro.com.pe con el asunto de El Archivo de Baja no se encuentra en la ruta
+(12-10-2018 11:40:32) Ruta del Archivo log :  /home/usrclaroclub/CLAROCLUB/Interno/DTH/Logs/SH003_PROC_BAJADTH_20181012_114032.log
+
+
+(12-10-2018 14:37:20) *************************************
+(12-10-2018 14:37:20) Iniciando proceso              
+(12-10-2018 14:37:20) Fecha y Hora : 12-10-2018 14:37:20               
+(12-10-2018 14:37:20) *************************************
+(12-10-2018 14:37:20) 
+Iniciando proceso ....12-10-2018 14:37:20
+
+(12-10-2018 14:37:20) procesando...
+Archivo: 'ALTA_DTH_20181012.CCL'
+Fecha : 'L'
+(12-10-2018 14:37:20) Se convierte el archivo de entrada al formato UNIX
+dos2unix: converting file /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Alta/ALTA_DTH_20181012.CCL to UNIX format ...
+(12-10-2018 14:37:20) Se procede a importar los datos del archivo de entrada a la tabla de alta de clientes
+
+SQL*Loader: Release 10.2.0.1.0 - Production on Fri Oct 12 14:37:20 2018
+
+Copyright (c) 1982, 2005, Oracle.  All rights reserved.
+
+Commit point reached - logical record count 45
+Commit point reached - logical record count 90
+Commit point reached - logical record count 135
+Commit point reached - logical record count 180
+Commit point reached - logical record count 225
+Commit point reached - logical record count 270
+Commit point reached - logical record count 315
+Commit point reached - logical record count 360
+Commit point reached - logical record count 371
+(12-10-2018 14:37:20) El proceso de importacion culmino satisfactoriamente
+20181012
+(12-10-2018 14:37:20) Se procede a ejecutar el SP PKG_CC_PTOSFIJA.ADMPSI_ALTACLIENTEDTH
+(12-10-2018 14:37:22) Ejecución de SP fue satisfactorio
+(12-10-2018 14:37:22) El archivo de entrada fue copiado en /home/usrclaroclub/CLAROCLUB/Interno/DTH/Procesados/Alta/ALTA_DTH_20181012.CCL
+'20181012'
+(12-10-2018 14:37:22) Se procede a ejecutar el SP PKG_CC_PTOSFIJA.ADMPSI_EALTACLIENTEDTH y exportar los datos obtenidos
+(12-10-2018 14:37:23) Se ha generado el archivo /home/usrclaroclub/CLAROCLUB/Interno/DTH/Error/Alta/ALTA_DTH_20181012.ERR
+(12-10-2018 14:37:23) A continuación se enviará un correo a SoporteAplicacionesAtencionVirtual@claro.com.pe,carlos.bruno@claro.com.pe,E700584@claro.com.pe,soportepostventafactory@claro.com.pe con el asunto de Errores en el proceso de baja
+  adding: ALTA_DTH_20181012.ERR (deflated 92%)
+(12-10-2018 14:42:30) *************************************
+(12-10-2018 14:42:30) Iniciando proceso de Importación              
+(12-10-2018 14:42:30) Fecha y Hora : 12-10-2018 14:42:30               
+(12-10-2018 14:42:30) *************************************
+find: /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Pagos/PAGOS_DTH_20181012.OAC: No such file or directory
+cat: /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Pagos/PAGOS_DTH_20181012.OAC: No such file or directory
+(12-10-2018 14:42:30)  12-10-2018 14:42:30: Error: No se encontro el archivo de datos...
+(12-10-2018 14:42:30) Termino proceso
+(12-10-2018 14:42:30) ************************************
+(12-10-2018 14:42:30)  FINALIZANDO PROCESO...............
+(12-10-2018 14:42:30) 2018-10-12@14:42:30 Fin de proceso 
+(12-10-2018 14:42:30) ************************************
+(12-10-2018 14:42:30) No existe ninguno de estos archivos PAGOS_DTH_20181012.OAC
+(12-10-2018 14:42:30) A continuación se enviará un correo a SoporteAplicacionesAtencionVirtual@claro.com.pe,carlos.bruno@claro.com.pe,E700584@claro.com.pe,soportepostventafactory@claro.com.pe con el asunto de El Archivo de pagos no se encuentra en la ruta
+(12-10-2018 14:42:30) Ruta del Archivo log :  /home/usrclaroclub/CLAROCLUB/Interno/DTH/Logs/SH002_PROC_PAGOS_20181012_144230.log
+
+
+(12-10-2018 14:48:29) *************************************
+(12-10-2018 14:48:29) Iniciando proceso de Importación              
+(12-10-2018 14:48:29) Fecha y Hora : 12-10-2018 14:48:29               
+(12-10-2018 14:48:29) *************************************
+find: /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Pagos/PAGOS_DTH_20181012.OAC: No such file or directory
+cat: /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Pagos/PAGOS_DTH_20181012.OAC: No such file or directory
+(12-10-2018 14:48:29)  12-10-2018 14:48:29: Error: No se encontro el archivo de datos...
+(12-10-2018 14:48:29) Termino proceso
+(12-10-2018 14:48:29) ************************************
+(12-10-2018 14:48:29)  FINALIZANDO PROCESO...............
+(12-10-2018 14:48:29) 2018-10-12@14:48:29 Fin de proceso 
+(12-10-2018 14:48:29) ************************************
+(12-10-2018 14:48:29) No existe ninguno de estos archivos PAGOS_DTH_20181012.OAC
+(12-10-2018 14:48:29) A continuación se enviará un correo a SoporteAplicacionesAtencionVirtual@claro.com.pe,carlos.bruno@claro.com.pe,E700584@claro.com.pe,soportepostventafactory@claro.com.pe con el asunto de El Archivo de pagos no se encuentra en la ruta
+(12-10-2018 14:48:29) Ruta del Archivo log :  /home/usrclaroclub/CLAROCLUB/Interno/DTH/Logs/SH002_PROC_PAGOS_20181012_144829.log
+
+
+(15-10-2018 11:16:40) *************************************
+(15-10-2018 11:16:40) Iniciando proceso              
+(15-10-2018 11:16:40) Fecha y Hora : 15-10-2018 11:16:40               
+(15-10-2018 11:16:40) *************************************
+(15-10-2018 11:16:40) 
+Iniciando proceso ....15-10-2018 11:16:40
+
+(15-10-2018 11:16:40) procesando...
+find: /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Alta/ALTA_DTH_20181015.CCL: No such file or directory
+cat: /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Alta/ALTA_DTH_20181015.CCL: No such file or directory
+(15-10-2018 11:16:40) Error: No se encontro el archivo de datos...
+
+(15-10-2018 11:16:40) Termino proceso
+(15-10-2018 11:16:40) ************************************
+(15-10-2018 11:16:40)  FINALIZANDO PROCESO...............
+(15-10-2018 11:16:40) 2018-10-15@11:16:40 Fin de proceso 
+(15-10-2018 11:16:40) ************************************
+(15-10-2018 11:16:40) No existe ninguno de estos archivos ALTA_DTH_20181015.CCL
+(15-10-2018 11:16:40) A continuación se enviará un correo a SoporteAplicacionesAtencionVirtual@claro.com.pe,carlos.bruno@claro.com.pe,E700584@claro.com.pe,soportepostventafactory@claro.com.pe con el asunto de El Archivo de Alta de clientes no se encuentra en la ruta
+(15-10-2018 11:16:40) Ruta del Archivo log :  /home/usrclaroclub/CLAROCLUB/Interno/DTH/Logs/SH001_PROC_ALTACLIDTH_20181015_111640.log
+(15-10-2018 11:37:22) *************************************
+(15-10-2018 11:37:22) Iniciando proceso de Importación              
+(15-10-2018 11:37:22) Fecha y Hora : 15-10-2018 11:37:22               
+(15-10-2018 11:37:22) *************************************
+find: /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Pagos/PAGOS_DTH_20181015.OAC: No such file or directory
+cat: /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Pagos/PAGOS_DTH_20181015.OAC: No such file or directory
+(15-10-2018 11:37:22)  15-10-2018 11:37:22: Error: No se encontro el archivo de datos...
+(15-10-2018 11:37:22) Termino proceso
+(15-10-2018 11:37:22) ************************************
+(15-10-2018 11:37:22)  FINALIZANDO PROCESO...............
+(15-10-2018 11:37:22) 2018-10-15@11:37:22 Fin de proceso 
+(15-10-2018 11:37:22) ************************************
+(15-10-2018 11:37:22) No existe ninguno de estos archivos PAGOS_DTH_20181015.OAC
+(15-10-2018 11:37:22) A continuación se enviará un correo a SoporteAplicacionesAtencionVirtual@claro.com.pe,carlos.bruno@claro.com.pe,E700584@claro.com.pe,soportepostventafactory@claro.com.pe con el asunto de El Archivo de pagos no se encuentra en la ruta
+(15-10-2018 11:37:22) Ruta del Archivo log :  /home/usrclaroclub/CLAROCLUB/Interno/DTH/Logs/SH002_PROC_PAGOS_20181015_113722.log
+
+
+(15-10-2018 11:44:23) *************************************
+(15-10-2018 11:44:23) Iniciando proceso de Importación              
+(15-10-2018 11:44:23) Fecha y Hora : 15-10-2018 11:44:23               
+(15-10-2018 11:44:23) *************************************
+find: /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Pagos/PAGOS_DTH_20181015.OAC: No such file or directory
+cat: /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Pagos/PAGOS_DTH_20181015.OAC: No such file or directory
+(15-10-2018 11:44:23)  15-10-2018 11:44:23: Error: No se encontro el archivo de datos...
+(15-10-2018 11:44:23) Termino proceso
+(15-10-2018 11:44:23) ************************************
+(15-10-2018 11:44:23)  FINALIZANDO PROCESO...............
+(15-10-2018 11:44:23) 2018-10-15@11:44:23 Fin de proceso 
+(15-10-2018 11:44:23) ************************************
+(15-10-2018 11:44:23) No existe ninguno de estos archivos PAGOS_DTH_20181015.OAC
+(15-10-2018 11:44:23) A continuación se enviará un correo a SoporteAplicacionesAtencionVirtual@claro.com.pe,carlos.bruno@claro.com.pe,E700584@claro.com.pe,soportepostventafactory@claro.com.pe con el asunto de El Archivo de pagos no se encuentra en la ruta
+(15-10-2018 11:44:23) Ruta del Archivo log :  /home/usrclaroclub/CLAROCLUB/Interno/DTH/Logs/SH002_PROC_PAGOS_20181015_114423.log
+
+
+(15-10-2018 11:47:03) *************************************
+(15-10-2018 11:47:03) Iniciando proceso de Importación              
+(15-10-2018 11:47:03) Fecha y Hora : 15-10-2018 11:47:03               
+(15-10-2018 11:47:03) *************************************
+find: /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Pagos/PAGOS_DTH_20181015.OAC: No such file or directory
+cat: /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Pagos/PAGOS_DTH_20181015.OAC: No such file or directory
+(15-10-2018 11:47:03)  15-10-2018 11:47:03: Error: No se encontro el archivo de datos...
+(15-10-2018 11:47:03) Termino proceso
+(15-10-2018 11:47:03) ************************************
+(15-10-2018 11:47:03)  FINALIZANDO PROCESO...............
+(15-10-2018 11:47:03) 2018-10-15@11:47:03 Fin de proceso 
+(15-10-2018 11:47:03) ************************************
+(15-10-2018 11:47:03) No existe ninguno de estos archivos PAGOS_DTH_20181015.OAC
+(15-10-2018 11:47:03) A continuación se enviará un correo a SoporteAplicacionesAtencionVirtual@claro.com.pe,carlos.bruno@claro.com.pe,E700584@claro.com.pe,soportepostventafactory@claro.com.pe con el asunto de El Archivo de pagos no se encuentra en la ruta
+(15-10-2018 11:47:03) Ruta del Archivo log :  /home/usrclaroclub/CLAROCLUB/Interno/DTH/Logs/SH002_PROC_PAGOS_20181015_114703.log
+
+
+(15-10-2018 11:49:21) *************************************
+(15-10-2018 11:49:21) Iniciando proceso de Importación              
+(15-10-2018 11:49:21) Fecha y Hora : 15-10-2018 11:49:21               
+(15-10-2018 11:49:21) *************************************
+find: /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Pagos/PAGOS_DTH_20181015.OAC: No such file or directory
+cat: /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Pagos/PAGOS_DTH_20181015.OAC: No such file or directory
+(15-10-2018 11:49:21)  15-10-2018 11:49:21: Error: No se encontro el archivo de datos...
+(15-10-2018 11:49:21) Termino proceso
+(15-10-2018 11:49:21) ************************************
+(15-10-2018 11:49:21)  FINALIZANDO PROCESO...............
+(15-10-2018 11:49:21) 2018-10-15@11:49:21 Fin de proceso 
+(15-10-2018 11:49:21) ************************************
+(15-10-2018 11:49:21) No existe ninguno de estos archivos PAGOS_DTH_20181015.OAC
+(15-10-2018 11:49:21) A continuación se enviará un correo a SoporteAplicacionesAtencionVirtual@claro.com.pe,carlos.bruno@claro.com.pe,E700584@claro.com.pe,soportepostventafactory@claro.com.pe con el asunto de El Archivo de pagos no se encuentra en la ruta
+(15-10-2018 11:49:21) Ruta del Archivo log :  /home/usrclaroclub/CLAROCLUB/Interno/DTH/Logs/SH002_PROC_PAGOS_20181015_114921.log
+
+
+(15-10-2018 11:52:03) *************************************
+(15-10-2018 11:52:03) Iniciando proceso de Importación              
+(15-10-2018 11:52:03) Fecha y Hora : 15-10-2018 11:52:03               
+(15-10-2018 11:52:03) *************************************
+find: /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Pagos/PAGOS_DTH_20181015.OAC: No such file or directory
+cat: /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Pagos/PAGOS_DTH_20181015.OAC: No such file or directory
+(15-10-2018 11:52:03)  15-10-2018 11:52:03: Error: No se encontro el archivo de datos...
+(15-10-2018 11:52:03) Termino proceso
+(15-10-2018 11:52:03) ************************************
+(15-10-2018 11:52:03)  FINALIZANDO PROCESO...............
+(15-10-2018 11:52:03) 2018-10-15@11:52:03 Fin de proceso 
+(15-10-2018 11:52:03) ************************************
+(15-10-2018 11:52:03) No existe ninguno de estos archivos PAGOS_DTH_20181015.OAC
+(15-10-2018 11:52:03) A continuación se enviará un correo a SoporteAplicacionesAtencionVirtual@claro.com.pe,carlos.bruno@claro.com.pe,E700584@claro.com.pe,soportepostventafactory@claro.com.pe con el asunto de El Archivo de pagos no se encuentra en la ruta
+(15-10-2018 11:52:03) Ruta del Archivo log :  /home/usrclaroclub/CLAROCLUB/Interno/DTH/Logs/SH002_PROC_PAGOS_20181015_115203.log
+
+
+(15-10-2018 12:43:56) *************************************
+(15-10-2018 12:43:56) Iniciando proceso de Importación              
+(15-10-2018 12:43:56) Fecha y Hora : 15-10-2018 12:43:56               
+(15-10-2018 12:43:56) *************************************
+find: /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Pagos/PAGOS_DTH_20181015.OAC: No such file or directory
+cat: /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Pagos/PAGOS_DTH_20181015.OAC: No such file or directory
+(15-10-2018 12:43:56)  15-10-2018 12:43:56: Error: No se encontro el archivo de datos...
+(15-10-2018 12:43:56) Termino proceso
+(15-10-2018 12:43:56) ************************************
+(15-10-2018 12:43:56)  FINALIZANDO PROCESO...............
+(15-10-2018 12:43:56) 2018-10-15@12:43:56 Fin de proceso 
+(15-10-2018 12:43:56) ************************************
+(15-10-2018 12:43:56) No existe ninguno de estos archivos PAGOS_DTH_20181015.OAC
+(15-10-2018 12:43:56) A continuación se enviará un correo a SoporteAplicacionesAtencionVirtual@claro.com.pe,carlos.bruno@claro.com.pe,E700584@claro.com.pe,soportepostventafactory@claro.com.pe con el asunto de El Archivo de pagos no se encuentra en la ruta
+(15-10-2018 12:43:56) Ruta del Archivo log :  /home/usrclaroclub/CLAROCLUB/Interno/DTH/Logs/SH002_PROC_PAGOS_20181015_124356.log
+
+
+(16-10-2018 08:53:30) *************************************
+(16-10-2018 08:53:30) Iniciando proceso              
+(16-10-2018 08:53:30) Fecha y Hora : 16-10-2018 08:53:30               
+(16-10-2018 08:53:30) *************************************
+(16-10-2018 08:53:30) 
+Iniciando proceso ....16-10-2018 08:53:30
+
+(16-10-2018 08:53:30) procesando...
+find: /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Alta/ALTA_DTH_20181016.CCL: No such file or directory
+cat: /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Alta/ALTA_DTH_20181016.CCL: No such file or directory
+(16-10-2018 08:53:30) Error: No se encontro el archivo de datos...
+
+(16-10-2018 08:53:30) Termino proceso
+(16-10-2018 08:53:30) ************************************
+(16-10-2018 08:53:30)  FINALIZANDO PROCESO...............
+(16-10-2018 08:53:30) 2018-10-16@08:53:30 Fin de proceso 
+(16-10-2018 08:53:30) ************************************
+(16-10-2018 08:53:30) No existe ninguno de estos archivos ALTA_DTH_20181016.CCL
+(16-10-2018 08:53:30) A continuación se enviará un correo a SoporteAplicacionesAtencionVirtual@claro.com.pe,carlos.bruno@claro.com.pe,E700584@claro.com.pe,soportepostventafactory@claro.com.pe con el asunto de El Archivo de Alta de clientes no se encuentra en la ruta
+(16-10-2018 08:53:30) Ruta del Archivo log :  /home/usrclaroclub/CLAROCLUB/Interno/DTH/Logs/SH001_PROC_ALTACLIDTH_20181016_085330.log
+(16-10-2018 08:55:52) *************************************
+(16-10-2018 08:55:52) Iniciando proceso              
+(16-10-2018 08:55:52) Fecha y Hora : 16-10-2018 08:55:52               
+(16-10-2018 08:55:52) *************************************
+(16-10-2018 08:55:52) 
+Iniciando proceso ....16-10-2018 08:55:52
+
+(16-10-2018 08:55:52) procesando...
+Archivo: 'ALTA_DTH_20181016.CCL'
+Fecha : 'L'
+(16-10-2018 08:55:52) Se convierte el archivo de entrada al formato UNIX
+dos2unix: converting file /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Alta/ALTA_DTH_20181016.CCL to UNIX format ...
+(16-10-2018 08:55:52) Se procede a importar los datos del archivo de entrada a la tabla de alta de clientes
+
+SQL*Loader: Release 10.2.0.1.0 - Production on Tue Oct 16 08:55:52 2018
+
+Copyright (c) 1982, 2005, Oracle.  All rights reserved.
+
+Commit point reached - logical record count 45
+Commit point reached - logical record count 90
+Commit point reached - logical record count 135
+Commit point reached - logical record count 180
+Commit point reached - logical record count 225
+Commit point reached - logical record count 244
+(16-10-2018 08:55:52) El proceso de importacion culmino satisfactoriamente
+20181016
+(16-10-2018 08:55:52) Se procede a ejecutar el SP PKG_CC_PTOSFIJA.ADMPSI_ALTACLIENTEDTH
+(16-10-2018 08:55:53) Hubo un error durante la ejeción del SP PKG_CC_PTOSFIJA.ADMPSI_ALTACLIENTEDTH
+(16-10-2018 08:55:53) A continuación se enviará un correo a SoporteAplicacionesAtencionVirtual@claro.com.pe,carlos.bruno@claro.com.pe,E700584@claro.com.pe,soportepostventafactory@claro.com.pe con el asunto de IMPORTACION DE ALTA DE clientes – Se encontraron errores
+(16-10-2018 09:22:37) *************************************
+(16-10-2018 09:22:37) Iniciando proceso de Importación              
+(16-10-2018 09:22:37) Fecha y Hora : 16-10-2018 09:22:37               
+(16-10-2018 09:22:37) *************************************
+find: /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Pagos/PAGOS_DTH_20181016.OAC: No such file or directory
+cat: /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Pagos/PAGOS_DTH_20181016.OAC: No such file or directory
+(16-10-2018 09:22:37)  16-10-2018 09:22:37: Error: No se encontro el archivo de datos...
+(16-10-2018 09:22:37) Termino proceso
+(16-10-2018 09:22:37) ************************************
+(16-10-2018 09:22:37)  FINALIZANDO PROCESO...............
+(16-10-2018 09:22:37) 2018-10-16@09:22:37 Fin de proceso 
+(16-10-2018 09:22:37) ************************************
+(16-10-2018 09:22:37) No existe ninguno de estos archivos PAGOS_DTH_20181016.OAC
+(16-10-2018 09:22:37) A continuación se enviará un correo a SoporteAplicacionesAtencionVirtual@claro.com.pe,carlos.bruno@claro.com.pe,E700584@claro.com.pe,soportepostventafactory@claro.com.pe con el asunto de El Archivo de pagos no se encuentra en la ruta
+(16-10-2018 09:22:37) Ruta del Archivo log :  /home/usrclaroclub/CLAROCLUB/Interno/DTH/Logs/SH002_PROC_PAGOS_20181016_092237.log
+
+
+(16-10-2018 09:52:04) *************************************
+(16-10-2018 09:52:04) Iniciando proceso de Importación              
+(16-10-2018 09:52:04) Fecha y Hora : 16-10-2018 09:52:04               
+(16-10-2018 09:52:04) *************************************
+find: /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Pagos/PAGOS_DTH_20181016.OAC: No such file or directory
+cat: /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Pagos/PAGOS_DTH_20181016.OAC: No such file or directory
+(16-10-2018 09:52:04)  16-10-2018 09:52:04: Error: No se encontro el archivo de datos...
+(16-10-2018 09:52:04) Termino proceso
+(16-10-2018 09:52:04) ************************************
+(16-10-2018 09:52:04)  FINALIZANDO PROCESO...............
+(16-10-2018 09:52:04) 2018-10-16@09:52:04 Fin de proceso 
+(16-10-2018 09:52:04) ************************************
+(16-10-2018 09:52:04) No existe ninguno de estos archivos PAGOS_DTH_20181016.OAC
+(16-10-2018 09:52:04) A continuación se enviará un correo a SoporteAplicacionesAtencionVirtual@claro.com.pe,carlos.bruno@claro.com.pe,E700584@claro.com.pe,soportepostventafactory@claro.com.pe con el asunto de El Archivo de pagos no se encuentra en la ruta
+(16-10-2018 09:52:04) Ruta del Archivo log :  /home/usrclaroclub/CLAROCLUB/Interno/DTH/Logs/SH002_PROC_PAGOS_20181016_095204.log
+
+
+(16-10-2018 10:01:23) *************************************
+(16-10-2018 10:01:23) Iniciando proceso de Importación              
+(16-10-2018 10:01:23) Fecha y Hora : 16-10-2018 10:01:23               
+(16-10-2018 10:01:23) *************************************
+find: /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Pagos/PAGOS_DTH_20181016.OAC: No such file or directory
+cat: /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Pagos/PAGOS_DTH_20181016.OAC: No such file or directory
+(16-10-2018 10:01:23)  16-10-2018 10:01:23: Error: No se encontro el archivo de datos...
+(16-10-2018 10:01:23) Termino proceso
+(16-10-2018 10:01:23) ************************************
+(16-10-2018 10:01:23)  FINALIZANDO PROCESO...............
+(16-10-2018 10:01:23) 2018-10-16@10:01:23 Fin de proceso 
+(16-10-2018 10:01:23) ************************************
+(16-10-2018 10:01:23) No existe ninguno de estos archivos PAGOS_DTH_20181016.OAC
+(16-10-2018 10:01:23) A continuación se enviará un correo a SoporteAplicacionesAtencionVirtual@claro.com.pe,carlos.bruno@claro.com.pe,E700584@claro.com.pe,soportepostventafactory@claro.com.pe con el asunto de El Archivo de pagos no se encuentra en la ruta
+(16-10-2018 10:01:23) Ruta del Archivo log :  /home/usrclaroclub/CLAROCLUB/Interno/DTH/Logs/SH002_PROC_PAGOS_20181016_100123.log
+
+
+(18-10-2018 19:07:06) *************************************
+(18-10-2018 19:07:06) Iniciando proceso              
+(18-10-2018 19:07:06) Fecha y Hora : 18-10-2018 19:07:06               
+(18-10-2018 19:07:06) *************************************
+(18-10-2018 19:07:06) 
+Iniciando proceso ....18-10-2018 19:07:06
+
+(18-10-2018 19:07:06) procesando...
+Archivo: 'ALTA_DTH_20181018.CCL'
+Fecha : 'L'
+(18-10-2018 19:07:06) Se convierte el archivo de entrada al formato UNIX
+dos2unix: converting file /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Alta/ALTA_DTH_20181018.CCL to UNIX format ...
+(18-10-2018 19:07:06) Se procede a importar los datos del archivo de entrada a la tabla de alta de clientes
+
+SQL*Loader: Release 10.2.0.1.0 - Production on Thu Oct 18 19:07:06 2018
+
+Copyright (c) 1982, 2005, Oracle.  All rights reserved.
+
+Commit point reached - logical record count 45
+Commit point reached - logical record count 90
+Commit point reached - logical record count 135
+Commit point reached - logical record count 180
+Commit point reached - logical record count 225
+Commit point reached - logical record count 270
+(18-10-2018 19:07:06) El proceso de importacion culmino satisfactoriamente
+20181018
+(18-10-2018 19:07:06) Se procede a ejecutar el SP PKG_CC_PTOSFIJA.ADMPSI_ALTACLIENTEDTH
+(18-10-2018 19:07:07) Hubo un error durante la ejeción del SP PKG_CC_PTOSFIJA.ADMPSI_ALTACLIENTEDTH
+(18-10-2018 19:07:07) A continuación se enviará un correo a SoporteAplicacionesAtencionVirtual@claro.com.pe,carlos.bruno@claro.com.pe,E700584@claro.com.pe,soportepostventafactory@claro.com.pe con el asunto de IMPORTACION DE ALTA DE clientes – Se encontraron errores
+(19-10-2018 11:28:42) *************************************
+(19-10-2018 11:28:42) Iniciando proceso de Importación              
+(19-10-2018 11:28:42) Fecha y Hora : 19-10-2018 11:28:42               
+(19-10-2018 11:28:42) *************************************
+(19-10-2018 11:28:42) Se convierte el archivo de entrada al formato UNIX
+dos2unix: converting file /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Pagos/PAGOS_DTH_20181019.OAC to UNIX format ...
+(19-10-2018 11:28:42) Se procede a importar los datos del archivo de entrada a la tabla de pagos
+
+SQL*Loader: Release 10.2.0.1.0 - Production on Fri Oct 19 11:28:42 2018
+
+Copyright (c) 1982, 2005, Oracle.  All rights reserved.
+
+Commit point reached - logical record count 85
+(19-10-2018 11:28:43) El proceso de importacion culmino satisfactoriamente
+(19-10-2018 11:28:43) Se ejecuta el SP PKG_CC_PTOSFIJA.ADMPSI_FACTURADTH
+(19-10-2018 11:30:07) Ejecución de SP fue satisfactorio
+(19-10-2018 11:30:07) El archivo de entrada fue copiado en /home/usrclaroclub/CLAROCLUB/Interno/DTH/Procesados/Pagos/PAGOS_DTH_20181019.OAC
+(19-10-2018 11:30:07) Se ejecuta el SP PKG_CC_PTOSFIJA.ADMPSI_EFACTURADTH y se exporta los datos obtenidos
+(19-10-2018 11:30:39) Se ha generado el archivo /home/usrclaroclub/CLAROCLUB/Interno/DTH/Error/Pagos/PAGOS_DTH_20181019.ERR
+(19-10-2018 11:30:39) A continuación se enviará un correo a SoporteAplicacionesAtencionVirtual@claro.com.pe,carlos.bruno@claro.com.pe,E700584@claro.com.pe,soportepostventafactory@claro.com.pe con el asunto de Errores en el proceso de facturacion
+  adding: PAGOS_DTH_20181019.ERR (deflated 81%)
+(22-10-2018 09:28:07) *************************************
+(22-10-2018 09:28:07) Iniciando proceso              
+(22-10-2018 09:28:07) Fecha y Hora : 22-10-2018 09:28:07               
+(22-10-2018 09:28:07) *************************************
+(22-10-2018 09:28:07) 
+Iniciando proceso ....22-10-2018 09:28:07
+
+(22-10-2018 09:28:07) procesando...
+Archivo: 'ALTA_DTH_20181022.CCL'
+Fecha : 'L'
+(22-10-2018 09:28:07) Se convierte el archivo de entrada al formato UNIX
+dos2unix: converting file /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Alta/ALTA_DTH_20181022.CCL to UNIX format ...
+(22-10-2018 09:28:07) Se procede a importar los datos del archivo de entrada a la tabla de alta de clientes
+
+SQL*Loader: Release 10.2.0.1.0 - Production on Mon Oct 22 09:28:07 2018
+
+Copyright (c) 1982, 2005, Oracle.  All rights reserved.
+
+Commit point reached - logical record count 45
+Commit point reached - logical record count 90
+Commit point reached - logical record count 135
+Commit point reached - logical record count 180
+Commit point reached - logical record count 225
+Commit point reached - logical record count 245
+(22-10-2018 09:28:07) El proceso de importacion culmino satisfactoriamente
+20181022
+(22-10-2018 09:28:07) Se procede a ejecutar el SP PKG_CC_PTOSFIJA.ADMPSI_ALTACLIENTEDTH
+(22-10-2018 09:28:07) Hubo un error durante la ejeción del SP PKG_CC_PTOSFIJA.ADMPSI_ALTACLIENTEDTH
+(22-10-2018 09:28:07) A continuación se enviará un correo a SoporteAplicacionesAtencionVirtual@claro.com.pe,carlos.bruno@claro.com.pe,E700584@claro.com.pe,soportepostventafactory@claro.com.pe con el asunto de IMPORTACION DE ALTA DE clientes – Se encontraron errores
+(22-10-2018 11:29:32) *************************************
+(22-10-2018 11:29:32) Iniciando proceso              
+(22-10-2018 11:29:32) Fecha y Hora : 22-10-2018 11:29:32               
+(22-10-2018 11:29:32) *************************************
+(22-10-2018 11:29:32) 
+Iniciando proceso ....22-10-2018 11:29:32
+
+(22-10-2018 11:29:32) procesando...
+Archivo: 'ALTA_DTH_20181022.CCL'
+Fecha : 'L'
+(22-10-2018 11:29:32) Se convierte el archivo de entrada al formato UNIX
+dos2unix: converting file /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Alta/ALTA_DTH_20181022.CCL to UNIX format ...
+(22-10-2018 11:29:32) Se procede a importar los datos del archivo de entrada a la tabla de alta de clientes
+
+SQL*Loader: Release 10.2.0.1.0 - Production on Mon Oct 22 11:29:32 2018
+
+Copyright (c) 1982, 2005, Oracle.  All rights reserved.
+
+Commit point reached - logical record count 45
+Commit point reached - logical record count 90
+Commit point reached - logical record count 135
+Commit point reached - logical record count 180
+Commit point reached - logical record count 225
+Commit point reached - logical record count 245
+(22-10-2018 11:29:32) El proceso de importacion culmino satisfactoriamente
+20181022
+(22-10-2018 11:29:32) Se procede a ejecutar el SP PKG_CC_PTOSFIJA.ADMPSI_ALTACLIENTEDTH
+(22-10-2018 11:29:35) Ejecución de SP fue satisfactorio
+(22-10-2018 11:29:35) El archivo de entrada fue copiado en /home/usrclaroclub/CLAROCLUB/Interno/DTH/Procesados/Alta/ALTA_DTH_20181022.CCL
+'20181022'
+(22-10-2018 11:29:35) Se procede a ejecutar el SP PKG_CC_PTOSFIJA.ADMPSI_EALTACLIENTEDTH y exportar los datos obtenidos
+(22-10-2018 11:29:36) Se ha generado el archivo /home/usrclaroclub/CLAROCLUB/Interno/DTH/Error/Alta/ALTA_DTH_20181022.ERR
+(22-10-2018 11:29:36) A continuación se enviará un correo a SoporteAplicacionesAtencionVirtual@claro.com.pe,carlos.bruno@claro.com.pe,E700584@claro.com.pe,soportepostventafactory@claro.com.pe con el asunto de Errores en el proceso de baja
+  adding: ALTA_DTH_20181022.ERR (deflated 92%)
+(23-10-2018 17:58:29) *************************************
+(23-10-2018 17:58:29) Iniciando proceso              
+(23-10-2018 17:58:29) Fecha y Hora : 23-10-2018 17:58:29               
+(23-10-2018 17:58:29) *************************************
+(23-10-2018 17:58:29) 
+Iniciando proceso ....23-10-2018 17:58:29
+
+(23-10-2018 17:58:29) procesando...
+Archivo: 'ALTA_DTH_20181023.CCL'
+Fecha : 'L'
+(23-10-2018 17:58:29) Se convierte el archivo de entrada al formato UNIX
+dos2unix: converting file /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Alta/ALTA_DTH_20181023.CCL to UNIX format ...
+(23-10-2018 17:58:29) Se procede a importar los datos del archivo de entrada a la tabla de alta de clientes
+
+SQL*Loader: Release 10.2.0.1.0 - Production on Tue Oct 23 17:58:29 2018
+
+Copyright (c) 1982, 2005, Oracle.  All rights reserved.
+
+Commit point reached - logical record count 45
+Commit point reached - logical record count 90
+Commit point reached - logical record count 135
+Commit point reached - logical record count 180
+Commit point reached - logical record count 225
+Commit point reached - logical record count 270
+Commit point reached - logical record count 308
+(23-10-2018 17:58:29) El proceso de importacion culmino satisfactoriamente
+20181023
+(23-10-2018 17:58:29) Se procede a ejecutar el SP PKG_CC_PTOSFIJA.ADMPSI_ALTACLIENTEDTH
+(23-10-2018 17:58:29) Hubo un error durante la ejeción del SP PKG_CC_PTOSFIJA.ADMPSI_ALTACLIENTEDTH
+(23-10-2018 17:58:29) A continuación se enviará un correo a SoporteAplicacionesAtencionVirtual@claro.com.pe,carlos.bruno@claro.com.pe,E700584@claro.com.pe,soportepostventafactory@claro.com.pe con el asunto de IMPORTACION DE ALTA DE clientes – Se encontraron errores
+(27-10-2018 11:03:54) *************************************
+(27-10-2018 11:03:54) Iniciando proceso              
+(27-10-2018 11:03:54) Fecha y Hora : 27-10-2018 11:03:54               
+(27-10-2018 11:03:54) *************************************
+(27-10-2018 11:03:54) 
+Iniciando proceso ....27-10-2018 11:03:54
+
+(27-10-2018 11:03:54) procesando...
+find: /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Alta/ALTA_DTH_20181027.CCL: No such file or directory
+cat: /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Alta/ALTA_DTH_20181027.CCL: No such file or directory
+(27-10-2018 11:03:54) Error: No se encontro el archivo de datos...
+
+(27-10-2018 11:03:54) Termino proceso
+(27-10-2018 11:03:54) ************************************
+(27-10-2018 11:03:54)  FINALIZANDO PROCESO...............
+(27-10-2018 11:03:54) 2018-10-27@11:03:54 Fin de proceso 
+(27-10-2018 11:03:54) ************************************
+(27-10-2018 11:03:54) No existe ninguno de estos archivos ALTA_DTH_20181027.CCL
+(27-10-2018 11:03:54) A continuación se enviará un correo a SoporteAplicacionesAtencionVirtual@claro.com.pe,carlos.bruno@claro.com.pe,E700584@claro.com.pe,soportepostventafactory@claro.com.pe con el asunto de El Archivo de Alta de clientes no se encuentra en la ruta
+(27-10-2018 11:03:54) Ruta del Archivo log :  /home/usrclaroclub/CLAROCLUB/Interno/DTH/Logs/SH001_PROC_ALTACLIDTH_20181027_110354.log
+(27-10-2018 11:10:03) *************************************
+(27-10-2018 11:10:03) Iniciando proceso              
+(27-10-2018 11:10:03) Fecha y Hora : 27-10-2018 11:10:03               
+(27-10-2018 11:10:03) *************************************
+(27-10-2018 11:10:03) 
+Iniciando proceso ....27-10-2018 11:10:03
+
+(27-10-2018 11:10:03) procesando...
+Archivo: 'ALTA_DTH_20181027.CCL'
+Fecha : 'L'
+(27-10-2018 11:10:04) Se convierte el archivo de entrada al formato UNIX
+dos2unix: converting file /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Alta/ALTA_DTH_20181027.CCL to UNIX format ...
+(27-10-2018 11:10:05) Se procede a importar los datos del archivo de entrada a la tabla de alta de clientes
+
+SQL*Loader: Release 10.2.0.1.0 - Production on Sat Oct 27 11:10:05 2018
+
+Copyright (c) 1982, 2005, Oracle.  All rights reserved.
+
+Commit point reached - logical record count 45
+Commit point reached - logical record count 90
+Commit point reached - logical record count 135
+Commit point reached - logical record count 180
+Commit point reached - logical record count 225
+Commit point reached - logical record count 270
+Commit point reached - logical record count 291
+(27-10-2018 11:10:05) El proceso de importacion culmino satisfactoriamente
+20181027
+(27-10-2018 11:10:06) Se procede a ejecutar el SP PKG_CC_PTOSFIJA.ADMPSI_ALTACLIENTEDTH
+(27-10-2018 11:10:06) Hubo un error durante la ejeción del SP PKG_CC_PTOSFIJA.ADMPSI_ALTACLIENTEDTH
+(27-10-2018 11:10:06) A continuación se enviará un correo a SoporteAplicacionesAtencionVirtual@claro.com.pe,carlos.bruno@claro.com.pe,E700584@claro.com.pe,soportepostventafactory@claro.com.pe con el asunto de IMPORTACION DE ALTA DE clientes – Se encontraron errores
+(27-10-2018 11:11:04) *************************************
+(27-10-2018 11:11:04) Iniciando proceso              
+(27-10-2018 11:11:04) Fecha y Hora : 27-10-2018 11:11:04               
+(27-10-2018 11:11:04) *************************************
+(27-10-2018 11:11:04) 
+Iniciando proceso ....27-10-2018 11:11:04
+
+(27-10-2018 11:11:04) procesando...
+Archivo: 'ALTA_DTH_20181027.CCL'
+Fecha : 'L'
+(27-10-2018 11:11:04) Se convierte el archivo de entrada al formato UNIX
+dos2unix: converting file /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Alta/ALTA_DTH_20181027.CCL to UNIX format ...
+(27-10-2018 11:11:04) Se procede a importar los datos del archivo de entrada a la tabla de alta de clientes
+
+SQL*Loader: Release 10.2.0.1.0 - Production on Sat Oct 27 11:11:04 2018
+
+Copyright (c) 1982, 2005, Oracle.  All rights reserved.
+
+Commit point reached - logical record count 45
+Commit point reached - logical record count 90
+Commit point reached - logical record count 135
+Commit point reached - logical record count 180
+Commit point reached - logical record count 225
+Commit point reached - logical record count 270
+Commit point reached - logical record count 291
+(27-10-2018 11:11:04) El proceso de importacion culmino satisfactoriamente
+20181027
+(27-10-2018 11:11:04) Se procede a ejecutar el SP PKG_CC_PTOSFIJA.ADMPSI_ALTACLIENTEDTH
+(27-10-2018 11:11:09) Ejecución de SP fue satisfactorio
+(27-10-2018 11:11:09) El archivo de entrada fue copiado en /home/usrclaroclub/CLAROCLUB/Interno/DTH/Procesados/Alta/ALTA_DTH_20181027.CCL
+'20181027'
+(27-10-2018 11:11:09) Se procede a ejecutar el SP PKG_CC_PTOSFIJA.ADMPSI_EALTACLIENTEDTH y exportar los datos obtenidos
+(27-10-2018 11:11:11) Se ha generado el archivo /home/usrclaroclub/CLAROCLUB/Interno/DTH/Error/Alta/ALTA_DTH_20181027.ERR
+(27-10-2018 11:11:11) A continuación se enviará un correo a SoporteAplicacionesAtencionVirtual@claro.com.pe,carlos.bruno@claro.com.pe,E700584@claro.com.pe,soportepostventafactory@claro.com.pe con el asunto de Errores en el proceso de baja
+  adding: ALTA_DTH_20181027.ERR (deflated 93%)
+(27-10-2018 11:12:53) *************************************
+(27-10-2018 11:12:53) Iniciando proceso              
+(27-10-2018 11:12:53) Fecha y Hora : 27-10-2018 11:12:53               
+(27-10-2018 11:12:53) *************************************
+(27-10-2018 11:12:53) 
+Iniciando proceso ....27-10-2018 11:12:53
+
+(27-10-2018 11:12:53) procesando...
+Archivo: 'ALTA_DTH_20181027.CCL'
+Fecha : 'L'
+(27-10-2018 11:12:53) Se convierte el archivo de entrada al formato UNIX
+dos2unix: converting file /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Alta/ALTA_DTH_20181027.CCL to UNIX format ...
+(27-10-2018 11:12:53) Se procede a importar los datos del archivo de entrada a la tabla de alta de clientes
+
+SQL*Loader: Release 10.2.0.1.0 - Production on Sat Oct 27 11:12:53 2018
+
+Copyright (c) 1982, 2005, Oracle.  All rights reserved.
+
+Commit point reached - logical record count 45
+Commit point reached - logical record count 90
+Commit point reached - logical record count 135
+Commit point reached - logical record count 180
+Commit point reached - logical record count 225
+Commit point reached - logical record count 270
+Commit point reached - logical record count 278
+(27-10-2018 11:12:53) El proceso de importacion culmino satisfactoriamente
+20181027
+(27-10-2018 11:12:53) Se procede a ejecutar el SP PKG_CC_PTOSFIJA.ADMPSI_ALTACLIENTEDTH
+(27-10-2018 11:12:55) Ejecución de SP fue satisfactorio
+(27-10-2018 11:12:55) El archivo de entrada fue copiado en /home/usrclaroclub/CLAROCLUB/Interno/DTH/Procesados/Alta/ALTA_DTH_20181027.CCL
+'20181027'
+(27-10-2018 11:12:55) Se procede a ejecutar el SP PKG_CC_PTOSFIJA.ADMPSI_EALTACLIENTEDTH y exportar los datos obtenidos
+(27-10-2018 11:12:57) Se ha generado el archivo /home/usrclaroclub/CLAROCLUB/Interno/DTH/Error/Alta/ALTA_DTH_20181027.ERR
+(27-10-2018 11:12:57) A continuación se enviará un correo a SoporteAplicacionesAtencionVirtual@claro.com.pe,carlos.bruno@claro.com.pe,E700584@claro.com.pe,soportepostventafactory@claro.com.pe con el asunto de Errores en el proceso de baja
+  adding: ALTA_DTH_20181027.ERR (deflated 93%)
+(28-10-2018 11:10:09) *************************************
+(28-10-2018 11:10:09) Iniciando proceso              
+(28-10-2018 11:10:09) Fecha y Hora : 28-10-2018 11:10:09               
+(28-10-2018 11:10:09) *************************************
+(28-10-2018 11:10:09) 
+Iniciando proceso ....28-10-2018 11:10:09
+
+(28-10-2018 11:10:09) procesando...
+Archivo: 'ALTA_DTH_20181028.CCL'
+Fecha : 'L'
+(28-10-2018 11:10:09) Se convierte el archivo de entrada al formato UNIX
+dos2unix: converting file /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Alta/ALTA_DTH_20181028.CCL to UNIX format ...
+(28-10-2018 11:10:09) Se procede a importar los datos del archivo de entrada a la tabla de alta de clientes
+
+SQL*Loader: Release 10.2.0.1.0 - Production on Sun Oct 28 11:10:09 2018
+
+Copyright (c) 1982, 2005, Oracle.  All rights reserved.
+
+Commit point reached - logical record count 45
+Commit point reached - logical record count 90
+Commit point reached - logical record count 135
+Commit point reached - logical record count 180
+Commit point reached - logical record count 225
+Commit point reached - logical record count 270
+Commit point reached - logical record count 278
+(28-10-2018 11:10:10) El proceso de importacion culmino satisfactoriamente
+20181028
+(28-10-2018 11:10:10) Se procede a ejecutar el SP PKG_CC_PTOSFIJA.ADMPSI_ALTACLIENTEDTH
+(28-10-2018 11:10:10) Ejecución de SP fue satisfactorio
+(28-10-2018 11:10:10) El archivo de entrada fue copiado en /home/usrclaroclub/CLAROCLUB/Interno/DTH/Procesados/Alta/ALTA_DTH_20181028.CCL
+'20181028'
+(28-10-2018 11:10:10) Se procede a ejecutar el SP PKG_CC_PTOSFIJA.ADMPSI_EALTACLIENTEDTH y exportar los datos obtenidos
+(28-10-2018 11:10:12) Se ha generado el archivo /home/usrclaroclub/CLAROCLUB/Interno/DTH/Error/Alta/ALTA_DTH_20181028.ERR
+(28-10-2018 11:10:12) A continuación se enviará un correo a SoporteAplicacionesAtencionVirtual@claro.com.pe,carlos.bruno@claro.com.pe,E700584@claro.com.pe,soportepostventafactory@claro.com.pe con el asunto de Errores en el proceso de baja
+  adding: ALTA_DTH_20181028.ERR (deflated 90%)
+(29-10-2018 10:54:52) *************************************
+(29-10-2018 10:54:52) Iniciando proceso              
+(29-10-2018 10:54:52) Fecha y Hora : 29-10-2018 10:54:52               
+(29-10-2018 10:54:52) *************************************
+(29-10-2018 10:54:52) 
+Iniciando proceso ....29-10-2018 10:54:52
+
+(29-10-2018 10:54:52) procesando...
+Archivo: 'ALTA_DTH_20181029.CCL'
+Fecha : 'L'
+(29-10-2018 10:54:52) Se convierte el archivo de entrada al formato UNIX
+dos2unix: converting file /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Alta/ALTA_DTH_20181029.CCL to UNIX format ...
+(29-10-2018 10:54:52) Se procede a importar los datos del archivo de entrada a la tabla de alta de clientes
+
+SQL*Loader: Release 10.2.0.1.0 - Production on Mon Oct 29 10:54:52 2018
+
+Copyright (c) 1982, 2005, Oracle.  All rights reserved.
+
+Commit point reached - logical record count 45
+Commit point reached - logical record count 90
+Commit point reached - logical record count 135
+Commit point reached - logical record count 180
+Commit point reached - logical record count 225
+Commit point reached - logical record count 226
+(29-10-2018 10:54:52) El proceso de importacion culmino satisfactoriamente
+20181029
+(29-10-2018 10:54:52) Se procede a ejecutar el SP PKG_CC_PTOSFIJA.ADMPSI_ALTACLIENTEDTH
+(29-10-2018 10:54:53) Hubo un error durante la ejeción del SP PKG_CC_PTOSFIJA.ADMPSI_ALTACLIENTEDTH
+(29-10-2018 10:54:53) A continuación se enviará un correo a SoporteAplicacionesAtencionVirtual@claro.com.pe,carlos.bruno@claro.com.pe,E700584@claro.com.pe,soportepostventafactory@claro.com.pe con el asunto de IMPORTACION DE ALTA DE clientes – Se encontraron errores
+(29-10-2018 10:57:32) *************************************
+(29-10-2018 10:57:32) Iniciando proceso              
+(29-10-2018 10:57:32) Fecha y Hora : 29-10-2018 10:57:32               
+(29-10-2018 10:57:32) *************************************
+(29-10-2018 10:57:32) 
+Iniciando proceso ....29-10-2018 10:57:32
+
+(29-10-2018 10:57:32) procesando...
+Archivo: 'ALTA_DTH_20181029.CCL'
+Fecha : 'L'
+(29-10-2018 10:57:32) Se convierte el archivo de entrada al formato UNIX
+dos2unix: converting file /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Alta/ALTA_DTH_20181029.CCL to UNIX format ...
+(29-10-2018 10:57:32) Se procede a importar los datos del archivo de entrada a la tabla de alta de clientes
+
+SQL*Loader: Release 10.2.0.1.0 - Production on Mon Oct 29 10:57:32 2018
+
+Copyright (c) 1982, 2005, Oracle.  All rights reserved.
+
+Commit point reached - logical record count 45
+Commit point reached - logical record count 90
+Commit point reached - logical record count 135
+Commit point reached - logical record count 180
+Commit point reached - logical record count 225
+Commit point reached - logical record count 226
+(29-10-2018 10:57:33) El proceso de importacion culmino satisfactoriamente
+20181029
+(29-10-2018 10:57:33) Se procede a ejecutar el SP PKG_CC_PTOSFIJA.ADMPSI_ALTACLIENTEDTH
+(29-10-2018 10:57:33) Hubo un error durante la ejeción del SP PKG_CC_PTOSFIJA.ADMPSI_ALTACLIENTEDTH
+(29-10-2018 10:57:33) A continuación se enviará un correo a SoporteAplicacionesAtencionVirtual@claro.com.pe,carlos.bruno@claro.com.pe,E700584@claro.com.pe,soportepostventafactory@claro.com.pe con el asunto de IMPORTACION DE ALTA DE clientes – Se encontraron errores
+(29-10-2018 15:20:00) *************************************
+(29-10-2018 15:20:00) Iniciando proceso              
+(29-10-2018 15:20:00) Fecha y Hora : 29-10-2018 15:20:00               
+(29-10-2018 15:20:00) *************************************
+(29-10-2018 15:20:00) 
+Iniciando proceso ....29-10-2018 15:20:00
+
+(29-10-2018 15:20:00) procesando...
+Archivo: 'ALTA_DTH_20181029.CCL'
+Fecha : 'L'
+(29-10-2018 15:20:00) Se convierte el archivo de entrada al formato UNIX
+dos2unix: converting file /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Alta/ALTA_DTH_20181029.CCL to UNIX format ...
+(29-10-2018 15:20:01) Se procede a importar los datos del archivo de entrada a la tabla de alta de clientes
+
+SQL*Loader: Release 10.2.0.1.0 - Production on Mon Oct 29 15:20:01 2018
+
+Copyright (c) 1982, 2005, Oracle.  All rights reserved.
+
+Commit point reached - logical record count 45
+Commit point reached - logical record count 90
+Commit point reached - logical record count 135
+Commit point reached - logical record count 180
+Commit point reached - logical record count 225
+Commit point reached - logical record count 226
+(29-10-2018 15:20:01) El proceso de importacion culmino satisfactoriamente
+20181029
+(29-10-2018 15:20:01) Se procede a ejecutar el SP PKG_CC_PTOSFIJA.ADMPSI_ALTACLIENTEDTH
+(29-10-2018 15:20:05) Ejecución de SP fue satisfactorio
+(29-10-2018 15:20:05) El archivo de entrada fue copiado en /home/usrclaroclub/CLAROCLUB/Interno/DTH/Procesados/Alta/ALTA_DTH_20181029.CCL
+'20181029'
+(29-10-2018 15:20:05) Se procede a ejecutar el SP PKG_CC_PTOSFIJA.ADMPSI_EALTACLIENTEDTH y exportar los datos obtenidos
+(29-10-2018 15:20:06) Se ha generado el archivo /home/usrclaroclub/CLAROCLUB/Interno/DTH/Error/Alta/ALTA_DTH_20181029.ERR
+(29-10-2018 15:20:06) A continuación se enviará un correo a SoporteAplicacionesAtencionVirtual@claro.com.pe,carlos.bruno@claro.com.pe,E700584@claro.com.pe,soportepostventafactory@claro.com.pe con el asunto de Errores en el proceso de baja
+  adding: ALTA_DTH_20181029.ERR (deflated 94%)
+(31-10-2018 17:19:04) *************************************
+(31-10-2018 17:19:04) Iniciando proceso              
+(31-10-2018 17:19:04) Fecha y Hora : 31-10-2018 17:19:04               
+(31-10-2018 17:19:04) *************************************
+(31-10-2018 17:19:04) 
+Iniciando proceso ....31-10-2018 17:19:04
+
+(31-10-2018 17:19:04) procesando...
+Archivo: 'ALTA_DTH_20181031.CCL'
+Fecha : 'L'
+(31-10-2018 17:19:04) Se convierte el archivo de entrada al formato UNIX
+dos2unix: converting file /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Alta/ALTA_DTH_20181031.CCL to UNIX format ...
+(31-10-2018 17:19:04) Se procede a importar los datos del archivo de entrada a la tabla de alta de clientes
+
+SQL*Loader: Release 10.2.0.1.0 - Production on Wed Oct 31 17:19:04 2018
+
+Copyright (c) 1982, 2005, Oracle.  All rights reserved.
+
+Commit point reached - logical record count 45
+Commit point reached - logical record count 90
+Commit point reached - logical record count 135
+Commit point reached - logical record count 180
+Commit point reached - logical record count 225
+Commit point reached - logical record count 270
+Commit point reached - logical record count 272
+(31-10-2018 17:19:04) El proceso de importacion culmino satisfactoriamente
+20181031
+(31-10-2018 17:19:04) Se procede a ejecutar el SP PKG_CC_PTOSFIJA.ADMPSI_ALTACLIENTEDTH
+(31-10-2018 17:19:05) Hubo un error durante la ejeción del SP PKG_CC_PTOSFIJA.ADMPSI_ALTACLIENTEDTH
+(31-10-2018 17:19:05) A continuación se enviará un correo a SoporteAplicacionesAtencionVirtual@claro.com.pe,carlos.bruno@claro.com.pe,E700584@claro.com.pe,soportepostventafactory@claro.com.pe con el asunto de IMPORTACION DE ALTA DE clientes – Se encontraron errores
+(31-10-2018 17:26:40) *************************************
+(31-10-2018 17:26:40) Iniciando proceso              
+(31-10-2018 17:26:40) Fecha y Hora : 31-10-2018 17:26:40               
+(31-10-2018 17:26:40) *************************************
+(31-10-2018 17:26:40) 
+Iniciando proceso ....31-10-2018 17:26:40
+
+(31-10-2018 17:26:40) procesando...
+Archivo: 'ALTA_DTH_20181031.CCL'
+Fecha : 'L'
+(31-10-2018 17:26:40) Se convierte el archivo de entrada al formato UNIX
+dos2unix: converting file /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Alta/ALTA_DTH_20181031.CCL to UNIX format ...
+(31-10-2018 17:26:40) Se procede a importar los datos del archivo de entrada a la tabla de alta de clientes
+
+SQL*Loader: Release 10.2.0.1.0 - Production on Wed Oct 31 17:26:40 2018
+
+Copyright (c) 1982, 2005, Oracle.  All rights reserved.
+
+Commit point reached - logical record count 45
+Commit point reached - logical record count 90
+Commit point reached - logical record count 135
+Commit point reached - logical record count 180
+Commit point reached - logical record count 225
+Commit point reached - logical record count 270
+Commit point reached - logical record count 275
+(31-10-2018 17:26:40) El proceso de importacion culmino satisfactoriamente
+20181031
+(31-10-2018 17:26:40) Se procede a ejecutar el SP PKG_CC_PTOSFIJA.ADMPSI_ALTACLIENTEDTH
+(31-10-2018 17:26:41) Hubo un error durante la ejeción del SP PKG_CC_PTOSFIJA.ADMPSI_ALTACLIENTEDTH
+(31-10-2018 17:26:41) A continuación se enviará un correo a SoporteAplicacionesAtencionVirtual@claro.com.pe,carlos.bruno@claro.com.pe,E700584@claro.com.pe,soportepostventafactory@claro.com.pe con el asunto de IMPORTACION DE ALTA DE clientes – Se encontraron errores
+(08-11-2018 13:25:01) *************************************
+(08-11-2018 13:25:01) Iniciando proceso              
+(08-11-2018 13:25:01) Fecha y Hora : 08-11-2018 13:25:01               
+(08-11-2018 13:25:01) *************************************
+(08-11-2018 13:25:01) 
+Iniciando proceso ....08-11-2018 13:25:01
+
+(08-11-2018 13:25:01) procesando...
+Archivo: 'ALTA_DTH_20181108.CCL'
+Fecha : 'L'
+(08-11-2018 13:25:01) Se convierte el archivo de entrada al formato UNIX
+dos2unix: converting file /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Alta/ALTA_DTH_20181108.CCL to UNIX format ...
+(08-11-2018 13:25:01) Se procede a importar los datos del archivo de entrada a la tabla de alta de clientes
+
+SQL*Loader: Release 10.2.0.1.0 - Production on Thu Nov 8 13:25:01 2018
+
+Copyright (c) 1982, 2005, Oracle.  All rights reserved.
+
+Commit point reached - logical record count 45
+Commit point reached - logical record count 90
+Commit point reached - logical record count 135
+Commit point reached - logical record count 180
+Commit point reached - logical record count 225
+Commit point reached - logical record count 270
+Commit point reached - logical record count 271
+(08-11-2018 13:25:01) El proceso de importacion culmino satisfactoriamente
+20181108
+(08-11-2018 13:25:01) Se procede a ejecutar el SP PKG_CC_PTOSFIJA.ADMPSI_ALTACLIENTEDTH
+(08-11-2018 13:25:02) Hubo un error durante la ejeción del SP PKG_CC_PTOSFIJA.ADMPSI_ALTACLIENTEDTH
+(08-11-2018 13:25:02) A continuación se enviará un correo a SoporteAplicacionesAtencionVirtual@claro.com.pe,carlos.bruno@claro.com.pe,E700584@claro.com.pe,soportepostventafactory@claro.com.pe con el asunto de IMPORTACION DE ALTA DE clientes – Se encontraron errores
+(11-11-2018 13:24:38) *************************************
+(11-11-2018 13:24:38) Iniciando proceso              
+(11-11-2018 13:24:38) Fecha y Hora : 11-11-2018 13:24:38               
+(11-11-2018 13:24:38) *************************************
+(11-11-2018 13:24:38) 
+Iniciando proceso ....11-11-2018 13:24:38
+
+(11-11-2018 13:24:38) procesando...
+Archivo: 'ALTA_DTH_20181111.CCL'
+Fecha : 'L'
+(11-11-2018 13:24:38) Se convierte el archivo de entrada al formato UNIX
+dos2unix: converting file /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Alta/ALTA_DTH_20181111.CCL to UNIX format ...
+(11-11-2018 13:24:38) Se procede a importar los datos del archivo de entrada a la tabla de alta de clientes
+
+SQL*Loader: Release 10.2.0.1.0 - Production on Sun Nov 11 13:24:38 2018
+
+Copyright (c) 1982, 2005, Oracle.  All rights reserved.
+
+Commit point reached - logical record count 45
+Commit point reached - logical record count 90
+Commit point reached - logical record count 135
+Commit point reached - logical record count 180
+Commit point reached - logical record count 199
+(11-11-2018 13:24:38) El proceso de importacion culmino satisfactoriamente
+20181111
+(11-11-2018 13:24:38) Se procede a ejecutar el SP PKG_CC_PTOSFIJA.ADMPSI_ALTACLIENTEDTH
+(11-11-2018 13:24:39) Ejecución de SP fue satisfactorio
+(11-11-2018 13:24:39) El archivo de entrada fue copiado en /home/usrclaroclub/CLAROCLUB/Interno/DTH/Procesados/Alta/ALTA_DTH_20181111.CCL
+'20181111'
+(11-11-2018 13:24:39) Se procede a ejecutar el SP PKG_CC_PTOSFIJA.ADMPSI_EALTACLIENTEDTH y exportar los datos obtenidos
+(11-11-2018 13:24:41) El archivo no trajo datos, asi que no se podra generar en la carpeta destino
+(11-11-2018 13:24:41) Ejecución de SP fue satisfactorio
+(11-11-2018 13:24:41) Se finalizó el proceso de Ejecución de ADMPSI_EALTACLIENTEDTH
+(11-11-2018 13:24:41) Se finalizó el proceso de Ejecución de ALTA DE clientes
+(11-11-2018 13:24:41) Fin de todo el Proceso de Migracion de Alta de clientes
+(12-11-2018 11:46:49) *************************************
+(12-11-2018 11:46:49) Iniciando proceso              
+(12-11-2018 11:46:49) Fecha y Hora : 12-11-2018 11:46:49               
+(12-11-2018 11:46:49) *************************************
+(12-11-2018 11:46:49) 
+Iniciando proceso ....12-11-2018 11:46:49
+
+(12-11-2018 11:46:49) procesando...
+find: /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Alta/ALTA_DTH_20181112.CCL: No such file or directory
+cat: /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Alta/ALTA_DTH_20181112.CCL: No such file or directory
+(12-11-2018 11:46:49) Error: No se encontro el archivo de datos...
+
+(12-11-2018 11:46:49) Termino proceso
+(12-11-2018 11:46:49) ************************************
+(12-11-2018 11:46:50)  FINALIZANDO PROCESO...............
+(12-11-2018 11:46:50) 2018-11-12@11:46:50 Fin de proceso 
+(12-11-2018 11:46:50) ************************************
+(12-11-2018 11:46:50) No existe ninguno de estos archivos ALTA_DTH_20181112.CCL
+(12-11-2018 11:46:50) A continuación se enviará un correo a SoporteAplicacionesAtencionVirtual@claro.com.pe,carlos.bruno@claro.com.pe,E700584@claro.com.pe,soportepostventafactory@claro.com.pe con el asunto de El Archivo de Alta de clientes no se encuentra en la ruta
+(12-11-2018 11:46:50) Ruta del Archivo log :  /home/usrclaroclub/CLAROCLUB/Interno/DTH/Logs/SH001_PROC_ALTACLIDTH_20181112_114649.log
+(13-11-2018 16:24:21) *************************************
+(13-11-2018 16:24:21) Iniciando proceso              
+(13-11-2018 16:24:21) Fecha y Hora : 13-11-2018 16:24:21               
+(13-11-2018 16:24:21) *************************************
+(13-11-2018 16:24:21) 
+Iniciando proceso ....13-11-2018 16:24:21
+
+(13-11-2018 16:24:21) procesando...
+Archivo: 'ALTA_DTH_20181113.CCL'
+Fecha : 'L'
+(13-11-2018 16:24:21) Se convierte el archivo de entrada al formato UNIX
+dos2unix: converting file /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Alta/ALTA_DTH_20181113.CCL to UNIX format ...
+(13-11-2018 16:24:21) Se procede a importar los datos del archivo de entrada a la tabla de alta de clientes
+
+SQL*Loader: Release 10.2.0.1.0 - Production on Tue Nov 13 16:24:21 2018
+
+Copyright (c) 1982, 2005, Oracle.  All rights reserved.
+
+Commit point reached - logical record count 45
+Commit point reached - logical record count 66
+(13-11-2018 16:24:22) El proceso de importacion culmino satisfactoriamente
+20181113
+(13-11-2018 16:24:22) Se procede a ejecutar el SP PKG_CC_PTOSFIJA.ADMPSI_ALTACLIENTEDTH
+(13-11-2018 16:24:22) Hubo un error durante la ejeción del SP PKG_CC_PTOSFIJA.ADMPSI_ALTACLIENTEDTH
+(13-11-2018 16:24:22) A continuación se enviará un correo a SoporteAplicacionesAtencionVirtual@claro.com.pe,carlos.bruno@claro.com.pe,E700584@claro.com.pe,soportepostventafactory@claro.com.pe con el asunto de IMPORTACION DE ALTA DE clientes – Se encontraron errores
+(13-11-2018 16:28:35) *************************************
+(13-11-2018 16:28:35) Iniciando proceso              
+(13-11-2018 16:28:35) Fecha y Hora : 13-11-2018 16:28:35               
+(13-11-2018 16:28:35) *************************************
+(13-11-2018 16:28:35) 
+Iniciando proceso ....13-11-2018 16:28:35
+
+(13-11-2018 16:28:35) procesando...
+Archivo: 'ALTA_DTH_20181113.CCL'
+Fecha : 'L'
+(13-11-2018 16:28:35) Se convierte el archivo de entrada al formato UNIX
+dos2unix: converting file /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Alta/ALTA_DTH_20181113.CCL to UNIX format ...
+(13-11-2018 16:28:35) Se procede a importar los datos del archivo de entrada a la tabla de alta de clientes
+
+SQL*Loader: Release 10.2.0.1.0 - Production on Tue Nov 13 16:28:35 2018
+
+Copyright (c) 1982, 2005, Oracle.  All rights reserved.
+
+Commit point reached - logical record count 45
+Commit point reached - logical record count 90
+Commit point reached - logical record count 135
+Commit point reached - logical record count 180
+Commit point reached - logical record count 225
+Commit point reached - logical record count 270
+Commit point reached - logical record count 271
+(13-11-2018 16:28:35) El proceso de importacion culmino satisfactoriamente
+20181113
+(13-11-2018 16:28:35) Se procede a ejecutar el SP PKG_CC_PTOSFIJA.ADMPSI_ALTACLIENTEDTH
+(13-11-2018 16:28:38) Ejecución de SP fue satisfactorio
+(13-11-2018 16:28:38) El archivo de entrada fue copiado en /home/usrclaroclub/CLAROCLUB/Interno/DTH/Procesados/Alta/ALTA_DTH_20181113.CCL
+'20181113'
+(13-11-2018 16:28:38) Se procede a ejecutar el SP PKG_CC_PTOSFIJA.ADMPSI_EALTACLIENTEDTH y exportar los datos obtenidos
+(13-11-2018 16:28:39) Se ha generado el archivo /home/usrclaroclub/CLAROCLUB/Interno/DTH/Error/Alta/ALTA_DTH_20181113.ERR
+(13-11-2018 16:28:39) A continuación se enviará un correo a SoporteAplicacionesAtencionVirtual@claro.com.pe,carlos.bruno@claro.com.pe,E700584@claro.com.pe,soportepostventafactory@claro.com.pe con el asunto de Errores en el proceso de baja
+  adding: ALTA_DTH_20181113.ERR (deflated 59%)
+(13-11-2018 16:30:12) *************************************
+(13-11-2018 16:30:12) Iniciando proceso              
+(13-11-2018 16:30:12) Fecha y Hora : 13-11-2018 16:30:12               
+(13-11-2018 16:30:12) *************************************
+(13-11-2018 16:30:12) 
+Iniciando proceso ....13-11-2018 16:30:12
+
+(13-11-2018 16:30:12) procesando...
+Archivo: 'ALTA_DTH_20181113.CCL'
+Fecha : 'L'
+(13-11-2018 16:30:12) Se convierte el archivo de entrada al formato UNIX
+dos2unix: converting file /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Alta/ALTA_DTH_20181113.CCL to UNIX format ...
+(13-11-2018 16:30:12) Se procede a importar los datos del archivo de entrada a la tabla de alta de clientes
+
+SQL*Loader: Release 10.2.0.1.0 - Production on Tue Nov 13 16:30:12 2018
+
+Copyright (c) 1982, 2005, Oracle.  All rights reserved.
+
+Commit point reached - logical record count 45
+Commit point reached - logical record count 90
+Commit point reached - logical record count 135
+Commit point reached - logical record count 180
+Commit point reached - logical record count 225
+Commit point reached - logical record count 270
+Commit point reached - logical record count 306
+(13-11-2018 16:30:13) El proceso de importacion culmino satisfactoriamente
+20181113
+(13-11-2018 16:30:13) Se procede a ejecutar el SP PKG_CC_PTOSFIJA.ADMPSI_ALTACLIENTEDTH
+(13-11-2018 16:30:13) Hubo un error durante la ejeción del SP PKG_CC_PTOSFIJA.ADMPSI_ALTACLIENTEDTH
+(13-11-2018 16:30:13) A continuación se enviará un correo a SoporteAplicacionesAtencionVirtual@claro.com.pe,carlos.bruno@claro.com.pe,E700584@claro.com.pe,soportepostventafactory@claro.com.pe con el asunto de IMPORTACION DE ALTA DE clientes – Se encontraron errores
+(14-11-2018 20:10:38) *************************************
+(14-11-2018 20:10:38) Iniciando proceso              
+(14-11-2018 20:10:38) Fecha y Hora : 14-11-2018 20:10:38               
+(14-11-2018 20:10:38) *************************************
+(14-11-2018 20:10:38) 
+Iniciando proceso ....14-11-2018 20:10:38
+
+(14-11-2018 20:10:38) procesando...
+Archivo: 'ALTA_DTH_20181114.CCL'
+Fecha : 'L'
+(14-11-2018 20:10:38) Se convierte el archivo de entrada al formato UNIX
+dos2unix: converting file /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Alta/ALTA_DTH_20181114.CCL to UNIX format ...
+(14-11-2018 20:10:38) Se procede a importar los datos del archivo de entrada a la tabla de alta de clientes
+
+SQL*Loader: Release 10.2.0.1.0 - Production on Wed Nov 14 20:10:38 2018
+
+Copyright (c) 1982, 2005, Oracle.  All rights reserved.
+
+Commit point reached - logical record count 45
+Commit point reached - logical record count 90
+Commit point reached - logical record count 135
+Commit point reached - logical record count 180
+Commit point reached - logical record count 225
+Commit point reached - logical record count 270
+Commit point reached - logical record count 293
+(14-11-2018 20:10:39) El proceso de importacion culmino satisfactoriamente
+20181114
+(14-11-2018 20:10:39) Se procede a ejecutar el SP PKG_CC_PTOSFIJA.ADMPSI_ALTACLIENTEDTH
+(14-11-2018 20:10:41) Ejecución de SP fue satisfactorio
+(14-11-2018 20:10:41) El archivo de entrada fue copiado en /home/usrclaroclub/CLAROCLUB/Interno/DTH/Procesados/Alta/ALTA_DTH_20181114.CCL
+'20181114'
+(14-11-2018 20:10:41) Se procede a ejecutar el SP PKG_CC_PTOSFIJA.ADMPSI_EALTACLIENTEDTH y exportar los datos obtenidos
+(14-11-2018 20:10:42) El archivo no trajo datos, asi que no se podra generar en la carpeta destino
+(14-11-2018 20:10:42) Ejecución de SP fue satisfactorio
+(14-11-2018 20:10:42) Se finalizó el proceso de Ejecución de ADMPSI_EALTACLIENTEDTH
+(14-11-2018 20:10:42) Se finalizó el proceso de Ejecución de ALTA DE clientes
+(14-11-2018 20:10:42) Fin de todo el Proceso de Migracion de Alta de clientes
+(16-11-2018 11:26:21) *************************************
+(16-11-2018 11:26:21) Iniciando proceso              
+(16-11-2018 11:26:21) Fecha y Hora : 16-11-2018 11:26:20               
+(16-11-2018 11:26:21) *************************************
+(16-11-2018 11:26:21) 
+Iniciando proceso ....16-11-2018 11:26:20
+
+(16-11-2018 11:26:21) procesando...
+Archivo: 'ALTA_DTH_20181116.CCL'
+Fecha : 'L'
+(16-11-2018 11:26:21) Se convierte el archivo de entrada al formato UNIX
+dos2unix: converting file /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Alta/ALTA_DTH_20181116.CCL to UNIX format ...
+(16-11-2018 11:26:21) Se procede a importar los datos del archivo de entrada a la tabla de alta de clientes
+
+SQL*Loader: Release 10.2.0.1.0 - Production on Fri Nov 16 11:26:21 2018
+
+Copyright (c) 1982, 2005, Oracle.  All rights reserved.
+
+Commit point reached - logical record count 45
+Commit point reached - logical record count 90
+Commit point reached - logical record count 135
+Commit point reached - logical record count 180
+Commit point reached - logical record count 225
+Commit point reached - logical record count 270
+(16-11-2018 11:26:21) El proceso de importacion culmino satisfactoriamente
+20181116
+(16-11-2018 11:26:21) Se procede a ejecutar el SP PKG_CC_PTOSFIJA.ADMPSI_ALTACLIENTEDTH
+(16-11-2018 11:26:21) Hubo un error durante la ejeción del SP PKG_CC_PTOSFIJA.ADMPSI_ALTACLIENTEDTH
+(16-11-2018 11:26:21) A continuación se enviará un correo a SoporteAplicacionesAtencionVirtual@claro.com.pe,carlos.bruno@claro.com.pe,E700584@claro.com.pe,soportepostventafactory@claro.com.pe con el asunto de IMPORTACION DE ALTA DE clientes – Se encontraron errores
+(16-11-2018 11:28:41) *************************************
+(16-11-2018 11:28:41) Iniciando proceso              
+(16-11-2018 11:28:41) Fecha y Hora : 16-11-2018 11:28:41               
+(16-11-2018 11:28:41) *************************************
+(16-11-2018 11:28:41) 
+Iniciando proceso ....16-11-2018 11:28:41
+
+(16-11-2018 11:28:41) procesando...
+Archivo: 'ALTA_DTH_20181116.CCL'
+Fecha : 'L'
+(16-11-2018 11:28:42) Se convierte el archivo de entrada al formato UNIX
+dos2unix: converting file /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Alta/ALTA_DTH_20181116.CCL to UNIX format ...
+(16-11-2018 11:28:42) Se procede a importar los datos del archivo de entrada a la tabla de alta de clientes
+
+SQL*Loader: Release 10.2.0.1.0 - Production on Fri Nov 16 11:28:42 2018
+
+Copyright (c) 1982, 2005, Oracle.  All rights reserved.
+
+Commit point reached - logical record count 45
+Commit point reached - logical record count 90
+Commit point reached - logical record count 135
+Commit point reached - logical record count 180
+Commit point reached - logical record count 225
+Commit point reached - logical record count 270
+(16-11-2018 11:28:42) El proceso de importacion culmino satisfactoriamente
+20181116
+(16-11-2018 11:28:42) Se procede a ejecutar el SP PKG_CC_PTOSFIJA.ADMPSI_ALTACLIENTEDTH
+(16-11-2018 11:28:42) Hubo un error durante la ejeción del SP PKG_CC_PTOSFIJA.ADMPSI_ALTACLIENTEDTH
+(16-11-2018 11:28:42) A continuación se enviará un correo a SoporteAplicacionesAtencionVirtual@claro.com.pe,carlos.bruno@claro.com.pe,E700584@claro.com.pe,soportepostventafactory@claro.com.pe con el asunto de IMPORTACION DE ALTA DE clientes – Se encontraron errores
+(16-11-2018 11:37:08) *************************************
+(16-11-2018 11:37:08) Iniciando proceso              
+(16-11-2018 11:37:08) Fecha y Hora : 16-11-2018 11:37:08               
+(16-11-2018 11:37:08) *************************************
+(16-11-2018 11:37:08) 
+Iniciando proceso ....16-11-2018 11:37:08
+
+(16-11-2018 11:37:08) procesando...
+Archivo: 'ALTA_DTH_20181116.CCL'
+Fecha : 'L'
+(16-11-2018 11:37:08) Se convierte el archivo de entrada al formato UNIX
+dos2unix: converting file /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Alta/ALTA_DTH_20181116.CCL to UNIX format ...
+(16-11-2018 11:37:08) Se procede a importar los datos del archivo de entrada a la tabla de alta de clientes
+
+SQL*Loader: Release 10.2.0.1.0 - Production on Fri Nov 16 11:37:08 2018
+
+Copyright (c) 1982, 2005, Oracle.  All rights reserved.
+
+Commit point reached - logical record count 45
+Commit point reached - logical record count 90
+Commit point reached - logical record count 135
+Commit point reached - logical record count 180
+Commit point reached - logical record count 225
+Commit point reached - logical record count 270
+(16-11-2018 11:37:12) El proceso de importacion culmino satisfactoriamente
+20181116
+(16-11-2018 11:37:12) Se procede a ejecutar el SP PKG_CC_PTOSFIJA.ADMPSI_ALTACLIENTEDTH
+(16-11-2018 11:37:20) Ejecución de SP fue satisfactorio
+(16-11-2018 11:37:20) El archivo de entrada fue copiado en /home/usrclaroclub/CLAROCLUB/Interno/DTH/Procesados/Alta/ALTA_DTH_20181116.CCL
+'20181116'
+(16-11-2018 11:37:20) Se procede a ejecutar el SP PKG_CC_PTOSFIJA.ADMPSI_EALTACLIENTEDTH y exportar los datos obtenidos
+(16-11-2018 11:37:21) Se ha generado el archivo /home/usrclaroclub/CLAROCLUB/Interno/DTH/Error/Alta/ALTA_DTH_20181116.ERR
+(16-11-2018 11:37:21) A continuación se enviará un correo a SoporteAplicacionesAtencionVirtual@claro.com.pe,carlos.bruno@claro.com.pe,E700584@claro.com.pe,soportepostventafactory@claro.com.pe con el asunto de Errores en el proceso de baja
+  adding: ALTA_DTH_20181116.ERR (deflated 93%)
+(18-11-2018 12:13:54) *************************************
+(18-11-2018 12:13:54) Iniciando proceso              
+(18-11-2018 12:13:54) Fecha y Hora : 18-11-2018 12:13:54               
+(18-11-2018 12:13:54) *************************************
+(18-11-2018 12:13:54) 
+Iniciando proceso ....18-11-2018 12:13:54
+
+(18-11-2018 12:13:54) procesando...
+find: /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Alta/ALTA_DTH_20181118.CCL: No such file or directory
+cat: /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Alta/ALTA_DTH_20181118.CCL: No such file or directory
+(18-11-2018 12:13:54) Error: No se encontro el archivo de datos...
+
+(18-11-2018 12:13:54) Termino proceso
+(18-11-2018 12:13:54) ************************************
+(18-11-2018 12:13:54)  FINALIZANDO PROCESO...............
+(18-11-2018 12:13:54) 2018-11-18@12:13:54 Fin de proceso 
+(18-11-2018 12:13:54) ************************************
+(18-11-2018 12:13:54) No existe ninguno de estos archivos ALTA_DTH_20181118.CCL
+(18-11-2018 12:13:54) A continuación se enviará un correo a SoporteAplicacionesAtencionVirtual@claro.com.pe,carlos.bruno@claro.com.pe,E700584@claro.com.pe,soportepostventafactory@claro.com.pe con el asunto de El Archivo de Alta de clientes no se encuentra en la ruta
+(18-11-2018 12:13:54) Ruta del Archivo log :  /home/usrclaroclub/CLAROCLUB/Interno/DTH/Logs/SH001_PROC_ALTACLIDTH_20181118_121354.log
+(18-11-2018 12:15:08) *************************************
+(18-11-2018 12:15:08) Iniciando proceso              
+(18-11-2018 12:15:08) Fecha y Hora : 18-11-2018 12:15:08               
+(18-11-2018 12:15:08) *************************************
+(18-11-2018 12:15:08) 
+Iniciando proceso ....18-11-2018 12:15:08
+
+(18-11-2018 12:15:08) procesando...
+Archivo: 'ALTA_DTH_20181118.CCL'
+Fecha : 'L'
+(18-11-2018 12:15:08) Se convierte el archivo de entrada al formato UNIX
+dos2unix: converting file /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Alta/ALTA_DTH_20181118.CCL to UNIX format ...
+(18-11-2018 12:15:08) Se procede a importar los datos del archivo de entrada a la tabla de alta de clientes
+
+SQL*Loader: Release 10.2.0.1.0 - Production on Sun Nov 18 12:15:08 2018
+
+Copyright (c) 1982, 2005, Oracle.  All rights reserved.
+
+Commit point reached - logical record count 45
+Commit point reached - logical record count 90
+Commit point reached - logical record count 135
+Commit point reached - logical record count 180
+Commit point reached - logical record count 225
+Commit point reached - logical record count 270
+Commit point reached - logical record count 284
+(18-11-2018 12:15:09) El proceso de importacion culmino satisfactoriamente
+20181118
+(18-11-2018 12:15:09) Se procede a ejecutar el SP PKG_CC_PTOSFIJA.ADMPSI_ALTACLIENTEDTH
+(18-11-2018 12:15:11) Ejecución de SP fue satisfactorio
+(18-11-2018 12:15:11) El archivo de entrada fue copiado en /home/usrclaroclub/CLAROCLUB/Interno/DTH/Procesados/Alta/ALTA_DTH_20181118.CCL
+'20181118'
+(18-11-2018 12:15:11) Se procede a ejecutar el SP PKG_CC_PTOSFIJA.ADMPSI_EALTACLIENTEDTH y exportar los datos obtenidos
+(18-11-2018 12:15:15) El archivo no trajo datos, asi que no se podra generar en la carpeta destino
+(18-11-2018 12:15:15) Ejecución de SP fue satisfactorio
+(18-11-2018 12:15:15) Se finalizó el proceso de Ejecución de ADMPSI_EALTACLIENTEDTH
+(18-11-2018 12:15:15) Se finalizó el proceso de Ejecución de ALTA DE clientes
+(18-11-2018 12:15:15) Fin de todo el Proceso de Migracion de Alta de clientes
+(19-11-2018 15:16:21) *************************************
+(19-11-2018 15:16:21) Iniciando proceso              
+(19-11-2018 15:16:21) Fecha y Hora : 19-11-2018 15:16:21               
+(19-11-2018 15:16:21) *************************************
+(19-11-2018 15:16:21) 
+Iniciando proceso ....19-11-2018 15:16:21
+
+(19-11-2018 15:16:21) procesando...
+Archivo: 'ALTA_DTH_20181119.CCL'
+Fecha : 'L'
+(19-11-2018 15:16:21) Se convierte el archivo de entrada al formato UNIX
+dos2unix: converting file /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Alta/ALTA_DTH_20181119.CCL to UNIX format ...
+(19-11-2018 15:16:21) Se procede a importar los datos del archivo de entrada a la tabla de alta de clientes
+
+SQL*Loader: Release 10.2.0.1.0 - Production on Mon Nov 19 15:16:21 2018
+
+Copyright (c) 1982, 2005, Oracle.  All rights reserved.
+
+Commit point reached - logical record count 45
+Commit point reached - logical record count 75
+(19-11-2018 15:16:21) El proceso de importacion culmino satisfactoriamente
+20181119
+(19-11-2018 15:16:21) Se procede a ejecutar el SP PKG_CC_PTOSFIJA.ADMPSI_ALTACLIENTEDTH
+(19-11-2018 15:16:22) Ejecución de SP fue satisfactorio
+(19-11-2018 15:16:22) El archivo de entrada fue copiado en /home/usrclaroclub/CLAROCLUB/Interno/DTH/Procesados/Alta/ALTA_DTH_20181119.CCL
+'20181119'
+(19-11-2018 15:16:22) Se procede a ejecutar el SP PKG_CC_PTOSFIJA.ADMPSI_EALTACLIENTEDTH y exportar los datos obtenidos
+(19-11-2018 15:16:24) El archivo no trajo datos, asi que no se podra generar en la carpeta destino
+(19-11-2018 15:16:24) Ejecución de SP fue satisfactorio
+(19-11-2018 15:16:24) Se finalizó el proceso de Ejecución de ADMPSI_EALTACLIENTEDTH
+(19-11-2018 15:16:24) Se finalizó el proceso de Ejecución de ALTA DE clientes
+(19-11-2018 15:16:24) Fin de todo el Proceso de Migracion de Alta de clientes
+(23-11-2018 12:23:09) *************************************
+(23-11-2018 12:23:09) Iniciando proceso              
+(23-11-2018 12:23:09) Fecha y Hora : 23-11-2018 12:23:09               
+(23-11-2018 12:23:09) *************************************
+(23-11-2018 12:23:09) 
+Iniciando proceso ....23-11-2018 12:23:09
+
+(23-11-2018 12:23:09) procesando...
+Archivo: 'ALTA_DTH_20181123.CCL'
+Fecha : 'L'
+(23-11-2018 12:23:09) Se convierte el archivo de entrada al formato UNIX
+dos2unix: converting file /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Alta/ALTA_DTH_20181123.CCL to UNIX format ...
+(23-11-2018 12:23:09) Se procede a importar los datos del archivo de entrada a la tabla de alta de clientes
+
+SQL*Loader: Release 10.2.0.1.0 - Production on Fri Nov 23 12:23:09 2018
+
+Copyright (c) 1982, 2005, Oracle.  All rights reserved.
+
+Commit point reached - logical record count 45
+Commit point reached - logical record count 90
+Commit point reached - logical record count 135
+Commit point reached - logical record count 180
+Commit point reached - logical record count 225
+Commit point reached - logical record count 270
+Commit point reached - logical record count 300
+(23-11-2018 12:23:09) El proceso de importacion culmino satisfactoriamente
+20181123
+(23-11-2018 12:23:10) Se procede a ejecutar el SP PKG_CC_PTOSFIJA.ADMPSI_ALTACLIENTEDTH
+(23-11-2018 12:23:10) Hubo un error durante la ejeción del SP PKG_CC_PTOSFIJA.ADMPSI_ALTACLIENTEDTH
+(23-11-2018 12:23:10) A continuación se enviará un correo a SoporteAplicacionesAtencionVirtual@claro.com.pe,carlos.bruno@claro.com.pe,E700584@claro.com.pe,soportepostventafactory@claro.com.pe con el asunto de IMPORTACION DE ALTA DE clientes – Se encontraron errores
+(23-11-2018 12:26:10) *************************************
+(23-11-2018 12:26:10) Iniciando proceso              
+(23-11-2018 12:26:10) Fecha y Hora : 23-11-2018 12:26:10               
+(23-11-2018 12:26:10) *************************************
+(23-11-2018 12:26:10) 
+Iniciando proceso ....23-11-2018 12:26:10
+
+(23-11-2018 12:26:10) procesando...
+Archivo: 'ALTA_DTH_20181123.CCL'
+Fecha : 'L'
+(23-11-2018 12:26:10) Se convierte el archivo de entrada al formato UNIX
+dos2unix: converting file /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Alta/ALTA_DTH_20181123.CCL to UNIX format ...
+(23-11-2018 12:26:10) Se procede a importar los datos del archivo de entrada a la tabla de alta de clientes
+
+SQL*Loader: Release 10.2.0.1.0 - Production on Fri Nov 23 12:26:10 2018
+
+Copyright (c) 1982, 2005, Oracle.  All rights reserved.
+
+Commit point reached - logical record count 45
+Commit point reached - logical record count 90
+Commit point reached - logical record count 135
+Commit point reached - logical record count 180
+Commit point reached - logical record count 225
+Commit point reached - logical record count 270
+Commit point reached - logical record count 272
+(23-11-2018 12:26:11) El proceso de importacion culmino satisfactoriamente
+20181123
+(23-11-2018 12:26:11) Se procede a ejecutar el SP PKG_CC_PTOSFIJA.ADMPSI_ALTACLIENTEDTH
+(23-11-2018 12:26:15) Ejecución de SP fue satisfactorio
+(23-11-2018 12:26:15) El archivo de entrada fue copiado en /home/usrclaroclub/CLAROCLUB/Interno/DTH/Procesados/Alta/ALTA_DTH_20181123.CCL
+'20181123'
+(23-11-2018 12:26:15) Se procede a ejecutar el SP PKG_CC_PTOSFIJA.ADMPSI_EALTACLIENTEDTH y exportar los datos obtenidos
+(23-11-2018 12:26:17) Se ha generado el archivo /home/usrclaroclub/CLAROCLUB/Interno/DTH/Error/Alta/ALTA_DTH_20181123.ERR
+(23-11-2018 12:26:17) A continuación se enviará un correo a SoporteAplicacionesAtencionVirtual@claro.com.pe,carlos.bruno@claro.com.pe,E700584@claro.com.pe,soportepostventafactory@claro.com.pe con el asunto de Errores en el proceso de baja
+  adding: ALTA_DTH_20181123.ERR (deflated 10%)
+(23-11-2018 12:27:39) *************************************
+(23-11-2018 12:27:39) Iniciando proceso              
+(23-11-2018 12:27:39) Fecha y Hora : 23-11-2018 12:27:39               
+(23-11-2018 12:27:39) *************************************
+(23-11-2018 12:27:39) 
+Iniciando proceso ....23-11-2018 12:27:39
+
+(23-11-2018 12:27:39) procesando...
+Archivo: 'ALTA_DTH_20181123.CCL'
+Fecha : 'L'
+(23-11-2018 12:27:39) Se convierte el archivo de entrada al formato UNIX
+dos2unix: converting file /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Alta/ALTA_DTH_20181123.CCL to UNIX format ...
+(23-11-2018 12:27:39) Se procede a importar los datos del archivo de entrada a la tabla de alta de clientes
+
+SQL*Loader: Release 10.2.0.1.0 - Production on Fri Nov 23 12:27:39 2018
+
+Copyright (c) 1982, 2005, Oracle.  All rights reserved.
+
+Commit point reached - logical record count 45
+Commit point reached - logical record count 90
+Commit point reached - logical record count 135
+Commit point reached - logical record count 180
+Commit point reached - logical record count 225
+Commit point reached - logical record count 270
+Commit point reached - logical record count 291
+(23-11-2018 12:27:39) El proceso de importacion culmino satisfactoriamente
+20181123
+(23-11-2018 12:27:39) Se procede a ejecutar el SP PKG_CC_PTOSFIJA.ADMPSI_ALTACLIENTEDTH
+(23-11-2018 12:27:42) Ejecución de SP fue satisfactorio
+(23-11-2018 12:27:42) El archivo de entrada fue copiado en /home/usrclaroclub/CLAROCLUB/Interno/DTH/Procesados/Alta/ALTA_DTH_20181123.CCL
+'20181123'
+(23-11-2018 12:27:42) Se procede a ejecutar el SP PKG_CC_PTOSFIJA.ADMPSI_EALTACLIENTEDTH y exportar los datos obtenidos
+(23-11-2018 12:27:43) Se ha generado el archivo /home/usrclaroclub/CLAROCLUB/Interno/DTH/Error/Alta/ALTA_DTH_20181123.ERR
+(23-11-2018 12:27:43) A continuación se enviará un correo a SoporteAplicacionesAtencionVirtual@claro.com.pe,carlos.bruno@claro.com.pe,E700584@claro.com.pe,soportepostventafactory@claro.com.pe con el asunto de Errores en el proceso de baja
+  adding: ALTA_DTH_20181123.ERR (deflated 10%)
+(27-11-2018 15:37:44) *************************************
+(27-11-2018 15:37:44) Iniciando proceso              
+(27-11-2018 15:37:44) Fecha y Hora : 27-11-2018 15:37:44               
+(27-11-2018 15:37:44) *************************************
+(27-11-2018 15:37:44) 
+Iniciando proceso ....27-11-2018 15:37:44
+
+(27-11-2018 15:37:44) procesando...
+Archivo: 'ALTA_DTH_20181127.CCL'
+Fecha : 'L'
+(27-11-2018 15:37:44) Se convierte el archivo de entrada al formato UNIX
+dos2unix: converting file /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Alta/ALTA_DTH_20181127.CCL to UNIX format ...
+(27-11-2018 15:37:44) Se procede a importar los datos del archivo de entrada a la tabla de alta de clientes
+
+SQL*Loader: Release 10.2.0.1.0 - Production on Tue Nov 27 15:37:44 2018
+
+Copyright (c) 1982, 2005, Oracle.  All rights reserved.
+
+Commit point reached - logical record count 45
+Commit point reached - logical record count 87
+(27-11-2018 15:37:45) El proceso de importacion culmino satisfactoriamente
+20181127
+(27-11-2018 15:37:45) Se procede a ejecutar el SP PKG_CC_PTOSFIJA.ADMPSI_ALTACLIENTEDTH
+(27-11-2018 15:37:45) Hubo un error durante la ejeción del SP PKG_CC_PTOSFIJA.ADMPSI_ALTACLIENTEDTH
+(27-11-2018 15:37:45) A continuación se enviará un correo a SoporteAplicacionesAtencionVirtual@claro.com.pe,carlos.bruno@claro.com.pe,E700584@claro.com.pe,soportepostventafactory@claro.com.pe con el asunto de IMPORTACION DE ALTA DE clientes – Se encontraron errores
+(27-11-2018 15:39:35) *************************************
+(27-11-2018 15:39:35) Iniciando proceso              
+(27-11-2018 15:39:35) Fecha y Hora : 27-11-2018 15:39:35               
+(27-11-2018 15:39:35) *************************************
+(27-11-2018 15:39:35) 
+Iniciando proceso ....27-11-2018 15:39:35
+
+(27-11-2018 15:39:35) procesando...
+Archivo: 'ALTA_DTH_20181127.CCL'
+Fecha : 'L'
+(27-11-2018 15:39:35) Se convierte el archivo de entrada al formato UNIX
+dos2unix: converting file /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Alta/ALTA_DTH_20181127.CCL to UNIX format ...
+(27-11-2018 15:39:36) Se procede a importar los datos del archivo de entrada a la tabla de alta de clientes
+
+SQL*Loader: Release 10.2.0.1.0 - Production on Tue Nov 27 15:39:36 2018
+
+Copyright (c) 1982, 2005, Oracle.  All rights reserved.
+
+Commit point reached - logical record count 45
+Commit point reached - logical record count 90
+Commit point reached - logical record count 135
+Commit point reached - logical record count 180
+Commit point reached - logical record count 225
+Commit point reached - logical record count 270
+Commit point reached - logical record count 301
+(27-11-2018 15:39:36) El proceso de importacion culmino satisfactoriamente
+20181127
+(27-11-2018 15:39:36) Se procede a ejecutar el SP PKG_CC_PTOSFIJA.ADMPSI_ALTACLIENTEDTH
+(27-11-2018 15:39:41) Ejecución de SP fue satisfactorio
+(27-11-2018 15:39:41) El archivo de entrada fue copiado en /home/usrclaroclub/CLAROCLUB/Interno/DTH/Procesados/Alta/ALTA_DTH_20181127.CCL
+'20181127'
+(27-11-2018 15:39:41) Se procede a ejecutar el SP PKG_CC_PTOSFIJA.ADMPSI_EALTACLIENTEDTH y exportar los datos obtenidos
+(27-11-2018 15:39:42) Se ha generado el archivo /home/usrclaroclub/CLAROCLUB/Interno/DTH/Error/Alta/ALTA_DTH_20181127.ERR
+(27-11-2018 15:39:42) A continuación se enviará un correo a SoporteAplicacionesAtencionVirtual@claro.com.pe,carlos.bruno@claro.com.pe,E700584@claro.com.pe,soportepostventafactory@claro.com.pe con el asunto de Errores en el proceso de baja
+  adding: ALTA_DTH_20181127.ERR (deflated 10%)
+(28-11-2018 12:46:09) *************************************
+(28-11-2018 12:46:09) Iniciando proceso               
+(28-11-2018 12:46:09) Fecha y Hora : 28-11-2018 12:46:09               
+(28-11-2018 12:46:09) *************************************
+find: /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Baja/BAJA_DTH_20181128.CCL: No such file or directory
+cat: /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Baja/BAJA_DTH_20181128.CCL: No such file or directory
+(28-11-2018 12:46:09) No se encontro el archivo de datos...
+(28-11-2018 12:46:09) Termino proceso
+(28-11-2018 12:46:09) ************************************
+(28-11-2018 12:46:09)  FINALIZANDO PROCESO...............
+(28-11-2018 12:46:09) 2018-11-28@12:46:09 Fin de proceso 
+(28-11-2018 12:46:09) ************************************
+(28-11-2018 12:46:09) No existe ninguno de estos archivos BAJA_DTH_20181128.CCL
+(28-11-2018 12:46:09) A continuación se enviará un correo a SoporteAplicacionesAtencionVirtual@claro.com.pe,carlos.bruno@claro.com.pe,E700584@claro.com.pe,soportepostventafactory@claro.com.pe con el asunto de El Archivo de Baja no se encuentra en la ruta
+(28-11-2018 12:46:09) Ruta del Archivo log :  /home/usrclaroclub/CLAROCLUB/Interno/DTH/Logs/SH003_PROC_BAJADTH_20181128_124609.log
+
+
+(29-11-2018 15:34:05) *************************************
+(29-11-2018 15:34:05) Iniciando proceso              
+(29-11-2018 15:34:05) Fecha y Hora : 29-11-2018 15:34:05               
+(29-11-2018 15:34:05) *************************************
+(29-11-2018 15:34:05) 
+Iniciando proceso ....29-11-2018 15:34:05
+
+(29-11-2018 15:34:05) procesando...
+Archivo: 'ALTA_DTH_20181129.CCL'
+Fecha : 'L'
+(29-11-2018 15:34:05) Se convierte el archivo de entrada al formato UNIX
+dos2unix: converting file /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Alta/ALTA_DTH_20181129.CCL to UNIX format ...
+(29-11-2018 15:34:06) Se procede a importar los datos del archivo de entrada a la tabla de alta de clientes
+
+SQL*Loader: Release 10.2.0.1.0 - Production on Thu Nov 29 15:34:06 2018
+
+Copyright (c) 1982, 2005, Oracle.  All rights reserved.
+
+Commit point reached - logical record count 45
+Commit point reached - logical record count 90
+Commit point reached - logical record count 135
+Commit point reached - logical record count 180
+Commit point reached - logical record count 225
+Commit point reached - logical record count 270
+Commit point reached - logical record count 271
+(29-11-2018 15:34:06) El proceso de importacion culmino satisfactoriamente
+20181129
+(29-11-2018 15:34:06) Se procede a ejecutar el SP PKG_CC_PTOSFIJA.ADMPSI_ALTACLIENTEDTH
+(29-11-2018 15:34:06) Hubo un error durante la ejeción del SP PKG_CC_PTOSFIJA.ADMPSI_ALTACLIENTEDTH
+(29-11-2018 15:34:06) A continuación se enviará un correo a SoporteAplicacionesAtencionVirtual@claro.com.pe,carlos.bruno@claro.com.pe,E700584@claro.com.pe,soportepostventafactory@claro.com.pe con el asunto de IMPORTACION DE ALTA DE clientes – Se encontraron errores
+(29-11-2018 15:34:56) *************************************
+(29-11-2018 15:34:56) Iniciando proceso              
+(29-11-2018 15:34:56) Fecha y Hora : 29-11-2018 15:34:56               
+(29-11-2018 15:34:56) *************************************
+(29-11-2018 15:34:56) 
+Iniciando proceso ....29-11-2018 15:34:56
+
+(29-11-2018 15:34:56) procesando...
+Archivo: 'ALTA_DTH_20181129.CCL'
+Fecha : 'L'
+(29-11-2018 15:34:56) Se convierte el archivo de entrada al formato UNIX
+dos2unix: converting file /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Alta/ALTA_DTH_20181129.CCL to UNIX format ...
+(29-11-2018 15:34:56) Se procede a importar los datos del archivo de entrada a la tabla de alta de clientes
+
+SQL*Loader: Release 10.2.0.1.0 - Production on Thu Nov 29 15:34:56 2018
+
+Copyright (c) 1982, 2005, Oracle.  All rights reserved.
+
+Commit point reached - logical record count 45
+Commit point reached - logical record count 90
+Commit point reached - logical record count 135
+Commit point reached - logical record count 180
+Commit point reached - logical record count 225
+Commit point reached - logical record count 270
+Commit point reached - logical record count 308
+(29-11-2018 15:34:56) El proceso de importacion culmino satisfactoriamente
+20181129
+(29-11-2018 15:34:56) Se procede a ejecutar el SP PKG_CC_PTOSFIJA.ADMPSI_ALTACLIENTEDTH
+(29-11-2018 15:35:00) Ejecución de SP fue satisfactorio
+(29-11-2018 15:35:00) El archivo de entrada fue copiado en /home/usrclaroclub/CLAROCLUB/Interno/DTH/Procesados/Alta/ALTA_DTH_20181129.CCL
+'20181129'
+(29-11-2018 15:35:00) Se procede a ejecutar el SP PKG_CC_PTOSFIJA.ADMPSI_EALTACLIENTEDTH y exportar los datos obtenidos
+(29-11-2018 15:35:02) Se ha generado el archivo /home/usrclaroclub/CLAROCLUB/Interno/DTH/Error/Alta/ALTA_DTH_20181129.ERR
+(29-11-2018 15:35:02) A continuación se enviará un correo a SoporteAplicacionesAtencionVirtual@claro.com.pe,carlos.bruno@claro.com.pe,E700584@claro.com.pe,soportepostventafactory@claro.com.pe con el asunto de Errores en el proceso de baja
+  adding: ALTA_DTH_20181129.ERR (deflated 10%)
+(30-11-2018 15:20:00) *************************************
+(30-11-2018 15:20:00) Iniciando proceso              
+(30-11-2018 15:20:00) Fecha y Hora : 30-11-2018 15:20:00               
+(30-11-2018 15:20:00) *************************************
+(30-11-2018 15:20:00) 
+Iniciando proceso ....30-11-2018 15:20:00
+
+(30-11-2018 15:20:00) procesando...
+Archivo: 'ALTA_DTH_20181130.CCL'
+Fecha : 'L'
+(30-11-2018 15:20:00) Se convierte el archivo de entrada al formato UNIX
+dos2unix: converting file /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Alta/ALTA_DTH_20181130.CCL to UNIX format ...
+(30-11-2018 15:20:00) Se procede a importar los datos del archivo de entrada a la tabla de alta de clientes
+
+SQL*Loader: Release 10.2.0.1.0 - Production on Fri Nov 30 15:20:00 2018
+
+Copyright (c) 1982, 2005, Oracle.  All rights reserved.
+
+Commit point reached - logical record count 45
+Commit point reached - logical record count 90
+Commit point reached - logical record count 135
+Commit point reached - logical record count 180
+Commit point reached - logical record count 225
+Commit point reached - logical record count 270
+Commit point reached - logical record count 294
+(30-11-2018 15:20:01) El proceso de importacion culmino satisfactoriamente
+20181130
+(30-11-2018 15:20:01) Se procede a ejecutar el SP PKG_CC_PTOSFIJA.ADMPSI_ALTACLIENTEDTH
+(30-11-2018 15:20:03) Hubo un error durante la ejeción del SP PKG_CC_PTOSFIJA.ADMPSI_ALTACLIENTEDTH
+(30-11-2018 15:20:03) A continuación se enviará un correo a SoporteAplicacionesAtencionVirtual@claro.com.pe,carlos.bruno@claro.com.pe,E700584@claro.com.pe,soportepostventafactory@claro.com.pe con el asunto de IMPORTACION DE ALTA DE clientes – Se encontraron errores
+(02-12-2018 16:46:00) *************************************
+(02-12-2018 16:46:00) Iniciando proceso              
+(02-12-2018 16:46:00) Fecha y Hora : 02-12-2018 16:46:00               
+(02-12-2018 16:46:00) *************************************
+(02-12-2018 16:46:00) 
+Iniciando proceso ....02-12-2018 16:46:00
+
+(02-12-2018 16:46:00) procesando...
+Archivo: 'ALTA_DTH_20181202.CCL'
+Fecha : 'L'
+(02-12-2018 16:46:00) Se convierte el archivo de entrada al formato UNIX
+dos2unix: converting file /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Alta/ALTA_DTH_20181202.CCL to UNIX format ...
+(02-12-2018 16:46:00) Se procede a importar los datos del archivo de entrada a la tabla de alta de clientes
+
+SQL*Loader: Release 10.2.0.1.0 - Production on Sun Dec 2 16:46:00 2018
+
+Copyright (c) 1982, 2005, Oracle.  All rights reserved.
+
+Commit point reached - logical record count 45
+Commit point reached - logical record count 90
+Commit point reached - logical record count 135
+Commit point reached - logical record count 180
+Commit point reached - logical record count 225
+Commit point reached - logical record count 270
+Commit point reached - logical record count 315
+Commit point reached - logical record count 321
+(02-12-2018 16:46:00) El proceso de importacion culmino satisfactoriamente
+20181202
+(02-12-2018 16:46:00) Se procede a ejecutar el SP PKG_CC_PTOSFIJA.ADMPSI_ALTACLIENTEDTH
+(02-12-2018 16:46:03) Ejecución de SP fue satisfactorio
+(02-12-2018 16:46:03) El archivo de entrada fue copiado en /home/usrclaroclub/CLAROCLUB/Interno/DTH/Procesados/Alta/ALTA_DTH_20181202.CCL
+'20181202'
+(02-12-2018 16:46:03) Se procede a ejecutar el SP PKG_CC_PTOSFIJA.ADMPSI_EALTACLIENTEDTH y exportar los datos obtenidos
+(02-12-2018 16:46:05) El archivo no trajo datos, asi que no se podra generar en la carpeta destino
+(02-12-2018 16:46:05) Ejecución de SP fue satisfactorio
+(02-12-2018 16:46:05) Se finalizó el proceso de Ejecución de ADMPSI_EALTACLIENTEDTH
+(02-12-2018 16:46:05) Se finalizó el proceso de Ejecución de ALTA DE clientes
+(02-12-2018 16:46:05) Fin de todo el Proceso de Migracion de Alta de clientes
+(02-12-2018 16:46:58) *************************************
+(02-12-2018 16:46:58) Iniciando proceso              
+(02-12-2018 16:46:58) Fecha y Hora : 02-12-2018 16:46:58               
+(02-12-2018 16:46:58) *************************************
+(02-12-2018 16:46:58) 
+Iniciando proceso ....02-12-2018 16:46:58
+
+(02-12-2018 16:46:58) procesando...
+(02-12-2018 16:46:58) Ninguno de estos archivos tiene data ALTA_DTH_20181202.CCL
+(02-12-2018 16:46:58) A continuación se enviará un correo a SoporteAplicacionesAtencionVirtual@claro.com.pe,carlos.bruno@claro.com.pe,E700584@claro.com.pe,soportepostventafactory@claro.com.pe con el asunto de El Archivo de Alta de clientes se encuentra vacio.
+(02-12-2018 16:46:58) Se envió correo Fecha y Hora: 02-12-2018 16:46:58
+(02-12-2018 16:47:55) *************************************
+(02-12-2018 16:47:55) Iniciando proceso              
+(02-12-2018 16:47:55) Fecha y Hora : 02-12-2018 16:47:55               
+(02-12-2018 16:47:55) *************************************
+(02-12-2018 16:47:55) 
+Iniciando proceso ....02-12-2018 16:47:55
+
+(02-12-2018 16:47:55) procesando...
+(02-12-2018 16:47:55) Ninguno de estos archivos tiene data ALTA_DTH_20181202.CCL
+(02-12-2018 16:47:55) A continuación se enviará un correo a SoporteAplicacionesAtencionVirtual@claro.com.pe,carlos.bruno@claro.com.pe,E700584@claro.com.pe,soportepostventafactory@claro.com.pe con el asunto de El Archivo de Alta de clientes se encuentra vacio.
+(02-12-2018 16:47:55) Se envió correo Fecha y Hora: 02-12-2018 16:47:55
+(12-12-2018 10:39:27) *************************************
+(12-12-2018 10:39:27) Iniciando proceso de Importación              
+(12-12-2018 10:39:27) Fecha y Hora : 12-12-2018 10:39:27               
+(12-12-2018 10:39:27) *************************************
+find: /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Pagos/PAGOS_DTH_20181212.OAC: No such file or directory
+cat: /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Pagos/PAGOS_DTH_20181212.OAC: No such file or directory
+(12-12-2018 10:39:27)  12-12-2018 10:39:27: Error: No se encontro el archivo de datos...
+(12-12-2018 10:39:27) Termino proceso
+(12-12-2018 10:39:27) ************************************
+(12-12-2018 10:39:27)  FINALIZANDO PROCESO...............
+(12-12-2018 10:39:27) 2018-12-12@10:39:27 Fin de proceso 
+(12-12-2018 10:39:27) ************************************
+(12-12-2018 10:39:27) No existe ninguno de estos archivos PAGOS_DTH_20181212.OAC
+(12-12-2018 10:39:27) A continuación se enviará un correo a SoporteAplicacionesAtencionVirtual@claro.com.pe,carlos.bruno@claro.com.pe,E700584@claro.com.pe,soportepostventafactory@claro.com.pe con el asunto de El Archivo de pagos no se encuentra en la ruta
+(12-12-2018 10:39:27) Ruta del Archivo log :  /home/usrclaroclub/CLAROCLUB/Interno/DTH/Logs/SH002_PROC_PAGOS_20181212_103927.log
+
+
+(18-12-2018 11:21:33) *************************************
+(18-12-2018 11:21:33) Iniciando proceso              
+(18-12-2018 11:21:33) Fecha y Hora : 18-12-2018 11:21:33               
+(18-12-2018 11:21:33) *************************************
+(18-12-2018 11:21:33) 
+Iniciando proceso ....18-12-2018 11:21:33
+
+(18-12-2018 11:21:33) procesando...
+Archivo: 'ALTA_DTH_20181218.CCL'
+Fecha : 'L'
+(18-12-2018 11:21:33) Se convierte el archivo de entrada al formato UNIX
+dos2unix: converting file /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Alta/ALTA_DTH_20181218.CCL to UNIX format ...
+(18-12-2018 11:21:33) Se procede a importar los datos del archivo de entrada a la tabla de alta de clientes
+
+SQL*Loader: Release 10.2.0.1.0 - Production on Tue Dec 18 11:21:33 2018
+
+Copyright (c) 1982, 2005, Oracle.  All rights reserved.
+
+Commit point reached - logical record count 45
+Commit point reached - logical record count 90
+Commit point reached - logical record count 135
+Commit point reached - logical record count 180
+Commit point reached - logical record count 225
+Commit point reached - logical record count 260
+(18-12-2018 11:21:33) El proceso de importacion culmino satisfactoriamente
+20181218
+(18-12-2018 11:21:33) Se procede a ejecutar el SP PKG_CC_PTOSFIJA.ADMPSI_ALTACLIENTEDTH
+(18-12-2018 11:21:38) Ejecución de SP fue satisfactorio
+(18-12-2018 11:21:38) El archivo de entrada fue copiado en /home/usrclaroclub/CLAROCLUB/Interno/DTH/Procesados/Alta/ALTA_DTH_20181218.CCL
+'20181218'
+(18-12-2018 11:21:38) Se procede a ejecutar el SP PKG_CC_PTOSFIJA.ADMPSI_EALTACLIENTEDTH y exportar los datos obtenidos
+(18-12-2018 11:21:39) Se ha generado el archivo /home/usrclaroclub/CLAROCLUB/Interno/DTH/Error/Alta/ALTA_DTH_20181218.ERR
+(18-12-2018 11:21:39) A continuación se enviará un correo a SoporteAplicacionesAtencionVirtual@claro.com.pe,carlos.bruno@claro.com.pe,E700584@claro.com.pe,soportepostventafactory@claro.com.pe con el asunto de Errores en el proceso de baja
+  adding: ALTA_DTH_20181218.ERR (deflated 92%)
+(19-12-2018 10:35:00) *************************************
+(19-12-2018 10:35:00) Iniciando proceso              
+(19-12-2018 10:35:00) Fecha y Hora : 19-12-2018 10:35:00               
+(19-12-2018 10:35:00) *************************************
+(19-12-2018 10:35:00) 
+Iniciando proceso ....19-12-2018 10:35:00
+
+(19-12-2018 10:35:00) procesando...
+find: /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Alta/ALTA_DTH_20181219.CCL: No such file or directory
+cat: /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Alta/ALTA_DTH_20181219.CCL: No such file or directory
+(19-12-2018 10:35:00) Error: No se encontro el archivo de datos...
+
+(19-12-2018 10:35:00) Termino proceso
+(19-12-2018 10:35:00) ************************************
+(19-12-2018 10:35:00)  FINALIZANDO PROCESO...............
+(19-12-2018 10:35:00) 2018-12-19@10:35:00 Fin de proceso 
+(19-12-2018 10:35:00) ************************************
+(19-12-2018 10:35:00) No existe ninguno de estos archivos ALTA_DTH_20181219.CCL
+(19-12-2018 10:35:00) A continuación se enviará un correo a SoporteAplicacionesAtencionVirtual@claro.com.pe,carlos.bruno@claro.com.pe,E700584@claro.com.pe,soportepostventafactory@claro.com.pe con el asunto de El Archivo de Alta de clientes no se encuentra en la ruta
+(19-12-2018 10:35:00) Ruta del Archivo log :  /home/usrclaroclub/CLAROCLUB/Interno/DTH/Logs/SH001_PROC_ALTACLIDTH_20181219_103500.log
+(19-12-2018 10:36:06) *************************************
+(19-12-2018 10:36:06) Iniciando proceso              
+(19-12-2018 10:36:06) Fecha y Hora : 19-12-2018 10:36:06               
+(19-12-2018 10:36:06) *************************************
+(19-12-2018 10:36:06) 
+Iniciando proceso ....19-12-2018 10:36:06
+
+(19-12-2018 10:36:06) procesando...
+find: /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Alta/ALTA_DTH_20181219.CCL: No such file or directory
+cat: /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Alta/ALTA_DTH_20181219.CCL: No such file or directory
+(19-12-2018 10:36:06) Error: No se encontro el archivo de datos...
+
+(19-12-2018 10:36:06) Termino proceso
+(19-12-2018 10:36:06) ************************************
+(19-12-2018 10:36:06)  FINALIZANDO PROCESO...............
+(19-12-2018 10:36:06) 2018-12-19@10:36:06 Fin de proceso 
+(19-12-2018 10:36:06) ************************************
+(19-12-2018 10:36:06) No existe ninguno de estos archivos ALTA_DTH_20181219.CCL
+(19-12-2018 10:36:06) A continuación se enviará un correo a SoporteAplicacionesAtencionVirtual@claro.com.pe,carlos.bruno@claro.com.pe,E700584@claro.com.pe,soportepostventafactory@claro.com.pe con el asunto de El Archivo de Alta de clientes no se encuentra en la ruta
+(19-12-2018 10:36:06) Ruta del Archivo log :  /home/usrclaroclub/CLAROCLUB/Interno/DTH/Logs/SH001_PROC_ALTACLIDTH_20181219_103606.log
+(19-12-2018 10:56:39) *************************************
+(19-12-2018 10:56:39) Iniciando proceso              
+(19-12-2018 10:56:39) Fecha y Hora : 19-12-2018 10:56:39               
+(19-12-2018 10:56:39) *************************************
+(19-12-2018 10:56:39) 
+Iniciando proceso ....19-12-2018 10:56:39
+
+(19-12-2018 10:56:39) procesando...
+find: /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Alta/ALTA_DTH_20181219.CCL: No such file or directory
+cat: /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Alta/ALTA_DTH_20181219.CCL: No such file or directory
+(19-12-2018 10:56:39) Error: No se encontro el archivo de datos...
+
+(19-12-2018 10:56:39) Termino proceso
+(19-12-2018 10:56:39) ************************************
+(19-12-2018 10:56:39)  FINALIZANDO PROCESO...............
+(19-12-2018 10:56:39) 2018-12-19@10:56:39 Fin de proceso 
+(19-12-2018 10:56:39) ************************************
+(19-12-2018 10:56:39) No existe ninguno de estos archivos ALTA_DTH_20181219.CCL
+(19-12-2018 10:56:39) A continuación se enviará un correo a SoporteAplicacionesAtencionVirtual@claro.com.pe,carlos.bruno@claro.com.pe,E700584@claro.com.pe,soportepostventafactory@claro.com.pe con el asunto de El Archivo de Alta de clientes no se encuentra en la ruta
+(19-12-2018 10:56:39) Ruta del Archivo log :  /home/usrclaroclub/CLAROCLUB/Interno/DTH/Logs/SH001_PROC_ALTACLIDTH_20181219_105639.log
+(20-12-2018 13:57:25) *************************************
+(20-12-2018 13:57:25) Iniciando proceso              
+(20-12-2018 13:57:25) Fecha y Hora : 20-12-2018 13:57:25               
+(20-12-2018 13:57:25) *************************************
+(20-12-2018 13:57:25) 
+Iniciando proceso ....20-12-2018 13:57:25
+
+(20-12-2018 13:57:25) procesando...
+Archivo: 'ALTA_DTH_20181220.CCL'
+Fecha : 'L'
+(20-12-2018 13:57:25) Se convierte el archivo de entrada al formato UNIX
+dos2unix: converting file /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Alta/ALTA_DTH_20181220.CCL to UNIX format ...
+(20-12-2018 13:57:25) Se procede a importar los datos del archivo de entrada a la tabla de alta de clientes
+
+SQL*Loader: Release 10.2.0.1.0 - Production on Thu Dec 20 13:57:25 2018
+
+Copyright (c) 1982, 2005, Oracle.  All rights reserved.
+
+Commit point reached - logical record count 45
+Commit point reached - logical record count 90
+Commit point reached - logical record count 135
+Commit point reached - logical record count 180
+Commit point reached - logical record count 225
+Commit point reached - logical record count 270
+Commit point reached - logical record count 305
+(20-12-2018 13:57:25) El proceso de importacion culmino satisfactoriamente
+20181220
+(20-12-2018 13:57:25) Se procede a ejecutar el SP PKG_CC_PTOSFIJA.ADMPSI_ALTACLIENTEDTH
+(20-12-2018 13:57:26) Hubo un error durante la ejeción del SP PKG_CC_PTOSFIJA.ADMPSI_ALTACLIENTEDTH
+(20-12-2018 13:57:26) A continuación se enviará un correo a SoporteAplicacionesAtencionVirtual@claro.com.pe,carlos.bruno@claro.com.pe,E700584@claro.com.pe,soportepostventafactory@claro.com.pe con el asunto de IMPORTACION DE ALTA DE clientes – Se encontraron errores
+(26-12-2018 11:00:16) *************************************
+(26-12-2018 11:00:16) Iniciando proceso              
+(26-12-2018 11:00:16) Fecha y Hora : 26-12-2018 11:00:16               
+(26-12-2018 11:00:16) *************************************
+(26-12-2018 11:00:16) 
+Iniciando proceso ....26-12-2018 11:00:16
+
+(26-12-2018 11:00:16) procesando...
+Archivo: 'ALTA_DTH_20181226.CCL'
+Fecha : 'L'
+(26-12-2018 11:00:16) Se convierte el archivo de entrada al formato UNIX
+dos2unix: converting file /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Alta/ALTA_DTH_20181226.CCL to UNIX format ...
+(26-12-2018 11:00:16) Se procede a importar los datos del archivo de entrada a la tabla de alta de clientes
+
+SQL*Loader: Release 10.2.0.1.0 - Production on Wed Dec 26 11:00:16 2018
+
+Copyright (c) 1982, 2005, Oracle.  All rights reserved.
+
+Commit point reached - logical record count 13
+(26-12-2018 11:00:17) El proceso de importacion culmino satisfactoriamente
+20181226
+(26-12-2018 11:00:17) Se procede a ejecutar el SP PKG_CC_PTOSFIJA.ADMPSI_ALTACLIENTEDTH
+(26-12-2018 11:00:18) Hubo un error durante la ejeción del SP PKG_CC_PTOSFIJA.ADMPSI_ALTACLIENTEDTH
+(26-12-2018 11:00:18) A continuación se enviará un correo a SoporteAplicacionesAtencionVirtual@claro.com.pe,carlos.bruno@claro.com.pe,E700584@claro.com.pe,soportepostventafactory@claro.com.pe con el asunto de IMPORTACION DE ALTA DE clientes – Se encontraron errores
+(26-12-2018 16:16:19) *************************************
+(26-12-2018 16:16:20) Iniciando proceso              
+(26-12-2018 16:16:20) Fecha y Hora : 26-12-2018 16:16:19               
+(26-12-2018 16:16:20) *************************************
+(26-12-2018 16:16:20) 
+Iniciando proceso ....26-12-2018 16:16:19
+
+(26-12-2018 16:16:20) procesando...
+Archivo: 'ALTA_DTH_20181226.CCL'
+Fecha : 'L'
+(26-12-2018 16:16:20) Se convierte el archivo de entrada al formato UNIX
+dos2unix: converting file /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Alta/ALTA_DTH_20181226.CCL to UNIX format ...
+(26-12-2018 16:16:20) Se procede a importar los datos del archivo de entrada a la tabla de alta de clientes
+
+SQL*Loader: Release 10.2.0.1.0 - Production on Wed Dec 26 16:16:20 2018
+
+Copyright (c) 1982, 2005, Oracle.  All rights reserved.
+
+Commit point reached - logical record count 13
+(26-12-2018 16:16:21) El proceso de importacion culmino satisfactoriamente
+20181226
+(26-12-2018 16:16:21) Se procede a ejecutar el SP PKG_CC_PTOSFIJA.ADMPSI_ALTACLIENTEDTH
+(26-12-2018 16:16:22) Ejecución de SP fue satisfactorio
+(26-12-2018 16:16:22) El archivo de entrada fue copiado en /home/usrclaroclub/CLAROCLUB/Interno/DTH/Procesados/Alta/ALTA_DTH_20181226.CCL
+'20181226'
+(26-12-2018 16:16:22) Se procede a ejecutar el SP PKG_CC_PTOSFIJA.ADMPSI_EALTACLIENTEDTH y exportar los datos obtenidos
+(26-12-2018 16:16:24) Se ha generado el archivo /home/usrclaroclub/CLAROCLUB/Interno/DTH/Error/Alta/ALTA_DTH_20181226.ERR
+(26-12-2018 16:16:24) A continuación se enviará un correo a SoporteAplicacionesAtencionVirtual@claro.com.pe,carlos.bruno@claro.com.pe,E700584@claro.com.pe,soportepostventafactory@claro.com.pe con el asunto de Errores en el proceso de baja
+  adding: ALTA_DTH_20181226.ERR (deflated 92%)
+(27-12-2018 15:10:19) *************************************
+(27-12-2018 15:10:19) Iniciando proceso               
+(27-12-2018 15:10:19) Fecha y Hora : 27-12-2018 15:10:19               
+(27-12-2018 15:10:19) *************************************
+(27-12-2018 15:10:19) Ninguno de estos archivos tiene data BAJA_DTH_20181227.CCL
+(27-12-2018 15:10:19) A continuación se enviará un correo a SoporteAplicacionesAtencionVirtual@claro.com.pe,carlos.bruno@claro.com.pe,E700584@claro.com.pe,soportepostventafactory@claro.com.pe con el asunto de El Archivo de Baja se encuentra vacio.
+(27-12-2018 15:10:19) Se envió correo Fecha y Hora: 27-12-2018 15:10:19
+(28-12-2018 23:04:55) *************************************
+(28-12-2018 23:04:55) Iniciando proceso de Importación              
+(28-12-2018 23:04:55) Fecha y Hora : 28-12-2018 23:04:55               
+(28-12-2018 23:04:55) *************************************
+(28-12-2018 23:04:55) Se convierte el archivo de entrada al formato UNIX
+dos2unix: converting file /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Pagos/PAGOS_DTH_20181228.OAC to UNIX format ...
+(28-12-2018 23:04:55) Se procede a importar los datos del archivo de entrada a la tabla de pagos
+
+SQL*Loader: Release 10.2.0.1.0 - Production on Fri Dec 28 23:04:55 2018
+
+Copyright (c) 1982, 2005, Oracle.  All rights reserved.
+
+Commit point reached - logical record count 85
+Commit point reached - logical record count 170
+Commit point reached - logical record count 211
+(28-12-2018 23:04:56) El proceso de importacion culmino satisfactoriamente
+(28-12-2018 23:04:56) Se ejecuta el SP PKG_CC_PTOSFIJA.ADMPSI_FACTURADTH
+(28-12-2018 23:05:02) Ejecución de SP fue satisfactorio
+(28-12-2018 23:05:02) El archivo de entrada fue copiado en /home/usrclaroclub/CLAROCLUB/Interno/DTH/Procesados/Pagos/PAGOS_DTH_20181228.OAC
+(28-12-2018 23:05:02) Se ejecuta el SP PKG_CC_PTOSFIJA.ADMPSI_EFACTURADTH y se exporta los datos obtenidos
+(28-12-2018 23:05:05) Se ha generado el archivo /home/usrclaroclub/CLAROCLUB/Interno/DTH/Error/Pagos/PAGOS_DTH_20181228.ERR
+(28-12-2018 23:05:05) A continuación se enviará un correo a SoporteAplicacionesAtencionVirtual@claro.com.pe,carlos.bruno@claro.com.pe,E700584@claro.com.pe,soportepostventafactory@claro.com.pe con el asunto de Errores en el proceso de facturacion
+  adding: PAGOS_DTH_20181228.ERR (deflated 81%)
+(29-12-2018 10:10:41) *************************************
+(29-12-2018 10:10:41) Iniciando proceso              
+(29-12-2018 10:10:41) Fecha y Hora : 29-12-2018 10:10:41               
+(29-12-2018 10:10:41) *************************************
+(29-12-2018 10:10:41) 
+Iniciando proceso ....29-12-2018 10:10:41
+
+(29-12-2018 10:10:41) procesando...
+Archivo: 'ALTA_DTH_20181229.CCL'
+Fecha : 'L'
+(29-12-2018 10:10:41) Se convierte el archivo de entrada al formato UNIX
+dos2unix: converting file /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Alta/ALTA_DTH_20181229.CCL to UNIX format ...
+(29-12-2018 10:10:41) Se procede a importar los datos del archivo de entrada a la tabla de alta de clientes
+
+SQL*Loader: Release 10.2.0.1.0 - Production on Sat Dec 29 10:10:41 2018
+
+Copyright (c) 1982, 2005, Oracle.  All rights reserved.
+
+Commit point reached - logical record count 45
+Commit point reached - logical record count 90
+Commit point reached - logical record count 135
+Commit point reached - logical record count 180
+Commit point reached - logical record count 225
+Commit point reached - logical record count 270
+Commit point reached - logical record count 315
+Commit point reached - logical record count 320
+(29-12-2018 10:10:41) El proceso de importacion culmino satisfactoriamente
+20181229
+(29-12-2018 10:10:41) Se procede a ejecutar el SP PKG_CC_PTOSFIJA.ADMPSI_ALTACLIENTEDTH
+(29-12-2018 13:07:20) Hubo un error durante la ejeción del SP PKG_CC_PTOSFIJA.ADMPSI_ALTACLIENTEDTH
+(29-12-2018 13:07:20) A continuación se enviará un correo a SoporteAplicacionesAtencionVirtual@claro.com.pe,carlos.bruno@claro.com.pe,E700584@claro.com.pe,soportepostventafactory@claro.com.pe con el asunto de IMPORTACION DE ALTA DE clientes – Se encontraron errores
+(30-12-2018 11:04:23) *************************************
+(30-12-2018 11:04:23) Iniciando proceso              
+(30-12-2018 11:04:23) Fecha y Hora : 30-12-2018 11:04:23               
+(30-12-2018 11:04:23) *************************************
+(30-12-2018 11:04:23) 
+Iniciando proceso ....30-12-2018 11:04:23
+
+(30-12-2018 11:04:23) procesando...
+find: /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Alta/ALTA_DTH_20181230.CCL: No such file or directory
+cat: /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Alta/ALTA_DTH_20181230.CCL: No such file or directory
+(30-12-2018 11:04:23) Error: No se encontro el archivo de datos...
+
+(30-12-2018 11:04:23) Termino proceso
+(30-12-2018 11:04:23) ************************************
+(30-12-2018 11:04:23)  FINALIZANDO PROCESO...............
+(30-12-2018 11:04:23) 2018-12-30@11:04:23 Fin de proceso 
+(30-12-2018 11:04:23) ************************************
+(30-12-2018 11:04:23) No existe ninguno de estos archivos ALTA_DTH_20181230.CCL
+(30-12-2018 11:04:23) A continuación se enviará un correo a SoporteAplicacionesAtencionVirtual@claro.com.pe,carlos.bruno@claro.com.pe,E700584@claro.com.pe,soportepostventafactory@claro.com.pe con el asunto de El Archivo de Alta de clientes no se encuentra en la ruta
+(30-12-2018 11:04:23) Ruta del Archivo log :  /home/usrclaroclub/CLAROCLUB/Interno/DTH/Logs/SH001_PROC_ALTACLIDTH_20181230_110423.log
+(30-12-2018 18:08:03) *************************************
+(30-12-2018 18:08:03) Iniciando proceso              
+(30-12-2018 18:08:03) Fecha y Hora : 30-12-2018 18:08:03               
+(30-12-2018 18:08:03) *************************************
+(30-12-2018 18:08:03) 
+Iniciando proceso ....30-12-2018 18:08:03
+
+(30-12-2018 18:08:03) procesando...
+Archivo: 'ALTA_DTH_20181230.CCL'
+Fecha : 'L'
+(30-12-2018 18:08:03) Se convierte el archivo de entrada al formato UNIX
+dos2unix: converting file /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Alta/ALTA_DTH_20181230.CCL to UNIX format ...
+(30-12-2018 18:08:03) Se procede a importar los datos del archivo de entrada a la tabla de alta de clientes
+
+SQL*Loader: Release 10.2.0.1.0 - Production on Sun Dec 30 18:08:03 2018
+
+Copyright (c) 1982, 2005, Oracle.  All rights reserved.
+
+Commit point reached - logical record count 45
+Commit point reached - logical record count 90
+Commit point reached - logical record count 135
+Commit point reached - logical record count 180
+Commit point reached - logical record count 225
+Commit point reached - logical record count 258
+(30-12-2018 18:08:04) El proceso de importacion culmino satisfactoriamente
+20181230
+(30-12-2018 18:08:04) Se procede a ejecutar el SP PKG_CC_PTOSFIJA.ADMPSI_ALTACLIENTEDTH
+(30-12-2018 18:08:04) Hubo un error durante la ejeción del SP PKG_CC_PTOSFIJA.ADMPSI_ALTACLIENTEDTH
+(30-12-2018 18:08:04) A continuación se enviará un correo a SoporteAplicacionesAtencionVirtual@claro.com.pe,carlos.bruno@claro.com.pe,E700584@claro.com.pe,soportepostventafactory@claro.com.pe con el asunto de IMPORTACION DE ALTA DE clientes – Se encontraron errores
+(01-01-2019 12:04:18) *************************************
+(01-01-2019 12:04:18) Iniciando proceso              
+(01-01-2019 12:04:18) Fecha y Hora : 01-01-2019 12:04:18               
+(01-01-2019 12:04:18) *************************************
+(01-01-2019 12:04:18) 
+Iniciando proceso ....01-01-2019 12:04:18
+
+(01-01-2019 12:04:18) procesando...
+Archivo: 'ALTA_DTH_20190101.CCL'
+Fecha : 'L'
+(01-01-2019 12:04:18) Se convierte el archivo de entrada al formato UNIX
+dos2unix: converting file /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Alta/ALTA_DTH_20190101.CCL to UNIX format ...
+(01-01-2019 12:04:18) Se procede a importar los datos del archivo de entrada a la tabla de alta de clientes
+
+SQL*Loader: Release 10.2.0.1.0 - Production on Tue Jan 1 12:04:18 2019
+
+Copyright (c) 1982, 2005, Oracle.  All rights reserved.
+
+Commit point reached - logical record count 45
+Commit point reached - logical record count 82
+(01-01-2019 12:04:19) El proceso de importacion culmino satisfactoriamente
+20190101
+(01-01-2019 12:04:19) Se procede a ejecutar el SP PKG_CC_PTOSFIJA.ADMPSI_ALTACLIENTEDTH
+(01-01-2019 12:04:19) Hubo un error durante la ejeción del SP PKG_CC_PTOSFIJA.ADMPSI_ALTACLIENTEDTH
+(01-01-2019 12:04:19) A continuación se enviará un correo a SoporteAplicacionesAtencionVirtual@claro.com.pe,carlos.bruno@claro.com.pe,E700584@claro.com.pe,soportepostventafactory@claro.com.pe con el asunto de IMPORTACION DE ALTA DE clientes – Se encontraron errores
+(03-01-2019 16:06:24) *************************************
+(03-01-2019 16:06:24) Iniciando proceso              
+(03-01-2019 16:06:24) Fecha y Hora : 03-01-2019 16:06:24               
+(03-01-2019 16:06:24) *************************************
+(03-01-2019 16:06:24) 
+Iniciando proceso ....03-01-2019 16:06:24
+
+(03-01-2019 16:06:24) procesando...
+Archivo: 'ALTA_DTH_20190103.CCL'
+Fecha : 'L'
+(03-01-2019 16:06:24) Se convierte el archivo de entrada al formato UNIX
+dos2unix: converting file /home/usrclaroclub/CLAROCLUB/Interno/DTH/Documentos/Alta/ALTA_DTH_20190103.CCL to UNIX format ...
+(03-01-2019 16:06:24) Se procede a importar los datos del archivo de entrada a la tabla de alta de clientes
+
+SQL*Loader: Release 10.2.0.1.0 - Production on Thu Jan 3 16:06:24 2019
+
+Copyright (c) 1982, 2005, Oracle.  All rights reserved.
+
+Commit point reached - logical record count 45
+Commit point reached - logical record count 90
+Commit point reached - logical record count 135
+Commit point reached - logical record count 180
+Commit point reached - logical record count 225
+Commit point reached - logical record count 253
+(03-01-2019 16:06:25) El proceso de importacion culmino satisfactoriamente
+20190103
+(03-01-2019 16:06:25) Se procede a ejecutar el SP PKG_CC_PTOSFIJA.ADMPSI_ALTACLIENTEDTH
+(03-01-2019 16:06:26) Hubo un error durante la ejeción del SP PKG_CC_PTOSFIJA.ADMPSI_ALTACLIENTEDTH
+(03-01-2019 16:06:26) A continuación se enviará un correo a SoporteAplicacionesAtencionVirtual@claro.com.pe,carlos.bruno@claro.com.pe,E700584@claro.com.pe,soportepostventafactory@claro.com.pe con el asunto de IMPORTACION DE ALTA DE clientes – Se encontraron errores

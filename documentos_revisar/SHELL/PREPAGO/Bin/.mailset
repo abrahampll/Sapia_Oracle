@@ -1,0 +1,5 @@
+IT_OPERADOR=operador@claro.com.pe,SoporteAplicacionesAtencionVirtual@claro.com.pe,carlos.bruno@claro.com.pe,E700584@claro.com.pe,soportepostventafactory@claro.com.pe,clopez.everis@claro.com.pe;export IT_OPERADOR
+IT_SOAP=arles.melgarejo@claro.com.pe,carlos.bruno@claro.com.pe,E700584@claro.com.pe,soportepostventafactory@claro.com.pe,clopez.everis@claro.com.pe;export IT_SOAP
+IT_RECARGA=arles.melgarejo@claro.com.pe,carlos.bruno@claro.com.pe,E700584@claro.com.pe,soportepostventafactory@claro.com.pe,clopez.everis@claro.com.pe; export IT_RECARGA
+IT_VENCIMIENTO=operador@claro.com.pe,carlos.bruno@claro.com.pe,E700584@claro.com.pe,soportepostventafactory@claro.com.pe,clopez.everis@claro.com.pe; export IT_VENCIMIENTO
+IT_ALINEACION=arles.melgarejo@claro.com.pe,carlos.bruno@claro.com.pe,E700584@claro.com.pe,soportepostventafactory@claro.com.pe,clopez.everis@claro.com.pe; export IT_ALINEACION

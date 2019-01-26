@@ -1,0 +1,16 @@
+INSERT INTO PCLUB.ADMPT_ERRORES_CC(ADMPN_COD_ERROR,ADMPV_DES_ERROR)
+VALUES ('43','Tipo de documento no existe en DWH.');
+
+INSERT INTO PCLUB.ADMPT_ERRORES_CC(ADMPN_COD_ERROR,ADMPV_DES_ERROR)
+VALUES ('44','No existen líneas prepago para el cliente ingresado.');
+
+INSERT INTO PCLUB.ADMPT_ERRORES_CC(ADMPN_COD_ERROR,ADMPV_DES_ERROR)
+VALUES ('45','No existen líneas TFI prepago para el cliente ingresado.');
+
+INSERT INTO PCLUB.ADMPT_ERRORES_CC(ADMPN_COD_ERROR,ADMPV_DES_ERROR)
+VALUES ('46','El cliente ya existe en ClaroClub.');
+
+INSERT INTO PCLUB.ADMPT_ERRORES_CC(ADMPN_COD_ERROR,ADMPV_DES_ERROR)
+VALUES ('47','Ocurre un error con una línea del cliente.');
+
+COMMIT;

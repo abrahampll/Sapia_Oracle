@@ -1,0 +1,1 @@
+drop index PCLUB.IX_ADMPT_KARDEX_05;

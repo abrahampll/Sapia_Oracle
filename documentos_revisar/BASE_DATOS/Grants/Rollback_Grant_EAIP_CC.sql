@@ -1,0 +1,1 @@
+revoke EXECUTE ON PCLUB.pkg_cc_mantenimiento from USREAIPCLUB;

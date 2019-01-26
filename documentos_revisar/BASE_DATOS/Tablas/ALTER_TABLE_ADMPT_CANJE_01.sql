@@ -1,0 +1,1 @@
+alter table pclub.admpt_canje modify ADMPV_CODSEGMENTO varchar2(50);

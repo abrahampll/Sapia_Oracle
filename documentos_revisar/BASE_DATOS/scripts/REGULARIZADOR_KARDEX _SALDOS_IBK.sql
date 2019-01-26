@@ -1,0 +1,60 @@
+DECLARE
+TYPE CUR_C IS REF CURSOR;
+TYPE CUR_C2 IS REF CURSOR;
+C1 CUR_C;
+C2 CUR_C2;
+C_COD_CLI VARCHAR2(40);
+C_COD_CLIIB number;
+C_COD_CLI2 VARCHAR2(40);
+C_COD_CLIIB2 number;
+SALDOS NUMBER;
+SALDOS_KARDEX NUMBER;
+FEC_ACT DATE;
+BONO_ACT NUMBER;
+
+BEGIN
+
+delete from PCLUB.admpt_saldos_cliente s where s.admpn_id_saldo='11940';
+COMMIT;
+
+BEGIN
+OPEN C1 FOR
+select c.admpv_cod_cli, c.admpn_cod_cli_ib from PCLUB.admpt_clienteib c where c.admpv_cod_cli is not null 
+and not exists (select 1 from PCLUB.admpt_saldos_cliente s where s.admpv_cod_cli=c.admpv_cod_cli);
+
+LOOP
+FETCH C1 INTO C_COD_CLI,C_COD_CLIIB;
+EXIT WHEN C1%NOTFOUND;
+
+UPDATE PCLUB.ADMPT_SALDOS_CLIENTE S
+SET S.ADMPV_COD_CLI=C_COD_CLI
+WHERE S.ADMPN_COD_CLI_IB=C_COD_CLIIB;
+COMMIT;
+END LOOP;
+
+CLOSE C1;
+COMMIT;
+END;
+
+BEGIN
+OPEN C2 FOR
+select I.ADMPV_COD_CLI, I.ADMPN_COD_CLI_IB from PCLUB.ADMPT_CLIENTEIB I where I.admpv_cod_cli is not null 
+AND I.ADMPC_ESTADO='A' AND not exists (select 1 from PCLUB.ADMPT_KARDEX K where K.admpv_cod_cli=I.ADMPV_COD_CLI)
+and exists (select 1 from PCLUB.Admpt_Kardex K where K.ADMPN_COD_CLI_IB=I.ADMPN_COD_CLI_IB);
+
+LOOP
+FETCH C2 INTO C_COD_CLI2, C_COD_CLIIB2;
+EXIT WHEN C2%NOTFOUND;
+
+UPDATE PCLUB.ADMPT_KARDEX K
+SET K.ADMPV_COD_CLI=C_COD_CLI2
+WHERE K.ADMPN_COD_CLI_IB=C_COD_CLIIB2;
+COMMIT;
+
+END LOOP;
+
+CLOSE C2;
+COMMIT;
+END;
+END;
+/

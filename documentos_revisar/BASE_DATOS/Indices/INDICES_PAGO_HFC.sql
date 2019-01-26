@@ -1,0 +1,40 @@
+
+-- Indice para tabla ADMPT_TMP_PAGO_HFC
+
+CREATE INDEX PCLUB.IDX_ADMPT_TMP_PAGO_HFC_01 
+ON PCLUB.ADMPT_TMP_PAGO_HFC (ADMPD_FEC_OPER)
+LOGGING
+TABLESPACE PCLUB_INDX
+PCTFREE    10
+INITRANS   2
+MAXTRANS   255
+STORAGE    (INITIAL          64K
+            NEXT             1M
+            MINEXTENTS       1
+            MAXEXTENTS       UNLIMITED
+            PCTINCREASE      0
+            FREELISTS        1
+            FREELIST GROUPS  1
+            BUFFER_POOL      DEFAULT
+           );
+
+
+-- Indice para ADMPT_AUX_PAGO_HFC
+
+CREATE INDEX PCLUB.IDX_ADMPT_AUX_PAGO_HFC_01 
+ON PCLUB.ADMPT_AUX_PAGO_HFC (ADMPV_COD_CLI_PROD, ADMPV_PERIODO, ADMPD_FEC_OPER, ADMPV_NOM_ARCH)
+LOGGING
+TABLESPACE PCLUB_INDX
+PCTFREE    10
+INITRANS   2
+MAXTRANS   255
+STORAGE    (
+            INITIAL          64K
+            NEXT             1M
+            MINEXTENTS       1
+            MAXEXTENTS       UNLIMITED
+            PCTINCREASE      0
+            FREELISTS        1
+            FREELIST GROUPS  1
+            BUFFER_POOL      DEFAULT
+           );

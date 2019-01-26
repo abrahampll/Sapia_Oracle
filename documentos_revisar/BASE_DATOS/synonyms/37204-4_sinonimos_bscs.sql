@@ -1,0 +1,1 @@
+create or replace SYNONYM USRBSCSCLUB.tfun029_register_service_sp for TIM.tfun029_register_service_sp;

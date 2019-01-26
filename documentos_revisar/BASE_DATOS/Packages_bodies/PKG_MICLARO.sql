@@ -1,0 +1,110 @@
+CREATE OR REPLACE PACKAGE BODY PCLUB.PKG_MICLARO IS
+
+  /****************************************************************
+  * NOMBRE SP          :  MICLSS_CLARO_PUNTOS
+  * PROPOSITO          :  OBTENER LOS CLARO PUNTOS DE UN CLIENTE Y 
+  *                       SU FECHA DE VENCIMIENTO
+  * INPUT              :  K_TIP_DOCUMENTO - TIPO DE DOCUMENTO 
+  *                       K_NUM_DOCUMENTO - NUMERO DE DOCUMENTO 
+  * OUTPUT             :  K_DATOS - CURSOR QUE DEVUELVE LOS CLARO PUNTOS
+  *                       K_COD_ERROR - CODIGO DE ERROR (-1: ERROR, 
+  *                                                       0: OK, 
+  *                                                       1: NO ENCONTRADO, 
+  *                                                       2: FALTAN PARAMETROS)
+  *                       K_MSG_ERROR - MENSAJE DE ERROR
+  * CREADO POR         :  JOSE TRESIERRA TANAKA
+  * FEC CREACION       :  30/04/2013
+  * FEC ACTUALIZACION  :  04/11/2013
+  ****************************************************************/
+  PROCEDURE MICLSS_CLARO_PUNTOS(K_TIP_DOCUMENTO IN VARCHAR2,
+                                K_NUM_DOCUMENTO IN VARCHAR2,
+                                K_DATOS         OUT SYS_REFCURSOR,
+                                K_COD_ERROR     OUT NUMBER,
+                                K_MSG_ERROR     OUT VARCHAR2) IS
+    V_ERROR EXCEPTION;
+    V_TIP_DOCUMENTO ADMPT_TIPO_DOC.ADMPV_COD_TPDOC%TYPE;
+    V_ID_SALDO      ADMPT_CLIENTEFIJA.ADMPV_COD_CLI%TYPE;
+    --  K_TIP_DOCUMENTO = '002'
+    --  K_NUM_DOCUMENTO = '45599691'
+  BEGIN
+  
+    IF K_TIP_DOCUMENTO IS NULL OR K_NUM_DOCUMENTO IS NULL THEN
+      RAISE V_ERROR;
+    END IF;
+  
+    --OBTENGO EL TIPO_DOCUMENTO EN TORA10G
+    SELECT T.ADMPV_COD_TPDOC
+      INTO V_TIP_DOCUMENTO
+      FROM ADMPT_TIPO_DOC T
+     WHERE T.ADMPV_EQU_FIJA = TRIM(K_TIP_DOCUMENTO);
+  
+    -- Para capturar el NO_DATA_FOUND
+    SELECT B.ADMPV_COD_CLI ID_SALDO
+      INTO V_ID_SALDO
+      FROM ADMPT_KARDEXFIJA K
+     INNER JOIN ADMPT_CLIENTEPRODUCTO A
+        ON (K.ADMPV_COD_CLI_PROD = A.ADMPV_COD_CLI_PROD)
+     INNER JOIN ADMPT_CLIENTEFIJA B
+        ON (A.ADMPV_COD_CLI = B.ADMPV_COD_CLI)
+     WHERE K.ADMPC_TPO_OPER = 'E'
+       AND K.ADMPN_SLD_PUNTO > 0
+       AND K.ADMPC_TPO_PUNTO IN ('I', 'L', 'C')
+       AND B.ADMPV_TIPO_DOC = V_TIP_DOCUMENTO
+       AND B.ADMPV_NUM_DOC = K_NUM_DOCUMENTO
+       AND B.ADMPC_ESTADO = 'A'
+       and rownum = 1;
+    -- Para capturar el NO_DATA_FOUND
+  
+    --CURSOR
+    OPEN K_DATOS FOR
+      SELECT B.ADMPV_COD_CLI ID_SALDO,
+             B.ADMPV_COD_CLI CODIGO,
+             DECODE(SIGN(NVL(SUM(K.ADMPN_SLD_PUNTO), 0)),
+                    -1,
+                    NVL(SUM(K.ADMPN_SLD_PUNTO), 0) * -1,
+                    NVL(SUM(K.ADMPN_SLD_PUNTO), 0)) PUNTOS,
+             ADD_MONTHS(MIN(NVL(K.ADMPD_FEC_MOD, K.ADMPD_FEC_REG)), 18) VIGENCIA
+        FROM ADMPT_KARDEXFIJA K
+       INNER JOIN ADMPT_CLIENTEPRODUCTO A
+          ON (K.ADMPV_COD_CLI_PROD = A.ADMPV_COD_CLI_PROD)
+       INNER JOIN ADMPT_CLIENTEFIJA B
+          ON (A.ADMPV_COD_CLI = B.ADMPV_COD_CLI)
+       WHERE K.ADMPC_TPO_OPER = 'E'
+         AND K.ADMPN_SLD_PUNTO > 0
+         AND K.ADMPC_TPO_PUNTO IN ('I', 'L', 'C')
+         AND B.ADMPV_TIPO_DOC = V_TIP_DOCUMENTO
+         AND B.ADMPV_NUM_DOC = K_NUM_DOCUMENTO
+         AND B.ADMPC_ESTADO = 'A'
+       GROUP BY B.ADMPV_COD_CLI;
+    /* SELECT '2.09954066.7' ID_SALDO, '2.09954066.7' CODIGO, '50' PUNTOS,
+         '25/10/2014 05:33:42 P.M.' VIGENCIA
+    FROM DUAL;*/
+  
+    K_COD_ERROR := 0;
+    K_MSG_ERROR := 'OK';
+  EXCEPTION
+    WHEN NO_DATA_FOUND THEN
+      OPEN K_DATOS FOR
+        SELECT NULL ID_SALDO, NULL CODIGO, NULL PUNTOS, NULL VIGENCIA
+          FROM DUAL
+         WHERE 0 = 1;
+      K_COD_ERROR := 1;
+      K_MSG_ERROR := 'NO ENCONTRADO';
+    WHEN V_ERROR THEN
+      OPEN K_DATOS FOR
+        SELECT NULL ID_SALDO, NULL CODIGO, NULL PUNTOS, NULL VIGENCIA
+          FROM DUAL
+         WHERE 0 = 1;
+      K_COD_ERROR := 2;
+      K_MSG_ERROR := 'FALTAN PARAMETROS';
+    WHEN OTHERS THEN
+      OPEN K_DATOS FOR
+        SELECT NULL ID_SALDO, NULL CODIGO, NULL PUNTOS, NULL VIGENCIA
+          FROM DUAL
+         WHERE 0 = 1;
+      K_COD_ERROR := '-1';
+      K_MSG_ERROR := 'ERROR: ' || SQLERRM;
+    
+  END MICLSS_CLARO_PUNTOS;
+END PKG_MICLARO;
+/

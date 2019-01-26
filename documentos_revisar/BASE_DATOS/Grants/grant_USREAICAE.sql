@@ -1,0 +1,2 @@
+grant execute on USRCAE.AUTHCLAROCLUB to USREAICAE;
+grant execute on USRCAE.PKG_PORTALES_CLARO to USREAICAE;

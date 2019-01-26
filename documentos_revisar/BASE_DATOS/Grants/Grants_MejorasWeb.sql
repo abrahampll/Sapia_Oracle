@@ -1,0 +1,8 @@
+grant execute on PCLUB.PKG_CC_CONSULTA to USRCLAROCLUB;
+grant execute on PCLUB.PKG_CC_MANTENIMIENTO to USRCLAROCLUB;
+
+  
+
+  
+ 
+

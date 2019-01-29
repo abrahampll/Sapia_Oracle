@@ -1,0 +1,37 @@
+$# numero de argumentos enviados a la shell, muestra los datos argumentos
+$* mostrar el cantidad de argumentos que fueron enviados desde la shell
+$0 muestra el nombre de la shell
+
+wc cuenta el numero de lineas
+echo "($LOGDATE) $*"
+
+sed 's/a/asdcad' remplaza el caracter a por asdcad
+
+rm -f nombre.txt fuerza el borrado del archivo
+
+sed 's/_/uso tes/' ./archivo : dentro del archivo reemplaza el caracter _ por uso test
+sed 's/_/another _' ./prueba.cac
+sed 's/test/another test' ./myfile
+echo `date +%Y%m%d_%H%M%S` >prueba.txt el contenido de la shell se crea en el archivo prueba.txt
+--------------------------------------------
+
+sed -e 's/This/That/; s/test/another test/' ./myfile para ejecutar varios comandos de sed usar la letra -e
+
+------------------
+https://likegeeks.com/es/sed-de-linux/
+https://likegeeks.com/es/funciones-de-bash/
+https://likegeeks.com/es/scripts-de-shell-practicos/
+https://likegeeks.com/es/comando-awk/s
+https://likegeeks.com/es/tutorial-de-regex/
+https://likegeeks.com/es/sed-de-linux/
+https://www.americati.com/doc/sed/sed.html
+
+
+https://blog.desdelinux.net/sed-shell-scripting-comando/
+
+https://hipertextual.com/archivo/2014/07/redirecciones-y-tuberias-bash/
+
+https://www.ibm.com/developerworks/ssa/linux/library/l-lpic1-v3-103-4/index.html
+
+
+https://www.computerhope.com/unix/ucat.htm

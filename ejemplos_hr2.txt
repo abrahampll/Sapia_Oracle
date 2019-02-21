@@ -1,0 +1,76 @@
+declare
+  numero        number := &numeric;
+  acumulador    number;
+  multiplicador number := 0;
+  contador      number := 1;
+begin
+  loop
+  
+    if (contador > 5) then
+      acumulador := contador * numero;
+      dbms_output.put_line('Numero ' || numero || '*' || to_char(contador) || '=' ||
+                           to_char(acumulador));
+      contador := contador + 1;
+      exit;
+    end if;
+    dbms_output.put_line('Contador ' || contador || 'Es mayor a 5');
+  end loop;
+
+end;
+ ---------------------------
+ 
+ declare
+  resultado number;
+  multiplicador number:=0;
+begin
+  loop
+    resultado:=3*multiplicador;
+    dbms_output.put_line('3x'||to_char(multiplicador)||'='||to_char(resultado));
+    multiplicador:=multiplicador+1;
+    exit when multiplicador>5;
+  end loop;
+end;
+-----------------------------
+
+DECLARE 
+ numero number:= &numeric;
+ contador number:=1;
+ acumulador number;
+ BEGIN
+  loop
+    acumulador:=contador* numero;
+    dbms_output.put_line('Numero '|| numero || '*' || to_char(contador) ||'='||to_char(acumulador));
+    contador:=contador+1;
+    exit when contador>12;
+ end loop;
+     dbms_output.put_line('Contador '|| contador || 'Es mayor a 12');
+end;
+
+------------------------------
+
+
+
+DECLARE 
+ numero number:= &numer;
+ contador number:=0;
+ acumulador number;
+ begin
+    for contador in reverse 1..10 
+      loop 
+        acumulador:=contador* numero;
+        DBMS_OUTPUT.put_line('Numero ' || numero || '*' || contador || '=' || acumulador);
+    end loop;    
+ END; 
+ 
+ --------------------
+ 
+ 
+ DECLARE 
+ vopcion number:=0;
+BEGIN 
+ IF vopcion <> 0 then 
+   DBMS_OUTPUT.put_line('NUMERO ' || vopcion || ' ' || 'Distinto de cero');
+ elsif  vopcion = 0 then num
+    DBMS_OUTPUT.put_line('NUMERO ' || vopcion || ' ' || 'igual a cero');
+ end if;
+end;

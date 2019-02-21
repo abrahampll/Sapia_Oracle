@@ -1,0 +1,782 @@
+PROCEDURE ADMPSI_PREMIGPOS(K_FECHINI   IN DATE,
+                             K_FECHFIN   IN DATE,
+                             K_CODERROR  OUT NUMBER,
+                             K_DESCERROR OUT VARCHAR2,
+                             K_NUMREGTOT OUT NUMBER,
+                             K_NUMREGPRO OUT NUMBER,
+                             K_NUMREGERR OUT NUMBER) IS
+  
+    --****************************************************************
+    -- Nombre SP           :  ADMPSI_PREMIGPOS
+    -- Propósito           :  Devuelve los errores producidos por otorgar puntos por Migracion hacia un plan Prepago
+    -- Input               :  K_FECHINI
+    --                        K_FECHFIN
+    -- Output              :  K_CODERROR
+    --                        K_DESCERROR
+    --                        K_NUMREGTOT
+    --                        K_NUMREGPRO
+    --                        K_NUMREGERR
+    -- Creado por          :  Maomed Chocce
+    -- Fec Creación        :  30/11/2010
+    -- Fec Actualización   :  07/01/2011
+    --****************************************************************
+  
+    NO_CONCEPTO EXCEPTION;
+    NO_PARAMETRO EXCEPTION;
+  
+    V_FECHINI   DATE;
+    V_FECHFIN   DATE;
+    V_NUMREGTOT NUMBER;
+    V_CODERROR  VARCHAR2(10);
+    V_DESCERROR VARCHAR2(400);
+    TYPE TY_CURSOR IS REF CURSOR;
+    CURSOROBTPOSAPRE TY_CURSOR;
+    C_CUR_DATOS_CLIE TY_CURSOR;
+  
+    C_NUMTELEF  VARCHAR2(20);
+    C_FECHAMIGR DATE;
+  
+    C_CUENTA     VARCHAR2(40);
+    C_TIP_DOC    VARCHAR2(20);
+    C_NUM_DOC    VARCHAR2(30);
+    C_CO_ID      INTEGER;
+    C_CI_FAC     VARCHAR2(2);
+    C_COD_TIP_CL VARCHAR2(10);
+    C_TIP_CL     VARCHAR2(30);
+  
+    V_CUENTA     VARCHAR2(40);
+    V_TIP_DOC    VARCHAR2(20);
+    V_NU_DOC     VARCHAR2(30);
+    V_CO_ID      INTEGER;
+    V_CI_FAC     VARCHAR2(2);
+    V_COD_TIP_CL VARCHAR2(10);
+    V_TIP_CL     VARCHAR2(30);
+  
+    V_TIPO_DOC  VARCHAR2(20);
+    V_NUM_DOC   VARCHAR2(20);
+    V_NOM_CLI   VARCHAR2(80);
+    V_APE_CLI   VARCHAR2(80);
+    V_SEXO      VARCHAR2(2);
+    V_EST_CIVIL VARCHAR2(20);
+    V_EMAIL     VARCHAR2(80);
+    V_PROV      VARCHAR2(30);
+    V_DEPA      VARCHAR2(40);
+    V_DIST      VARCHAR2(200);
+  
+    V_COD_CPTO     VARCHAR2(2);
+    V_CODCPTO_BONO VARCHAR2(2);
+    V_COUNT        NUMBER;
+    V_COUNT2       NUMBER;
+    V_EST_ERR      NUMBER;
+    V_ERROR        VARCHAR2(200);
+    V_ESTADO       VARCHAR2(3);
+    V_VALOR        NUMBER;
+    V_SALDO        NUMBER;
+    V_COUNT_IB     NUMBER;
+    V_COD_CLI_IB   NUMBER;
+  
+    V_KARDEX_SQ NUMBER;
+  
+    K_ID_CANJE    NUMBER;
+    K_SEC         NUMBER;
+    K_PUNTOS      NUMBER;
+    K_COD_CLIENTE VARCHAR2(40);
+    K_TIPO_DOC    VARCHAR2(2);
+    K_NUM_DOC     VARCHAR2(40);
+    K_TIP_CLI     VARCHAR2(2);
+  
+    V_PUNTOS_REQUERIDOS NUMBER := 0;
+  
+    V_SALDO_IB    NUMBER;
+    V_COUNT3      NUMBER;
+    LK_TPO_PUNTO  VARCHAR2(2);
+    LK_ID_KARDEX  NUMBER;
+    LK_SLD_PUNTOS NUMBER;
+    LK_COD_CLI    VARCHAR2(40);
+    LK_COD_CLIIB  NUMBER;
+    V_COUNTPRE    NUMBER;
+    V_SALDOCC     NUMBER;
+  
+    /* Cursor 1 */
+  
+    CURSOR LISTA_KARDEX_1 IS
+      SELECT KA.ADMPC_TPO_PUNTO,
+             KA.ADMPN_ID_KARDEX,
+             KA.ADMPN_SLD_PUNTO,
+             KA.ADMPV_COD_CLI,
+             ADMPN_COD_CLI_IB
+        FROM PCLUB.ADMPT_KARDEX KA
+       WHERE KA.ADMPC_ESTADO = 'A'
+         AND KA.ADMPC_TPO_OPER = 'E'
+         AND KA.ADMPN_SLD_PUNTO > 0
+         AND KA.ADMPC_TPO_PUNTO <> 'I'
+         AND KA.ADMPD_FEC_TRANS <=
+             TO_DATE(TO_CHAR(SYSDATE, 'DD/MM/YYYY'), 'DD/MM/YYYY') --'17/09/2010'
+         AND KA.ADMPV_COD_CLI IN
+             (SELECT CC2.ADMPV_COD_CLI
+                FROM PCLUB.ADMPT_CLIENTE CC2,
+                     (SELECT ADMPV_TIPO_DOC, ADMPV_NUM_DOC
+                        FROM PCLUB.ADMPT_CLIENTE
+                       WHERE ADMPV_COD_CLI = K_COD_CLIENTE
+                         AND ADMPV_COD_TPOCL = K_TIP_CLI
+                         AND ADMPC_ESTADO = 'A') CC1 /*Obtiene el numero de doc y su tipo*/
+               WHERE CC2.ADMPV_TIPO_DOC = CC1.ADMPV_TIPO_DOC
+                 AND CC2.ADMPV_NUM_DOC = CC1.ADMPV_NUM_DOC
+                 AND CC2.ADMPV_COD_TPOCL = K_TIP_CLI
+                 AND CC2.ADMPC_ESTADO = 'A') /*Selecciona todos los codigos que cumplen con la condicion*/
+       ORDER BY DECODE(ADMPC_TPO_PUNTO, 'I', 1, 'L', 2, 'C', 3),
+                ADMPN_ID_KARDEX ASC;
+  
+  BEGIN
+  
+    BEGIN
+      SELECT ADMPV_COD_CPTO
+        INTO V_COD_CPTO
+        FROM PCLUB.ADMPT_CONCEPTO
+       WHERE ADMPV_DESC LIKE '%MIGRACIONES POSTPAGO A PREPAGO CC%';
+    EXCEPTION
+      WHEN NO_DATA_FOUND THEN
+        V_COD_CPTO := NULL;
+    END;
+  
+    BEGIN
+      SELECT ADMPV_VALOR
+        INTO V_VALOR
+        FROM PCLUB.ADMPT_PARAMSIST
+       WHERE ADMPV_DESC LIKE '%PUNTOS_MIGRACION_POSTPAGO_PREPAGO%';
+    EXCEPTION
+      WHEN NO_DATA_FOUND THEN
+        V_VALOR := NULL;
+    END;
+  
+    BEGIN
+      SELECT ADMPV_COD_CPTO
+        INTO V_CODCPTO_BONO
+        FROM PCLUB.ADMPT_CONCEPTO
+       WHERE ADMPV_DESC LIKE
+             '%PENALIDAD POR MIGRACIONES POSTPAGO A PREPAGO%';
+    EXCEPTION
+      WHEN NO_DATA_FOUND THEN
+        V_CODCPTO_BONO := NULL;
+    END;
+  
+    --VERIFICANDO LA EXISTENCIA DE LOS CONCEPTOS A UTILIZAR
+    IF ((V_COD_CPTO IS NULL) OR (V_CODCPTO_BONO IS NULL)) THEN
+      RAISE NO_CONCEPTO;
+    END IF;
+  
+    --VERIFICANDO LA EXISTENCIA DEL PARAMETRO A UTILIZAR
+    IF V_VALOR IS NULL THEN
+      RAISE NO_PARAMETRO;
+    END IF;
+  
+    V_FECHINI := TO_DATE(TO_CHAR(K_FECHINI, 'dd/mm/yyyy'), 'dd/mm/yyyy');
+    V_FECHFIN := TO_DATE(TO_CHAR(K_FECHFIN, 'dd/mm/yyyy'), 'dd/mm/yyyy');
+  
+    PCLUB.PKG_CC_PREPAGO.ADMPSS_OBTPOSAPRE(V_FECHINI,
+                                           V_FECHFIN,
+                                           V_NUMREGTOT,
+                                           V_CODERROR,
+                                           V_DESCERROR,
+                                           CURSOROBTPOSAPRE);
+  
+    LOOP
+      FETCH CURSOROBTPOSAPRE
+        INTO C_NUMTELEF, C_FECHAMIGR; --,C_ORIGEN,C_DESTINO;
+      EXIT WHEN CURSOROBTPOSAPRE%NOTFOUND;
+      V_EST_ERR := 0;
+    
+      --OBTENER DATOS POSTPAGO DEL CLIENTE PREPAGO
+      PCLUB.PKG_CLAROCLUB.ADMPSS_DAT_CLIE('',
+                                          C_NUMTELEF,
+                                          V_ERROR,
+                                          C_CUR_DATOS_CLIE);
+      LOOP
+      
+        FETCH C_CUR_DATOS_CLIE
+          INTO C_CUENTA,
+               C_TIP_DOC,
+               C_NUM_DOC,
+               C_CO_ID,
+               C_CI_FAC,
+               C_COD_TIP_CL,
+               C_TIP_CL;
+        EXIT WHEN C_CUR_DATOS_CLIE%NOTFOUND;
+      
+        V_CUENTA     := C_CUENTA;
+        V_TIP_DOC    := C_TIP_DOC;
+        V_NU_DOC     := C_NUM_DOC;
+        V_CO_ID      := C_CO_ID;
+        V_CI_FAC     := C_CI_FAC;
+        V_COD_TIP_CL := C_COD_TIP_CL;
+        V_TIP_CL     := C_TIP_CL;
+      
+      END LOOP;
+    
+      CLOSE C_CUR_DATOS_CLIE;
+    
+      SELECT COUNT(*)
+        INTO V_COUNT
+        FROM PCLUB.ADMPT_CLIENTE
+       WHERE ADMPV_COD_CLI = C_NUMTELEF
+         AND ADMPV_COD_TPOCL = '3';
+    
+      /* IF V_COUNT > 0 THEN
+      
+         V_ERROR:='El número Postpago ya tiene una cuenta Prepago';
+         V_EST_ERR:= 1;
+      
+         INSERT INTO PCLUB.ADMPT_IMP_PREPOSPRE(ADMPN_ID_FILA,ADMPV_COD_CLI,ADMPD_FEC_MIG
+         ,ADMPD_FEC_OPER,ADMPV_MSJE_ERROR)
+         VALUES(PCLUB.ADMPT_IMP_PREPOSPRE_SQ.NEXTVAL,V_CUENTA,C_FECHAMIGR,
+         to_date(to_char(sysdate,'dd/mm/yyyy'),'dd/mm/yyyy'),V_ERROR);
+      
+         GOTO VERIFICAERROR;
+      END IF;*/
+    
+      IF (V_CUENTA IS NULL) OR (REPLACE(V_CUENTA, ' ', '') IS NULL) THEN
+      
+        --SE LE ASIGNA EL ERROR SI NO EXISTE EL NUMERO TELEFONICO
+        V_ERROR   := 'Código de Cliente Postpago es un dato obligatorio.';
+        V_EST_ERR := 1;
+        INSERT INTO PCLUB.ADMPT_IMP_PREPOSPRE
+          (ADMPN_ID_FILA,
+           ADMPV_COD_CLI,
+           ADMPD_FEC_MIG,
+           ADMPD_FEC_OPER,
+           ADMPV_MSJE_ERROR)
+        VALUES
+          (PCLUB.ADMPT_IMP_PREPOSPRE_SQ.NEXTVAL,
+           V_CUENTA,
+           C_FECHAMIGR,
+           TO_DATE(TO_CHAR(SYSDATE, 'dd/mm/yyyy'), 'dd/mm/yyyy'),
+           V_ERROR);
+      
+        GOTO VERIFICAERROR;
+      END IF;
+    
+      SELECT COUNT(*)
+        INTO V_COUNT
+        FROM PCLUB.ADMPT_CLIENTE
+       WHERE ADMPV_COD_CLI = V_CUENTA
+         AND ADMPV_COD_TPOCL IN ('1', '2');
+    
+      IF V_COUNT = 0 THEN
+      
+        --SE LE ASIGNA EL ERROR SI EL CLIENTE NO EXISTE
+        V_ERROR   := 'Cliente Postpago no existe';
+        V_EST_ERR := 1;
+      
+        INSERT INTO PCLUB.ADMPT_IMP_PREPOSPRE
+          (ADMPN_ID_FILA,
+           ADMPV_COD_CLI,
+           ADMPD_FEC_MIG,
+           ADMPD_FEC_OPER,
+           ADMPV_MSJE_ERROR)
+        VALUES
+          (PCLUB.ADMPT_IMP_PREPOSPRE_SQ.NEXTVAL,
+           V_CUENTA,
+           C_FECHAMIGR,
+           TO_DATE(TO_CHAR(SYSDATE, 'dd/mm/yyyy'), 'dd/mm/yyyy'),
+           V_ERROR);
+      
+        GOTO VERIFICAERROR;
+      END IF;
+    
+      SELECT ADMPC_ESTADO
+        INTO V_ESTADO
+        FROM PCLUB.ADMPT_CLIENTE
+       WHERE ADMPV_COD_CLI = V_CUENTA
+         AND ADMPV_COD_TPOCL IN ('1', '2');
+    
+      IF V_ESTADO = 'B' THEN
+      
+        --SE LE ASIGNA EL ERROR SI ESTA EL CLIENTE EN ESTADO DE BAJA
+        V_ERROR   := 'El Cliente ya se encuentra de Baja.';
+        V_EST_ERR := 1;
+      
+        INSERT INTO PCLUB.ADMPT_IMP_PREPOSPRE
+          (ADMPN_ID_FILA,
+           ADMPV_COD_CLI,
+           ADMPD_FEC_MIG,
+           ADMPD_FEC_OPER,
+           ADMPV_MSJE_ERROR)
+        VALUES
+          (PCLUB.ADMPT_IMP_PREPOSPRE_SQ.NEXTVAL,
+           V_CUENTA,
+           C_FECHAMIGR,
+           TO_DATE(TO_CHAR(SYSDATE, 'dd/mm/yyyy'), 'dd/mm/yyyy'),
+           V_ERROR);
+      
+        GOTO VERIFICAERROR;
+      END IF;
+    
+      <<VERIFICAERROR>>
+      IF V_EST_ERR = 0 THEN
+      
+        --ALMACENAR EL SALDO DEL CLIENTE POSTPAGO
+        SELECT ADMPN_SALDO_CC
+          INTO V_SALDO
+          FROM PCLUB.ADMPT_SALDOS_CLIENTE
+         WHERE ADMPV_COD_CLI = V_CUENTA;
+      
+        --MODIFICAR LOS SALDOS Y EL ESTADO DEL CLIENTE POSTPAGO EN LA TABLA KARDEX
+        UPDATE PCLUB.ADMPT_KARDEX
+           SET ADMPN_SLD_PUNTO = 0, ADMPC_ESTADO = 'C'
+         WHERE ADMPV_COD_CLI = V_CUENTA
+           AND ADMPC_TPO_OPER = 'E'
+           AND ADMPC_TPO_PUNTO IN ('C', 'L')
+           AND ADMPN_SLD_PUNTO > 0;
+      
+        --MODIFICAR EL ESTADO DEL CLIENTE POSTPAGO EN LA TABLA CLIENTE
+        UPDATE PCLUB.ADMPT_CLIENTE
+           SET ADMPC_ESTADO = 'B'
+         WHERE ADMPV_COD_CLI = V_CUENTA
+           AND ADMPV_COD_TPOCL IN ('1', '2');
+      
+        --MODIFICAR EL SALDO DEL CLIENTE POSTPAGO
+        UPDATE PCLUB.ADMPT_SALDOS_CLIENTE
+           SET ADMPN_SALDO_CC = 0, ADMPC_ESTPTO_CC = 'B'
+         WHERE ADMPV_COD_CLI = V_CUENTA;
+      
+        BEGIN
+          SELECT ADMPN_COD_CLI_IB
+            INTO V_COD_CLI_IB
+            FROM PCLUB.ADMPT_CLIENTEIB
+           WHERE ADMPV_COD_CLI = V_CUENTA;
+        EXCEPTION
+          WHEN NO_DATA_FOUND THEN
+            V_COD_CLI_IB := NULL;
+        END;
+      
+        --INSERTAR EL MOVIMIENTO POR CONCEPTO DE 'MIGRACIONES POSTPAGO A PREPAGO' DEL CLIENTE POSTPAGO
+        INSERT INTO PCLUB.ADMPT_KARDEX
+          (ADMPN_ID_KARDEX,
+           ADMPN_COD_CLI_IB,
+           ADMPV_COD_CLI,
+           ADMPV_COD_CPTO,
+           ADMPD_FEC_TRANS,
+           ADMPN_PUNTOS,
+           ADMPC_TPO_OPER,
+           ADMPC_TPO_PUNTO,
+           ADMPN_SLD_PUNTO,
+           ADMPC_ESTADO)
+        VALUES
+          (PCLUB.ADMPT_KARDEX_SQ.NEXTVAL,
+           V_COD_CLI_IB,
+           V_CUENTA,
+           V_COD_CPTO,
+           TO_DATE(TO_CHAR(SYSDATE, 'dd/mm/yyyy'), 'dd/mm/yyyy'),
+           V_SALDO * (-1),
+           'S',
+           'C',
+           0,
+           'C');
+      
+        --ALMACENAR LOS DATOS DEL CLIENTE POSTPAGO
+        SELECT ADMPV_TIPO_DOC,
+               ADMPV_NUM_DOC,
+               ADMPV_NOM_CLI,
+               ADMPV_APE_CLI,
+               ADMPC_SEXO,
+               ADMPV_EST_CIVIL,
+               ADMPV_EMAIL,
+               ADMPV_PROV,
+               ADMPV_DEPA,
+               ADMPV_DIST
+          INTO V_TIPO_DOC,
+               V_NUM_DOC,
+               V_NOM_CLI,
+               V_APE_CLI,
+               V_SEXO,
+               V_EST_CIVIL,
+               V_EMAIL,
+               V_PROV,
+               V_DEPA,
+               V_DIST
+          FROM PCLUB.ADMPT_CLIENTE
+         WHERE ADMPV_COD_CLI = V_CUENTA
+           AND ADMPV_COD_TPOCL IN ('1', '2');
+      
+        SELECT COUNT(*)
+          INTO V_COUNTPRE
+          FROM PCLUB.ADMPT_CLIENTE
+         WHERE ADMPV_COD_CLI = C_NUMTELEF
+           AND ADMPV_COD_TPOCL = '3';
+      
+        IF V_COUNTPRE = 0 THEN
+          ---INSERTAR LOS DATOS POSTPAGO DEL CLIENTE PREPAGO
+          INSERT INTO PCLUB.ADMPT_CLIENTE
+            (ADMPV_COD_CLI,
+             ADMPN_COD_CATCLI,
+             ADMPV_TIPO_DOC,
+             ADMPV_NUM_DOC,
+             ADMPV_NOM_CLI,
+             ADMPV_APE_CLI,
+             ADMPC_SEXO,
+             ADMPV_EST_CIVIL,
+             ADMPV_EMAIL,
+             ADMPV_PROV,
+             ADMPV_DEPA,
+             ADMPV_DIST,
+             ADMPD_FEC_ACTIV,
+             ADMPC_ESTADO,
+             ADMPV_COD_TPOCL)
+          VALUES
+            (C_NUMTELEF,
+             2,
+             V_TIPO_DOC,
+             V_NUM_DOC,
+             V_NOM_CLI,
+             V_APE_CLI,
+             V_SEXO,
+             V_EST_CIVIL,
+             V_EMAIL,
+             V_PROV,
+             V_DEPA,
+             V_DIST,
+             TO_DATE(TO_CHAR(SYSDATE, 'dd/mm/yyyy'), 'dd/mm/yyyy'),
+             'A',
+             '3');
+        END IF;
+      
+        SELECT COUNT(*)
+          INTO V_COUNT2
+          FROM PCLUB.ADMPT_SALDOS_CLIENTE
+         WHERE ADMPV_COD_CLI = C_NUMTELEF;
+      
+        IF V_COUNT2 = 0 THEN
+          --INSERTAR EN LA TABLA DE SALDOS EL CLIENTE PREPAGO SI NO EXISTE EL CLIENTE PREPAGO EN LA TABLA SALDOS
+          INSERT INTO PCLUB.ADMPT_SALDOS_CLIENTE
+            (ADMPN_ID_SALDO,
+             ADMPV_COD_CLI,
+             ADMPN_SALDO_CC,
+             ADMPN_SALDO_IB,
+             ADMPC_ESTPTO_CC)
+          VALUES
+            (PCLUB.ADMPT_SLD_CL_SQ.NEXTVAL, C_NUMTELEF, 0, 0, 'A');
+        END IF;
+      
+        --INSERTAR EL MOVIMIENTO DEL CLIENTE PREPAGO EN LA TABLA KARDEX CON EL SALDO CAPTURADO DEL CLIENTE POSTPAGO
+        INSERT INTO PCLUB.ADMPT_KARDEX
+          (ADMPN_ID_KARDEX,
+           ADMPN_COD_CLI_IB,
+           ADMPV_COD_CLI,
+           ADMPV_COD_CPTO,
+           ADMPD_FEC_TRANS,
+           ADMPN_PUNTOS,
+           ADMPC_TPO_OPER,
+           ADMPC_TPO_PUNTO,
+           ADMPN_SLD_PUNTO,
+           ADMPC_ESTADO)
+        VALUES
+          (PCLUB.ADMPT_KARDEX_SQ.NEXTVAL,
+           V_COD_CLI_IB,
+           C_NUMTELEF,
+           V_COD_CPTO,
+           TO_DATE(TO_CHAR(SYSDATE, 'dd/mm/yyyy'), 'dd/mm/yyyy'),
+           V_SALDO,
+           'E',
+           'C',
+           V_SALDO,
+           'A');
+      
+        --MODIFICAR EL SALDO EN LA TABLA SALDO DEL CLIENTE PREPAGO
+        UPDATE PCLUB.ADMPT_SALDOS_CLIENTE
+           SET ADMPN_SALDO_CC = V_SALDO +
+                                (SELECT NVL(ADMPN_SALDO_CC, 0)
+                                   FROM PCLUB.ADMPT_SALDOS_CLIENTE
+                                  WHERE ADMPV_COD_CLI = C_NUMTELEF)
+         WHERE ADMPV_COD_CLI = C_NUMTELEF;
+      
+        SELECT PCLUB.ADMPT_KARDEX_SQ.NEXTVAL INTO V_KARDEX_SQ FROM DUAL;
+      
+        SELECT ADMPN_SALDO_CC
+          INTO V_SALDOCC
+          FROM PCLUB.ADMPT_SALDOS_CLIENTE
+         WHERE ADMPV_COD_CLI = C_NUMTELEF;
+      
+        IF V_SALDOCC <= V_VALOR * (-1) THEN
+          V_VALOR := V_SALDOCC * (-1);
+        END IF;
+      
+        --INSERTAR EL MOVIMIENTO DEL CLIENTE PREPAGO POR CONCEPTO DE 'PENALIDAD POR MIGRACIONES POSTPAGO A PREPAGO'
+        INSERT INTO PCLUB.ADMPT_KARDEX
+          (ADMPN_ID_KARDEX,
+           ADMPN_COD_CLI_IB,
+           ADMPV_COD_CLI,
+           ADMPV_COD_CPTO,
+           ADMPD_FEC_TRANS,
+           ADMPN_PUNTOS,
+           ADMPC_TPO_OPER,
+           ADMPC_TPO_PUNTO,
+           ADMPN_SLD_PUNTO,
+           ADMPC_ESTADO)
+        VALUES
+          (V_KARDEX_SQ,
+           V_COD_CLI_IB,
+           C_NUMTELEF,
+           V_CODCPTO_BONO,
+           TO_DATE(TO_CHAR(SYSDATE, 'dd/mm/yyyy'), 'dd/mm/yyyy'),
+           V_VALOR,
+           'S',
+           'C',
+           0,
+           'C');
+      
+        K_ID_CANJE          := V_KARDEX_SQ;
+        K_SEC               := 1;
+        K_PUNTOS            := (V_VALOR * (-1));
+        K_COD_CLIENTE       := C_NUMTELEF;
+        K_TIPO_DOC          := '';
+        K_NUM_DOC           := '';
+        K_TIP_CLI           := '3';
+        V_PUNTOS_REQUERIDOS := K_PUNTOS;
+        --PCLUB.PKG_CC_TRANSACCION.ADMPSI_DESC_PUNTOS(K_ID_CANJE,K_SEC,K_PUNTOS,K_COD_CLIENTE,K_TIPO_DOC,K_NUM_DOC,K_TIP_CLI,K_CODERROR,K_MSJERROR);
+      
+        IF C_NUMTELEF IS NOT NULL THEN
+          IF K_TIP_CLI = '3' OR K_TIP_CLI = '4' THEN
+            OPEN LISTA_KARDEX_1;
+            FETCH LISTA_KARDEX_1
+              INTO LK_TPO_PUNTO,
+                   LK_ID_KARDEX,
+                   LK_SLD_PUNTOS,
+                   LK_COD_CLI,
+                   LK_COD_CLIIB;
+            WHILE LISTA_KARDEX_1%FOUND AND V_PUNTOS_REQUERIDOS > 0 LOOP
+              IF LK_SLD_PUNTOS <= V_PUNTOS_REQUERIDOS THEN
+                -- Actualiza Kardex
+                UPDATE PCLUB.ADMPT_KARDEX
+                   SET ADMPN_SLD_PUNTO = 0, ADMPC_ESTADO = 'C'
+                 WHERE ADMPN_ID_KARDEX = LK_ID_KARDEX;
+              
+                /* -- Inserta Canje_kardex
+                insert into PCLUB.admpt_canjedt_kardex (admpv_id_canje, admpn_id_kardex , admpv_id_canjesec, admpn_puntos)
+                values (K_ID_CANJE, LK_ID_KARDEX, K_SEC, LK_SLD_PUNTOS);*/
+              
+                -- Actualiza Saldos_cliente
+                IF LK_TPO_PUNTO = 'C' OR LK_TPO_PUNTO = 'L' THEN
+                  /* Punto Claro Club */
+                  UPDATE PCLUB.ADMPT_SALDOS_CLIENTE
+                     SET ADMPN_SALDO_CC = -LK_SLD_PUNTOS +
+                                          (SELECT NVL(ADMPN_SALDO_CC, 0)
+                                             FROM PCLUB.ADMPT_SALDOS_CLIENTE
+                                            WHERE ADMPV_COD_CLI = LK_COD_CLI)
+                   WHERE ADMPV_COD_CLI = LK_COD_CLI;
+                END IF;
+                V_PUNTOS_REQUERIDOS := V_PUNTOS_REQUERIDOS - LK_SLD_PUNTOS;
+              ELSE
+                IF LK_SLD_PUNTOS > V_PUNTOS_REQUERIDOS THEN
+                
+                  -- Actualiza Kardex
+                  UPDATE PCLUB.ADMPT_KARDEX
+                     SET ADMPN_SLD_PUNTO = LK_SLD_PUNTOS -
+                                           V_PUNTOS_REQUERIDOS
+                   WHERE ADMPN_ID_KARDEX = LK_ID_KARDEX;
+                
+                  /*  -- Inserta Canje_kardex
+                  insert into PCLUB.admpt_canjedt_kardex (admpv_id_canje, admpn_id_kardex , admpv_id_canjesec, admpn_puntos)
+                  values (K_ID_CANJE, LK_ID_KARDEX, K_SEC, V_PUNTOS_REQUERIDOS);*/
+                  -- Actualiza Saldos_cliente
+                  IF LK_TPO_PUNTO = 'C' OR LK_TPO_PUNTO = 'L' THEN
+                    /* Punto Claro Club */
+                    UPDATE PCLUB.ADMPT_SALDOS_CLIENTE
+                       SET ADMPN_SALDO_CC = -V_PUNTOS_REQUERIDOS +
+                                            (SELECT NVL(ADMPN_SALDO_CC, 0)
+                                               FROM PCLUB.ADMPT_SALDOS_CLIENTE
+                                              WHERE ADMPV_COD_CLI =
+                                                    LK_COD_CLI)
+                     WHERE ADMPV_COD_CLI = LK_COD_CLI;
+                  
+                  END IF;
+                  V_PUNTOS_REQUERIDOS := 0;
+                END IF;
+              END IF;
+            
+              FETCH LISTA_KARDEX_1
+                INTO LK_TPO_PUNTO,
+                     LK_ID_KARDEX,
+                     LK_SLD_PUNTOS,
+                     LK_COD_CLI,
+                     LK_COD_CLIIB;
+            END LOOP;
+            CLOSE LISTA_KARDEX_1;
+          END IF;
+        END IF;
+      
+        --INSERTAR EN LA TABLA KARDEX Y ACTUALIZAR EL SALDO POR LA ENTREGA DE PUNTOS POR ACTIVACIÓN
+        --PCLUB.PKG_CC_PREPAGO.ADMPSI_PREACTIV(C_NUMTELEF,K_CODERROR,K_DESCERROR);
+      
+        SELECT COUNT(*)
+          INTO V_COUNT_IB
+          FROM PCLUB.ADMPT_CLIENTEIB
+         WHERE ADMPV_COD_CLI = V_CUENTA
+           AND ADMPC_ESTADO = 'A';
+      
+        IF V_COUNT_IB <> 0 THEN
+        
+          SELECT ADMPN_COD_CLI_IB
+            INTO V_COD_CLI_IB
+            FROM PCLUB.ADMPT_CLIENTEIB
+           WHERE ADMPV_COD_CLI = V_CUENTA
+             AND ADMPC_ESTADO = 'A';
+        
+          SELECT ADMPN_SALDO_IB
+            INTO V_SALDO_IB
+            FROM PCLUB.ADMPT_SALDOS_CLIENTE
+           WHERE ADMPV_COD_CLI = V_CUENTA;
+        
+          --INSERTAR EL MOVIMIENTO DEL CLIENTE PREPAGO POR CONCEPTO DE 'PENALIDAD POR MIGRACIONES POSTPAGO A PREPAGO'
+          INSERT INTO PCLUB.ADMPT_KARDEX
+            (ADMPN_ID_KARDEX,
+             ADMPN_COD_CLI_IB,
+             ADMPV_COD_CLI,
+             ADMPV_COD_CPTO,
+             ADMPD_FEC_TRANS,
+             ADMPN_PUNTOS,
+             ADMPC_TPO_OPER,
+             ADMPC_TPO_PUNTO,
+             ADMPN_SLD_PUNTO,
+             ADMPC_ESTADO)
+          VALUES
+            (PCLUB.ADMPT_KARDEX_SQ.NEXTVAL,
+             V_COD_CLI_IB,
+             V_CUENTA,
+             V_COD_CPTO,
+             TO_DATE(TO_CHAR(SYSDATE, 'dd/mm/yyyy'), 'dd/mm/yyyy'),
+             V_SALDO_IB * (-1),
+             'S',
+             'I',
+             0,
+             'C');
+        
+          --MODIFICAR EL SALDO DEL CLIENTE PREPAGO EN LA TABLA SALDO POR CONCEPTO DE PENALIDAD
+          UPDATE PCLUB.ADMPT_SALDOS_CLIENTE
+             SET ADMPN_SALDO_IB = 0
+           WHERE ADMPN_COD_CLI_IB = V_COD_CLI_IB;
+        
+          --MODIFICAR LOS SALDOS Y EL ESTADO DEL CLIENTE POSTPAGO EN LA TABLA KARDEX
+          UPDATE PCLUB.ADMPT_KARDEX
+             SET ADMPN_SLD_PUNTO = 0, ADMPC_ESTADO = 'C'
+           WHERE ADMPN_COD_CLI_IB = V_COD_CLI_IB
+             AND ADMPC_TPO_OPER = 'E'
+             AND ADMPC_TPO_PUNTO = 'I'
+             AND ADMPN_SLD_PUNTO > 0;
+        
+          BEGIN
+          
+            SELECT ADMPN_COD_CLI_IB
+              INTO V_COD_CLI_IB
+              FROM PCLUB.ADMPT_CLIENTEIB
+             WHERE ADMPV_COD_CLI = V_CUENTA
+               AND ADMPC_ESTADO = 'A';
+          
+          EXCEPTION
+            WHEN NO_DATA_FOUND THEN
+              V_COD_CLI_IB := NULL;
+          END;
+        
+          --INSERTAR EL MOVIMIENTO DEL CLIENTE PREPAGO POR CONCEPTO DE 'PENALIDAD POR MIGRACIONES POSTPAGO A PREPAGO'
+          INSERT INTO PCLUB.ADMPT_KARDEX
+            (ADMPN_ID_KARDEX,
+             ADMPN_COD_CLI_IB,
+             ADMPV_COD_CLI,
+             ADMPV_COD_CPTO,
+             ADMPD_FEC_TRANS,
+             ADMPN_PUNTOS,
+             ADMPC_TPO_OPER,
+             ADMPC_TPO_PUNTO,
+             ADMPN_SLD_PUNTO,
+             ADMPC_ESTADO)
+          VALUES
+            (PCLUB.ADMPT_KARDEX_SQ.NEXTVAL,
+             V_COD_CLI_IB,
+             C_NUMTELEF,
+             V_COD_CPTO,
+             TO_DATE(TO_CHAR(SYSDATE, 'dd/mm/yyyy'), 'dd/mm/yyyy'),
+             V_SALDO_IB,
+             'E',
+             'I',
+             V_SALDO_IB,
+             'A');
+        
+          SELECT COUNT(*)
+            INTO V_COUNT3
+            FROM PCLUB.ADMPT_SALDOS_CLIENTE
+           WHERE ADMPV_COD_CLI = C_NUMTELEF;
+        
+          IF V_COUNT3 = 0 THEN
+            --INSERTAR EN LA TABLA DE SALDOS EL CLIENTE PREPAGO SI NO EXISTE EL CLIENTE PREPAGO EN LA TABLA SALDOS
+            INSERT INTO PCLUB.ADMPT_SALDOS_CLIENTE
+              (ADMPN_ID_SALDO,
+               ADMPV_COD_CLI,
+               ADMPN_COD_CLI_IB,
+               ADMPN_SALDO_CC,
+               ADMPN_SALDO_IB,
+               ADMPC_ESTPTO_IB)
+            VALUES
+              (PCLUB.ADMPT_SLD_CL_SQ.NEXTVAL,
+               C_NUMTELEF,
+               V_COD_CLI_IB,
+               0,
+               V_SALDO_IB,
+               'A');
+          
+          ELSE
+          
+            --MODIFICAR EL SALDO DEL CLIENTE PREPAGO EN LA TABLA SALDO POR CONCEPTO DE PENALIDAD
+            UPDATE PCLUB.ADMPT_SALDOS_CLIENTE
+               SET ADMPC_ESTPTO_IB  = 'A',
+                   ADMPN_COD_CLI_IB = V_COD_CLI_IB,
+                   ADMPN_SALDO_IB   = V_SALDO_IB +
+                                      (SELECT NVL(ADMPN_SALDO_IB, 0)
+                                         FROM PCLUB.ADMPT_SALDOS_CLIENTE
+                                        WHERE ADMPV_COD_CLI = C_NUMTELEF)
+            
+             WHERE ADMPV_COD_CLI = C_NUMTELEF;
+          
+          END IF;
+        
+          UPDATE PCLUB.ADMPT_CLIENTEIB
+             SET ADMPV_COD_CLI = C_NUMTELEF
+           WHERE ADMPN_COD_CLI_IB = V_COD_CLI_IB;
+        
+          UPDATE PCLUB.ADMPT_SALDOS_CLIENTE
+             SET ADMPN_COD_CLI_IB = ''
+           WHERE ADMPV_COD_CLI = V_CUENTA;
+        
+        END IF;
+      
+      END IF;
+      COMMIT;
+    END LOOP;
+    CLOSE CURSOROBTPOSAPRE;
+  
+    SELECT COUNT(*)
+      INTO K_NUMREGERR
+      FROM PCLUB.ADMPT_IMP_PREPOSPRE
+     WHERE ADMPD_FEC_OPER =
+           TO_DATE(TO_CHAR(SYSDATE, 'dd/mm/yyyy'), 'dd/mm/yyyy')
+       AND (ADMPV_MSJE_ERROR IS NOT NULL);
+  
+    K_NUMREGTOT := V_NUMREGTOT;
+    K_NUMREGPRO := V_NUMREGTOT - K_NUMREGERR;
+  
+    K_CODERROR  := 0;
+    K_DESCERROR := ' ';
+  
+  EXCEPTION
+  
+    WHEN NO_CONCEPTO THEN
+      K_CODERROR  := 55;
+      K_DESCERROR := 'No se tiene registrado los parametros(ADMPT_CONCEPTO)';
+    
+    WHEN NO_PARAMETRO THEN
+      K_CODERROR  := 56;
+      K_DESCERROR := 'No se tiene registrado los parametros(ADMPT_PARAMSIST)';
+    
+    WHEN OTHERS THEN
+      K_CODERROR  := SQLCODE;
+      K_DESCERROR := SUBSTR(SQLERRM, 1, 250);
+    
+  END ADMPSI_PREMIGPOS;

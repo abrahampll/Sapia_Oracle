@@ -20,3 +20,15 @@ https://www.plsql.biz/2006/12/cursores-en-plsql.html
 http://www.devjoker.com/contenidos/Tutorial-PLSQL/39/Cursores-Explicitos-en-PLSQL.aspx
 
 http://www.devjoker.com/contenidos/Tutorial-PLSQL/33/Estructuras-de-control-en-PLSQL.aspx
+
+
+/***** ejemplos de cursores
+http://www.euskalnet.net/jaoprogramador/sgbd/oracle/ora12.htm
+http://dis.um.es/~jfernand/0708/fbd/tutorial2.pdf
+https://elbauldelcodigo.com/cursores-explicitos-en-plsql/47/0
+
+https://es.scribd.com/document/46046429/Respuestas-Oracle-PL-SQL-Practica-18
+https://es.scribd.com/document/46046502/Respuestas-Oracle-PL-SQL-Practica-19
+https://es.scribd.com/document/46045646/Respuestas-Oracle-PL-SQL-Practica-9
+https://es.scribd.com/document/94626829/Ejercicios-Plsql
+https://es.scribd.com/document/89611997/Ejercicios-Con-Cursores-PlSql

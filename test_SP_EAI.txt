@@ -1,0 +1,27 @@
+DECLARE 
+
+ v_estado varchar2(100);
+   v_fecha_prog DATE;
+   V_COD_ERROR NUMBER;
+   V_MEN_ERROR VARCHAR2(100);
+curso1 sys_refcursor;
+BEGIN 
+
+
+ open  curso1 for 
+  SELECT SERVV_MSISDN, SERVD_FECHAPROG, CO_ID,
+         SERVV_ID_EAI_SW,SERVV_USUARIO_APLICACION,SERVV_EMAIL_USUARIO_APP,
+       SERVV_USUARIO_SISTEMA, SERVD_FECHA_REG,
+       SERVD_FECHA_EJEC,SERVC_ESTADO,SERVC_ESBATCH,
+       SERVV_ID_BATCH,SERVV_MEN_ERROR,SERVV_COD_ERROR, SERVV_XMLENTRADA, rowid as row_id_cur
+       FROM POSTT_SERVICIOPROG
+       WHERE SERVI_COD = 70
+        AND SERVD_FECHAPROG >= TO_DATE('2019-01-30','YYYY-MM-dd')
+        AND SERVD_FECHAPROG < TO_DATE('2019-01-30','YYYY-mm-dd')+1
+        AND SERVC_ESTADO = '1' 
+        AND rownum<=10000;
+        
+
+        dbms_output.put_line('valor ' || curso1%rowcount);
+    
+END;       

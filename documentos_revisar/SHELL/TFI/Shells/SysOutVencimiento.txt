@@ -1,0 +1,187 @@
++ . /home/usrclaroclub/CLAROCLUB/Interno/TFI/Bin/.varset
+++ HOME_CLARO=/home/usrclaroclub/CLAROCLUB
+++ export HOME_CLARO
+++ HOME_TFI=/home/usrclaroclub/CLAROCLUB/Interno/TFI
+++ export HOME_TFI
+++ DIRFTP=/home/usrftpsisfyr/FyR
+++ export DIRFTP
+++ DIRCTL=/home/usrclaroclub/CLAROCLUB/Interno/TFI/Ctl
+++ export DIRCTL
+++ DIRENTRADA=/home/usrclaroclub/CLAROCLUB/Interno/TFI/Documentos
+++ export DIRENTRADA
+++ DIRERROR=/home/usrclaroclub/CLAROCLUB/Interno/TFI/Error
+++ export DIRERROR
+++ DIRFALLOS=/home/usrclaroclub/CLAROCLUB/Interno/TFI/Fallos
+++ export DIRFALLOS
+++ DIRLOG=/home/usrclaroclub/CLAROCLUB/Interno/TFI/Logs
+++ export DIRLOG
+++ DIRPROCESADOS=/home/usrclaroclub/CLAROCLUB/Interno/TFI/Procesados
+++ export DIRPROCESADOS
+++ DIRSHELL=/home/usrclaroclub/CLAROCLUB/Interno/TFI/Shells
+++ export DIRSHELL
+++ DIRFTPTFI=/home/usrftpsisfyr/FyR/TFI
+++ export DIRFTPTFI
+++ DIRENT_ALTA=/home/usrclaroclub/CLAROCLUB/Interno/TFI/Documentos/Alta
+++ export DIRENT_ALTA
+++ DIRENT_ANIV=/home/usrclaroclub/CLAROCLUB/Interno/TFI/Documentos/Aniversario
+++ export DIRENT_ANIV
+++ DIRENT_BAJA=/home/usrclaroclub/CLAROCLUB/Interno/TFI/Documentos/Baja
+++ export DIRENT_BAJA
+++ DIRENT_NORECAR=/home/usrclaroclub/CLAROCLUB/Interno/TFI/Documentos/NoRecarga
+++ export DIRENT_NORECAR
+++ DIRENT_PROMO=/home/usrftpsisfyr/FyR/TFI/Promocion
+++ export DIRENT_PROMO
+++ DIRENT_RECAR=/home/usrclaroclub/CLAROCLUB/Interno/TFI/Documentos/Recarga
+++ export DIRENT_RECAR
+++ DIRENT_REGUL=/home/usrftpsisfyr/FyR/TFI/Regularizacion
+++ export DIRENT_REGUL
+++ DIRERR_ALTA=/home/usrclaroclub/CLAROCLUB/Interno/TFI/Error/Alta
+++ export DIRERR_ALTA
+++ DIRERR_ANIV=/home/usrclaroclub/CLAROCLUB/Interno/TFI/Error/Aniversario
+++ export DIRERR_ANIV
+++ DIRERR_BAJA=/home/usrclaroclub/CLAROCLUB/Interno/TFI/Error/Baja
+++ export DIRERR_BAJA
+++ DIRERR_CAMTITU=/home/usrclaroclub/CLAROCLUB/Interno/TFI/Error/CamTitular
+++ export DIRERR_CAMTITU
+++ DIRERR_NORECAR=/home/usrclaroclub/CLAROCLUB/Interno/TFI/Error/NoRecarga
+++ export DIRERR_NORECAR
+++ DIRERR_PROMO=/home/usrclaroclub/CLAROCLUB/Interno/TFI/Error/Promocion
+++ export DIRERR_PROMO
+++ DIRERR_RECAR=/home/usrclaroclub/CLAROCLUB/Interno/TFI/Error/Recarga
+++ export DIRERR_RECAR
+++ DIRERR_REGUL=/home/usrclaroclub/CLAROCLUB/Interno/TFI/Error/Regularizacion
+++ export DIRERR_REGUL
+++ DIRPROC_ALTA=/home/usrclaroclub/CLAROCLUB/Interno/TFI/Procesados/Alta
+++ export DIRPROC_ALTA
+++ DIRPROC_ANIV=/home/usrclaroclub/CLAROCLUB/Interno/TFI/Procesados/Aniversario
+++ export DIRPROC_ANIV
+++ DIRPROC_BAJA=/home/usrclaroclub/CLAROCLUB/Interno/TFI/Procesados/Baja
+++ export DIRPROC_BAJA
+++ DIRPROC_NORECAR=/home/usrclaroclub/CLAROCLUB/Interno/TFI/Procesados/NoRecarga
+++ export DIRPROC_NORECAR
+++ DIRPROC_PROMO=/home/usrclaroclub/CLAROCLUB/Interno/TFI/Procesados/Promocion
+++ export DIRPROC_PROMO
+++ DIRPROC_RECAR=/home/usrclaroclub/CLAROCLUB/Interno/TFI/Procesados/Recarga
+++ export DIRPROC_RECAR
+++ DIRPROC_REGUL=/home/usrclaroclub/CLAROCLUB/Interno/TFI/Procesados/Regularizacion
+++ export DIRPROC_REGUL
+++ SID_BD=PCLUBDB
+++ export SID_BD
+++ PCLUB_OW=PCLUB
+++ export PCLUB_OW
+++ TIPO_CLI=8
+++ export TIPO_CLI
++ . /home/usrclaroclub/CLAROCLUB/Interno/TFI/Bin/.passet
+++ USER_BD=usrpclub
+++ export USER_BD
+++ CLAVE_BD=sqm4zL9p
+++ export CLAVE_BD
++ . /home/usrclaroclub/CLAROCLUB/Interno/TFI/Bin/.mailset
+++ IT_OPERADOR=SoporteAplicacionesAtencionVirtual@claro.com.pe
+++ export IT_OPERADOR
+++ IT_MAIL=SoporteAplicacionesAtencionVirtual@claro.com.pe
+++ export IT_MAIL
++ cd /home/usrclaroclub/CLAROCLUB/Interno/TFI/Shells
+++ date +%Y%m%d
++ FECHA=20131017
+++ date +%Y%m%d%H%M%S
++ FECHA_HORA=20131017160137
+++ date +%H%M%S
++ HORA=160137
+++ hostname
++ HOST=tim-ftp1.tim.com.pe
+++ cat /etc/hosts
+++ grep -v '#'
+++ grep tim-ftp1.tim.com.pe
+++ awk '{print $1}'
++ IP_SERV=172.19.3.102
+++ whoami
++ USER_SERV=usrclaroclub
++ SHELL=SH008_VENCIMIENTO.sh
++ FILELOG=SH008_VENCIMIENTO_20131017160137.log
+++ date '+%d-%m-%Y %H:%M:%S'
++ demora='17-10-2013 16:01:37'
++ pMessage '************************************* '
+++ date '+%d-%m-%Y %H:%M:%S'
++ LOGDATE='17-10-2013 16:01:37'
++ echo '(17-10-2013 16:01:37) ************************************* '
++ echo '(17-10-2013 16:01:37) ************************************* '
++ pMessage 'Iniciando proceso                     '
+++ date '+%d-%m-%Y %H:%M:%S'
++ LOGDATE='17-10-2013 16:01:37'
++ echo '(17-10-2013 16:01:37) Iniciando proceso                     '
++ echo '(17-10-2013 16:01:37) Iniciando proceso                     '
++ pMessage 'Fecha y Hora  : 20131017160137         '
+++ date '+%d-%m-%Y %H:%M:%S'
++ LOGDATE='17-10-2013 16:01:37'
++ echo '(17-10-2013 16:01:37) Fecha y Hora  : 20131017160137         '
++ echo '(17-10-2013 16:01:37) Fecha y Hora  : 20131017160137         '
++ pMessage 'Usuario :  usrclaroclub               '
+++ date '+%d-%m-%Y %H:%M:%S'
++ LOGDATE='17-10-2013 16:01:37'
++ echo '(17-10-2013 16:01:37) Usuario :  usrclaroclub               '
++ echo '(17-10-2013 16:01:37) Usuario :  usrclaroclub               '
++ pMessage 'Shell : SH008_VENCIMIENTO.sh                      '
+++ date '+%d-%m-%Y %H:%M:%S'
++ LOGDATE='17-10-2013 16:01:37'
++ echo '(17-10-2013 16:01:37) Shell : SH008_VENCIMIENTO.sh                      '
++ echo '(17-10-2013 16:01:37) Shell : SH008_VENCIMIENTO.sh                      '
++ pMessage 'Ip : 172.19.3.102                       '
+++ date '+%d-%m-%Y %H:%M:%S'
++ LOGDATE='17-10-2013 16:01:37'
++ echo '(17-10-2013 16:01:37) Ip : 172.19.3.102                       '
++ echo '(17-10-2013 16:01:37) Ip : 172.19.3.102                       '
++ pMessage '*************************************
+'
+++ date '+%d-%m-%Y %H:%M:%S'
++ LOGDATE='17-10-2013 16:01:37'
++ echo '(17-10-2013 16:01:37) *************************************
+'
++ echo '(17-10-2013 16:01:37) *************************************
+'
++ pMessage 'Se ejecuta el SP PKG_CC_PTOSTFI.ADMPSI_TFIVENCPTO para el proceso de Vencimiento de Puntos'
+++ date '+%d-%m-%Y %H:%M:%S'
++ LOGDATE='17-10-2013 16:01:37'
++ echo '(17-10-2013 16:01:37) Se ejecuta el SP PKG_CC_PTOSTFI.ADMPSI_TFIVENCPTO para el proceso de Vencimiento de Puntos'
++ echo '(17-10-2013 16:01:37) Se ejecuta el SP PKG_CC_PTOSTFI.ADMPSI_TFIVENCPTO para el proceso de Vencimiento de Puntos'
++ sqlplus -S usrpclub/sqm4zL9p@PCLUBDB
++ pMessage 'Se valida la existencia de errores durante la ejecución'
+++ date '+%d-%m-%Y %H:%M:%S'
++ LOGDATE='17-10-2013 16:01:37'
++ echo '(17-10-2013 16:01:37) Se valida la existencia de errores durante la ejecución'
++ echo '(17-10-2013 16:01:37) Se valida la existencia de errores durante la ejecución'
+++ grep ORA- /home/usrclaroclub/CLAROCLUB/Interno/TFI/Logs/SH008_VENCIMIENTO_20131017160137.log
+++ wc -l
++ VALIDAT_CTL=0
++ '[' 0 -ne 0 ']'
++ pMessage 'Termino proceso'
+++ date '+%d-%m-%Y %H:%M:%S'
++ LOGDATE='17-10-2013 16:01:37'
++ echo '(17-10-2013 16:01:37) Termino proceso'
++ echo '(17-10-2013 16:01:37) Termino proceso'
++ pMessage '********** FINALIZANDO PROCESO ********** '
+++ date '+%d-%m-%Y %H:%M:%S'
++ LOGDATE='17-10-2013 16:01:37'
++ echo '(17-10-2013 16:01:37) ********** FINALIZANDO PROCESO ********** '
++ echo '(17-10-2013 16:01:37) ********** FINALIZANDO PROCESO ********** '
++ pMessage 'Fin de proceso '
+++ date '+%d-%m-%Y %H:%M:%S'
++ LOGDATE='17-10-2013 16:01:37'
++ echo '(17-10-2013 16:01:37) Fin de proceso '
++ echo '(17-10-2013 16:01:37) Fin de proceso '
++ pMessage '************************************'
+++ date '+%d-%m-%Y %H:%M:%S'
++ LOGDATE='17-10-2013 16:01:37'
++ echo '(17-10-2013 16:01:37) ************************************'
++ echo '(17-10-2013 16:01:37) ************************************'
++ pMessage 'Ruta del Archivo log : /home/usrclaroclub/CLAROCLUB/Interno/TFI/Logs/SH008_VENCIMIENTO_20131017160137.log'
+++ date '+%d-%m-%Y %H:%M:%S'
++ LOGDATE='17-10-2013 16:01:37'
++ echo '(17-10-2013 16:01:37) Ruta del Archivo log : /home/usrclaroclub/CLAROCLUB/Interno/TFI/Logs/SH008_VENCIMIENTO_20131017160137.log'
++ echo '(17-10-2013 16:01:37) Ruta del Archivo log : /home/usrclaroclub/CLAROCLUB/Interno/TFI/Logs/SH008_VENCIMIENTO_20131017160137.log'
++ pMessage ''
+++ date '+%d-%m-%Y %H:%M:%S'
++ LOGDATE='17-10-2013 16:01:37'
++ echo '(17-10-2013 16:01:37) '
++ echo '(17-10-2013 16:01:37) '
++ exit

@@ -1,0 +1,1 @@
+drop index PCLUB.IDX_ADMPT_TMP_VENC_PTS_001;

@@ -1,0 +1,30 @@
+-- Create table
+create table PCLUB.AUDITORIA_PROC_CLAROCLUB
+(
+  AUD_ID_SECUENCIA        INTEGER not null,
+  AUD_ID_PROCESO          VARCHAR2(10),
+  AUD_FECHA_REGISTRO      DATE,
+  AUD_DESCRIPCION_PROCESO VARCHAR2(150),
+  AUD_ID_EJEC_PROCESO     VARCHAR2(3),
+  AUD_EJECUCION_PROCESO   VARCHAR2(100),
+  AUD_PARAMETROS          VARCHAR2(300),
+  AUD_HORA_INICIO         DATE,
+  AUD_HORA_FIN            DATE,
+  AUD_LOTE_DEBE_IR        VARCHAR2(50),
+  AUD_LOTE_EJECUTO        VARCHAR2(200),
+  AUD_ESTADO_LOTE         VARCHAR2(100),
+  AUD_REGISTRO_ERROR_LOTE VARCHAR2(800),
+  AUD_MENSAJE_ERROR       VARCHAR2(200),
+  AUD_USUARIOREG          VARCHAR2(40)
+)
+tablespace PCLUB_DATA
+  pctfree 10
+  initrans 1
+  maxtrans 255
+  storage
+  (
+    initial 64K
+    next 1M
+    minextents 1
+    maxextents unlimited
+  );

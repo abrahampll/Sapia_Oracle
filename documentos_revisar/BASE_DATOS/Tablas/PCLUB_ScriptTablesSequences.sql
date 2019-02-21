@@ -1,0 +1,1917 @@
+create table PCLUB.ADMPT_AUX_ACCAMO_IB 
+( 
+  ADMPC_COD_TRANS CHAR(3), 
+  ADMPV_TIPO_DOC  VARCHAR2(20), 
+  ADMPV_NUM_DOC   VARCHAR2(20), 
+  ADMPV_NUM_LINEA VARCHAR2(20), 
+  ADMPD_FEC_OPER  DATE, 
+  ADMPV_NOM_ARCH  VARCHAR2(150) 
+) 
+tablespace PCLUB_DATA 
+  pctfree 10 
+  initrans 1 
+  maxtrans 255 
+  storage 
+  ( 
+    initial 64K 
+    minextents 1 
+    maxextents unlimited 
+  ); 
+ 
+ 
+create table PCLUB.ADMPT_AUX_DEBITO_IB 
+( 
+  ADMPD_FEC_OPER DATE, 
+  ADMPV_NOM_ARCH VARCHAR2(150), 
+  ADMPV_COD_CLI  VARCHAR2(40) 
+) 
+tablespace PCLUB_DATA 
+  pctfree 10 
+  initrans 1 
+  maxtrans 255 
+  storage 
+  ( 
+    initial 64K 
+    minextents 1 
+    maxextents unlimited 
+  ); 
+ 
+ 
+create table PCLUB.ADMPT_AUX_FACADE_IB 
+( 
+  ADMPC_COD_TRANS CHAR(3), 
+  ADMPV_TIPO_DOC  VARCHAR2(20), 
+  ADMPV_NUM_DOC   VARCHAR2(20), 
+  ADMPC_SIGNO     CHAR(1), 
+  ADMPN_PUNTOS    NUMBER, 
+  ADMPV_NOM_CAMP  VARCHAR2(200), 
+  ADMPD_FEC_OPER  DATE, 
+  ADMPV_NOM_ARCH  VARCHAR2(150) 
+) 
+tablespace PCLUB_DATA 
+  pctfree 10 
+  initrans 1 
+  maxtrans 255 
+  storage 
+  ( 
+    initial 64K 
+    minextents 1 
+    maxextents unlimited 
+  ); 
+ 
+ 
+  
+ 
+create table PCLUB.ADMPT_AUX_PROM 
+( 
+  ADMPV_COD_CLI  VARCHAR2(40), 
+  ADMPV_NOM_PROM VARCHAR2(150), 
+  ADMPN_PUNTOS   NUMBER, 
+  ADMPD_FEC_OPER DATE, 
+  ADMPV_NOM_ARCH VARCHAR2(150) 
+) 
+tablespace PCLUB_DATA 
+  pctfree 10 
+  initrans 1 
+  maxtrans 255 
+  storage 
+  ( 
+    initial 64K 
+    minextents 1 
+    maxextents unlimited 
+  ); 
+ 
+ 
+  
+ 
+create table PCLUB.ADMPT_AUX_REGULARIZA 
+( 
+  ADMPV_COD_CLI   VARCHAR2(40), 
+  ADMPV_NOM_REGUL VARCHAR2(150), 
+  ADMPN_PUNTOS    NUMBER, 
+  ADMPD_FEC_OPER  DATE, 
+  ADMPV_NOM_ARCH  VARCHAR2(150) 
+) 
+tablespace PCLUB_DATA 
+  pctfree 10 
+  initrans 1 
+  maxtrans 255 
+  storage 
+  ( 
+    initial 64K 
+    minextents 1 
+    maxextents unlimited 
+  ); 
+ 
+ 
+  
+ 
+create table PCLUB.ADMPT_CLIENTE 
+( 
+  ADMPV_COD_CLI    VARCHAR2(40) not null, 
+  ADMPV_COD_SEGCLI VARCHAR2(2), 
+  ADMPN_COD_CATCLI NUMBER, 
+  ADMPV_TIPO_DOC   VARCHAR2(20), 
+  ADMPV_NUM_DOC    VARCHAR2(20), 
+  ADMPV_NOM_CLI    VARCHAR2(30), 
+  ADMPV_APE_CLI    VARCHAR2(30), 
+  ADMPC_SEXO       CHAR(1), 
+  ADMPV_EST_CIVIL  VARCHAR2(20), 
+  ADMPV_EMAIL      VARCHAR2(80), 
+  ADMPV_PROV       VARCHAR2(30), 
+  ADMPV_DEPA       VARCHAR2(40), 
+  ADMPV_DIST       VARCHAR2(200), 
+  ADMPD_FEC_ACTIV  DATE, 
+  ADMPV_CICL_FACT  VARCHAR2(2), 
+  ADMPC_ESTADO     CHAR(1), 
+  ADMPV_COD_TPOCL  VARCHAR2(2) 
+) 
+tablespace PCLUB_DATA 
+  pctfree 10 
+  initrans 1 
+  maxtrans 255 
+  storage 
+  ( 
+    initial 64K 
+    minextents 1 
+    maxextents unlimited 
+  ); 
+alter table PCLUB.ADMPT_CLIENTE 
+  add constraint PK_ADMPT_CLIENTE primary key (ADMPV_COD_CLI) 
+  using index  
+  tablespace PCLUB_DATA 
+  pctfree 10 
+  initrans 2 
+  maxtrans 255 
+  storage 
+  ( 
+    initial 64K 
+    minextents 1 
+    maxextents unlimited 
+  ); 
+ 
+ create table PCLUB.ADMPT_SERV_PEND
+(
+  ADMPN_ID_FILA   NUMBER not null,
+  ADMPV_NUM_LINEA VARCHAR2(20),
+  ADMPN_SN_CODE   NUMBER,
+  ADMPN_SP_CODE   NUMBER,
+  ADMPC_ESTADO    CHAR(1),
+  ADMPD_FEC_REG   DATE,
+  ADMPD_FEC_PRO   DATE,
+  ADMPV_USUARIO   VARCHAR2(40),
+  ADMPV_MENSAJE   VARCHAR2(400),
+  ADPMV_ACCION    VARCHAR2(1)
+)
+tablespace PCLUB_DATA
+  pctfree 10
+  initrans 1
+  maxtrans 255
+  storage
+  (
+    initial 64K
+    minextents 1
+    maxextents unlimited
+  );
+alter table PCLUB.ADMPT_SERV_PEND
+  add constraint PK_ADMPT_SERV_PEND primary key (ADMPN_ID_FILA)
+  using index 
+  tablespace PCLUB_INDX
+  pctfree 10
+  initrans 2
+  maxtrans 255
+  storage
+  (
+    initial 64K
+    minextents 1
+    maxextents unlimited
+  );
+  
+ 
+create table PCLUB.ADMPT_CANJE 
+( 
+  ADMPN_ID_FILA   NUMBER not null, 
+  ADMPV_ID_CANJE  VARCHAR2(18) not null, 
+  ADMPV_COD_CLI   VARCHAR2(40) not null, 
+  ADMPV_ID_SOLIC  VARCHAR2(12), 
+  ADMPV_PTO_VENTA VARCHAR2(10), 
+  ADMPD_FEC_CANJE DATE, 
+  ADMPV_HRA_CANJE VARCHAR2(5), 
+  ADMPV_NUM_LINEA VARCHAR2(20), 
+  ADMPV_NUM_DOC   VARCHAR2(20), 
+  ADMPV_COD_TPOCL VARCHAR2(2), 
+  ADMPV_COD_ASESO VARCHAR2(16), 
+  ADMPV_NOM_ASESO VARCHAR2(60), 
+  ADMPC_TPO_OPER  CHAR(1) 
+) 
+tablespace PCLUB_DATA 
+  pctfree 10 
+  initrans 1 
+  maxtrans 255 
+  storage 
+  ( 
+    initial 64K 
+    minextents 1 
+    maxextents unlimited 
+  ); 
+alter table PCLUB.ADMPT_CANJE 
+  add constraint PK_ADMPT_CANJE primary key (ADMPN_ID_FILA) 
+  using index  
+  tablespace PCLUB_DATA 
+  pctfree 10 
+  initrans 2 
+  maxtrans 255 
+  storage 
+  ( 
+    initial 64K 
+    minextents 1 
+    maxextents unlimited 
+  ); 
+alter table PCLUB.ADMPT_CANJE 
+  add foreign key (ADMPV_COD_CLI) 
+  references PCLUB.ADMPT_CLIENTE (ADMPV_COD_CLI); 
+ 
+ 
+  
+ 
+create table PCLUB.ADMPT_CANJE_DETALLE 
+( 
+  ADMPV_ID_CANJE    VARCHAR2(18) not null, 
+  ADMPV_ID_CANJESEC VARCHAR2(10) not null, 
+  ADMPN_ID_FILA     NUMBER not null, 
+  ADMPV_ID_PROCLA   VARCHAR2(15) not null, 
+  ADMPV_DESC        VARCHAR2(50), 
+  ADMPV_NOM_CAMP    VARCHAR2(200), 
+  ADMPN_PUNTOS      NUMBER, 
+  ADMPN_PAGO        NUMBER, 
+  ADMPN_CANTIDAD    NUMBER, 
+  ADMPV_COD_TPOPR   VARCHAR2(2), 
+  ADMPN_COD_SERVC   NUMBER, 
+  ADMPN_MNT_RECAR   NUMBER, 
+  ADMPC_ESTADO      CHAR(1) 
+) 
+tablespace PCLUB_DATA 
+  pctfree 10 
+  initrans 1 
+  maxtrans 255 
+  storage 
+  ( 
+    initial 64K 
+    minextents 1 
+    maxextents unlimited 
+  ); 
+alter table PCLUB.ADMPT_CANJE_DETALLE 
+  add constraint PK_ADMPT_CANJE_DETALLE primary key (ADMPV_ID_CANJE, ADMPV_ID_CANJESEC) 
+  using index  
+  tablespace PCLUB_DATA 
+  pctfree 10 
+  initrans 2 
+  maxtrans 255 
+  storage 
+  ( 
+    initial 64K 
+    minextents 1 
+    maxextents unlimited 
+  ); 
+ 
+ 
+  
+ 
+create table PCLUB.ADMPT_CANJEDT_KARDEX 
+( 
+  ADMPV_ID_CANJE    VARCHAR2(18) not null, 
+  ADMPN_ID_KARDEX   NUMBER not null, 
+  ADMPV_ID_CANJESEC VARCHAR2(10) not null, 
+  ADMPN_PUNTOS      NUMBER 
+) 
+tablespace PCLUB_DATA 
+  pctfree 10 
+  initrans 1 
+  maxtrans 255 
+  storage 
+  ( 
+    initial 64K 
+    minextents 1 
+    maxextents unlimited 
+  ); 
+ 
+ 
+  
+ 
+create table PCLUB.ADMPT_CAT_CLIENTE 
+( 
+  ADMPN_COD_CATCLI NUMBER not null, 
+  ADMPV_COD_TPOCL  VARCHAR2(2), 
+  ADMPV_DESC       VARCHAR2(50), 
+  ADMPC_TIPO       CHAR(1), 
+  ADMPN_TME_PUNTO  NUMBER, 
+  ADMPV_OPER_INI   VARCHAR2(3), 
+  ADMPV_OPER_FIN   VARCHAR2(3), 
+  ADMPN_LIM_INF    NUMBER, 
+  ADMPN_LIM_SUP    NUMBER, 
+  ADMPC_ESTADO     CHAR(1), 
+  ADMPN_CXPT_PPAG  NUMBER, 
+  ADMPN_CXPT_CFIJ  NUMBER, 
+  ADMPN_CXPT_CADI  NUMBER 
+) 
+tablespace PCLUB_DATA 
+  pctfree 10 
+  initrans 1 
+  maxtrans 255 
+  storage 
+  ( 
+    initial 64K 
+    minextents 1 
+    maxextents unlimited 
+  ); 
+alter table PCLUB.ADMPT_CAT_CLIENTE 
+  add constraint PK_ADMPT_CAT_CLIENTE primary key (ADMPN_COD_CATCLI) 
+  using index  
+  tablespace PCLUB_DATA 
+  pctfree 10 
+  initrans 2 
+  maxtrans 255 
+  storage 
+  ( 
+    initial 64K 
+    minextents 1 
+    maxextents unlimited 
+  ); 
+ 
+ 
+  
+ 
+create table PCLUB.ADMPT_CLIENTEIB 
+( 
+  ADMPN_COD_CLI_IB NUMBER not null, 
+  ADMPV_TIPO_DOC   VARCHAR2(20) not null, 
+  ADMPV_NUM_DOC    VARCHAR2(20) not null, 
+  ADMPV_NUM_LINEA  VARCHAR2(20), 
+  ADMPV_COD_CLI    VARCHAR2(40), 
+  ADMPD_FEC_ACT    DATE, 
+  ADMPC_ESTADO     CHAR(1), 
+  ADMPN_FLG_DEBI   NUMBER(1), 
+  ADMPN_FLG_NUM    NUMBER(1), 
+  ADMPN_BONO_ACT   NUMBER(1), 
+  ADMPV_NOM_CLI    VARCHAR2(20), 
+  ADMPV_APE_CLI    VARCHAR2(20) 
+) 
+tablespace PCLUB_DATA 
+  pctfree 10 
+  initrans 1 
+  maxtrans 255 
+  storage 
+  ( 
+    initial 64K 
+    minextents 1 
+    maxextents unlimited 
+  ); 
+alter table PCLUB.ADMPT_CLIENTEIB 
+  add constraint PK_ADMPT_CLIENTEIB primary key (ADMPN_COD_CLI_IB) 
+  using index  
+  tablespace PCLUB_DATA 
+  pctfree 10 
+  initrans 2 
+  maxtrans 255 
+  storage 
+  ( 
+    initial 64K 
+    minextents 1 
+    maxextents unlimited 
+  ); 
+create index PCLUB.IX_ADMPT_CLIENTEIB_001 on PCLUB.ADMPT_CLIENTEIB (ADMPV_TIPO_DOC, ADMPV_NUM_DOC) 
+  tablespace PCLUB_INDX 
+  pctfree 10 
+  initrans 2 
+  maxtrans 255 
+  storage 
+  ( 
+    initial 64K 
+    minextents 1 
+    maxextents unlimited 
+  ); 
+ 
+ 
+  
+ 
+create table PCLUB.ADMPT_CLIREF_IB 
+( 
+  ADMPV_TIPO_DOC  VARCHAR2(20) not null, 
+  ADMPV_NUM_DOC   VARCHAR2(20) not null, 
+  ADMPV_NOMBRES   VARCHAR2(40), 
+  ADMPV_APELLIDOS VARCHAR2(80), 
+  ADMPV_NUM_LINEA VARCHAR2(20), 
+  ADMPV_NUM_REFER VARCHAR2(20), 
+  ADMPD_FEC_REGIS DATE, 
+  ADMPV_IP_REGIS  VARCHAR2(20) 
+) 
+tablespace PCLUB_DATA 
+  pctfree 10 
+  initrans 1 
+  maxtrans 255 
+  storage 
+  ( 
+    initial 64K 
+    minextents 1 
+    maxextents unlimited 
+  ); 
+alter table PCLUB.ADMPT_CLIREF_IB 
+  add constraint PK_ADMPT_CLIREF_IB primary key (ADMPV_TIPO_DOC, ADMPV_NUM_DOC) 
+  using index  
+  tablespace PCLUB_DATA 
+  pctfree 10 
+  initrans 2 
+  maxtrans 255 
+  storage 
+  ( 
+    initial 64K 
+    minextents 1 
+    maxextents unlimited 
+  ); 
+ 
+ 
+  
+ 
+create table PCLUB.ADMPT_CONCEPTO 
+( 
+  ADMPV_COD_CPTO  VARCHAR2(2) not null, 
+  ADMPV_DESC      VARCHAR2(50), 
+  ADMPC_ESTADO    CHAR(1), 
+  ADMPV_NOM_ARCH  VARCHAR2(50), 
+  ADMPN_PER_CADU  NUMBER, 
+  ADMPC_TPO_PUNTO CHAR(1) 
+) 
+tablespace PCLUB_DATA 
+  pctfree 10 
+  initrans 1 
+  maxtrans 255 
+  storage 
+  ( 
+    initial 64K 
+    minextents 1 
+    maxextents unlimited 
+  ); 
+alter table PCLUB.ADMPT_CONCEPTO 
+  add constraint PK_ADMPT_CONCEPTO primary key (ADMPV_COD_CPTO) 
+  using index  
+  tablespace PCLUB_DATA 
+  pctfree 10 
+  initrans 2 
+  maxtrans 255 
+  storage 
+  ( 
+    initial 64K 
+    minextents 1 
+    maxextents unlimited 
+  ); 
+ 
+ 
+  
+ 
+create table PCLUB.ADMPT_EXP_PROXRCO_CC 
+( 
+  ADMPN_ID_FILA   NUMBER not null, 
+  ADMPV_COD_CLI   VARCHAR2(40), 
+  ADMPC_TIPO      CHAR(1), 
+  ADMPN_COD_CONTR NUMBER(22), 
+  ADMPN_PUNTOS    NUMBER, 
+  ADMPN_EQUIV     NUMBER, 
+  ADMPD_FEC_OPER  DATE, 
+  ADMPV_NOM_ARCH  VARCHAR2(150) 
+) 
+tablespace PCLUB_DATA 
+  pctfree 10 
+  initrans 1 
+  maxtrans 255 
+  storage 
+  ( 
+    initial 64K 
+    minextents 1 
+    maxextents unlimited 
+  ); 
+alter table PCLUB.ADMPT_EXP_PROXRCO_CC 
+  add constraint PK_ADMPT_EXP_PROXRCO_CC primary key (ADMPN_ID_FILA) 
+  using index  
+  tablespace PCLUB_DATA 
+  pctfree 10 
+  initrans 2 
+  maxtrans 255 
+  storage 
+  ( 
+    initial 64K 
+    minextents 1 
+    maxextents unlimited 
+  ); 
+ 
+ 
+  
+ 
+create table PCLUB.ADMPT_EXP_PUNTOS_IB_BONUS 
+( 
+  ADMPN_ID_FILA  NUMBER not null, 
+  ADMPV_TIPO_DOC VARCHAR2(20), 
+  ADMPV_NUM_DOC  VARCHAR2(20), 
+  ADMPN_PUNTOS   NUMBER 
+) 
+tablespace PCLUB_DATA 
+  pctfree 10 
+  initrans 1 
+  maxtrans 255 
+  storage 
+  ( 
+    initial 64K 
+    minextents 1 
+    maxextents unlimited 
+  ); 
+alter table PCLUB.ADMPT_EXP_PUNTOS_IB_BONUS 
+  add constraint PK_ADMPT_EXP_PUNTOS_IB_BON primary key (ADMPN_ID_FILA) 
+  using index  
+  tablespace PCLUB_DATA 
+  pctfree 10 
+  initrans 2 
+  maxtrans 255 
+  storage 
+  ( 
+    initial 64K 
+    minextents 1 
+    maxextents unlimited 
+  ); 
+ 
+ 
+  
+ 
+create table PCLUB.ADMPT_EXP_TELEVNT_CC 
+( 
+  ADMPN_ID_FILA   NUMBER not null, 
+  ADMPV_COD_CLI   VARCHAR2(40), 
+  ADMPN_COD_CONTR NUMBER(22), 
+  ADMPN_PUNTOS    NUMBER, 
+  ADMPD_FEC_OPER  DATE, 
+  ADMPV_NOM_ARCH  VARCHAR2(150) 
+) 
+tablespace PCLUB_DATA 
+  pctfree 10 
+  initrans 1 
+  maxtrans 255 
+  storage 
+  ( 
+    initial 64K 
+    minextents 1 
+    maxextents unlimited 
+  ); 
+alter table PCLUB.ADMPT_EXP_TELEVNT_CC 
+  add constraint PK_ADMPT_EXP_TELEVNT_CC primary key (ADMPN_ID_FILA) 
+  using index  
+  tablespace PCLUB_DATA 
+  pctfree 10 
+  initrans 2 
+  maxtrans 255 
+  storage 
+  ( 
+    initial 64K 
+    minextents 1 
+    maxextents unlimited 
+  ); 
+ 
+ 
+  
+ 
+create table PCLUB.ADMPT_IMP_ACCAMO_IB 
+( 
+  ADMPN_ID_FILA    NUMBER not null, 
+  ADMPC_COD_TRANS  CHAR(3), 
+  ADMPV_TIPO_DOC   VARCHAR2(20), 
+  ADMPV_NUM_DOC    VARCHAR2(20), 
+  ADMPV_NOM_PRI    VARCHAR2(20), 
+  ADMPV_APE_MAT    VARCHAR2(40), 
+  ADMPV_NUM_LINEA  VARCHAR2(20), 
+  ADMPD_FEC_ACT    DATE, 
+  ADMPD_FEC_OPER   DATE, 
+  ADMPV_NOM_ARCH   VARCHAR2(150), 
+  ADMPC_COD_ERROR  CHAR(3), 
+  ADMPV_MSJE_ERROR VARCHAR2(100), 
+  ADMPV_NOM_SEG    VARCHAR2(20), 
+  ADMPV_APE_PAT    VARCHAR2(40), 
+  ADMPC_ACEP_BONO  CHAR(1) 
+) 
+tablespace PCLUB_DATA 
+  pctfree 10 
+  initrans 1 
+  maxtrans 255 
+  storage 
+  ( 
+    initial 64K 
+    minextents 1 
+    maxextents unlimited 
+  ); 
+alter table PCLUB.ADMPT_IMP_ACCAMO_IB 
+  add constraint PK_ADMPT_IMP_ACCAMO_IB primary key (ADMPN_ID_FILA) 
+  using index  
+  tablespace PCLUB_DATA 
+  pctfree 10 
+  initrans 2 
+  maxtrans 255 
+  storage 
+  ( 
+    initial 64K 
+    minextents 1 
+    maxextents unlimited 
+  ); 
+ 
+ 
+  
+ 
+create table PCLUB.ADMPT_IMP_ALTACLI_CC 
+( 
+  ADMPN_ID_FILA   NUMBER not null, 
+  ADMPV_TIPO_DOC  VARCHAR2(20), 
+  ADMPV_NUM_DOC   VARCHAR2(20), 
+  ADMPV_NOM_CLI   VARCHAR2(30), 
+  ADMPV_APE_CLI   VARCHAR2(30), 
+  ADMPC_SEXO      CHAR(1), 
+  ADMPV_EST_CIVIL VARCHAR2(20), 
+  ADMPV_COD_CLI   VARCHAR2(40), 
+  ADMPV_EMAIL     VARCHAR2(80), 
+  ADMPV_PROV      VARCHAR2(30), 
+  ADMPV_DEPA      VARCHAR2(40), 
+  ADMPV_DIST      VARCHAR2(200), 
+  ADMPD_FEC_ACT   DATE, 
+  ADMPV_CICL_FACT VARCHAR2(2), 
+  ADMPD_FEC_OPER  DATE, 
+  ADMPV_NOM_ARCH  VARCHAR2(150) 
+) 
+tablespace PCLUB_DATA 
+  pctfree 10 
+  initrans 1 
+  maxtrans 255 
+  storage 
+  ( 
+    initial 64K 
+    minextents 1 
+    maxextents unlimited 
+  ); 
+alter table PCLUB.ADMPT_IMP_ALTACLI_CC 
+  add constraint PK_ADMPT_IMP_ALTACLI_CC primary key (ADMPN_ID_FILA) 
+  using index  
+  tablespace PCLUB_DATA 
+  pctfree 10 
+  initrans 2 
+  maxtrans 255 
+  storage 
+  ( 
+    initial 64K 
+    minextents 1 
+    maxextents unlimited 
+  ); 
+ 
+ 
+  
+ 
+create table PCLUB.ADMPT_IMP_ALTACON_CC 
+( 
+  ADMPN_ID_FILA   NUMBER not null, 
+  ADMPV_COD_CLI   VARCHAR2(40), 
+  ADMPN_COD_CONTR NUMBER(22), 
+  ADMPD_FCH_ACT   DATE, 
+  ADMPV_NOM_CAMP  VARCHAR2(200), 
+  ADMPV_PLNTARIF  VARCHAR2(50), 
+  ADMPV_VIGACUE   VARCHAR2(100), 
+  ADMPD_FEC_OPER  DATE, 
+  ADMPV_NOM_ARCH  VARCHAR2(150) 
+) 
+tablespace PCLUB_DATA 
+  pctfree 10 
+  initrans 1 
+  maxtrans 255 
+  storage 
+  ( 
+    initial 64K 
+    minextents 1 
+    maxextents unlimited 
+  ); 
+alter table PCLUB.ADMPT_IMP_ALTACON_CC 
+  add constraint PK_ADMPT_IMP_ALTACON_CC primary key (ADMPN_ID_FILA) 
+  using index  
+  tablespace PCLUB_DATA 
+  pctfree 10 
+  initrans 2 
+  maxtrans 255 
+  storage 
+  ( 
+    initial 64K 
+    minextents 1 
+    maxextents unlimited 
+  ); 
+ 
+ 
+  
+ 
+create table PCLUB.ADMPT_IMP_BAJACLI_CC 
+( 
+  ADMPN_ID_FILA  NUMBER not null, 
+  ADMPV_COD_CLI  VARCHAR2(40), 
+  ADMPD_FCH_BAJA DATE, 
+  ADMPD_FEC_OPER DATE, 
+  ADMPV_NOM_ARCH VARCHAR2(150) 
+) 
+tablespace PCLUB_DATA 
+  pctfree 10 
+  initrans 1 
+  maxtrans 255 
+  storage 
+  ( 
+    initial 64K 
+    minextents 1 
+    maxextents unlimited 
+  ); 
+alter table PCLUB.ADMPT_IMP_BAJACLI_CC 
+  add constraint PK_ADMPT_IMP_BAJACLI_CC primary key (ADMPN_ID_FILA) 
+  using index  
+  tablespace PCLUB_DATA 
+  pctfree 10 
+  initrans 2 
+  maxtrans 255 
+  storage 
+  ( 
+    initial 64K 
+    minextents 1 
+    maxextents unlimited 
+  ); 
+ 
+ 
+  
+ 
+create table PCLUB.ADMPT_IMP_BONTRAN_CC 
+( 
+  ADMPN_ID_FILA  NUMBER not null, 
+  ADMPV_TIPO_DOC VARCHAR2(20), 
+  ADMPV_NUM_DOC  VARCHAR2(20), 
+  ADMPN_PUNTOS   NUMBER, 
+  ADMPD_FEC_OPER DATE, 
+  ADMPV_NOM_ARCH VARCHAR2(150) 
+) 
+tablespace PCLUB_DATA 
+  pctfree 10 
+  initrans 1 
+  maxtrans 255 
+  storage 
+  ( 
+    initial 64K 
+    minextents 1 
+    maxextents unlimited 
+  ); 
+alter table PCLUB.ADMPT_IMP_BONTRAN_CC 
+  add constraint PK_ADMPT_IMP_BONTRAN_CC primary key (ADMPN_ID_FILA) 
+  using index  
+  tablespace PCLUB_DATA 
+  pctfree 10 
+  initrans 2 
+  maxtrans 255 
+  storage 
+  ( 
+    initial 64K 
+    minextents 1 
+    maxextents unlimited 
+  ); 
+ 
+ 
+  
+ 
+create table PCLUB.ADMPT_IMP_CMBTIT_CC 
+( 
+  ADMPN_ID_FILA    NUMBER not null, 
+  ADMPV_TIPO_DOC   VARCHAR2(20), 
+  ADMPV_NUM_DOC    VARCHAR2(20), 
+  ADMPV_NOM_CLI    VARCHAR2(30), 
+  ADMPV_APE_CLI    VARCHAR2(30), 
+  ADMPC_SEXO       CHAR(1), 
+  ADMPV_EST_CIVIL  VARCHAR2(20), 
+  ADMPV_COD_CLI    VARCHAR2(40), 
+  ADMPV_EMAIL      VARCHAR2(80), 
+  ADMPV_PROV       VARCHAR2(30), 
+  ADMPV_DEPA       VARCHAR2(40), 
+  ADMPV_DIST       VARCHAR2(200), 
+  ADMPD_FEC_ACT    DATE, 
+  ADMPV_CICL_FACT  VARCHAR2(2), 
+  ADMPD_FEC_OPER   DATE, 
+  ADMPV_NOM_ARCH   VARCHAR2(150), 
+  ADMPC_COD_ERROR  CHAR(2), 
+  ADMPV_MSJE_ERROR VARCHAR2(100) 
+) 
+tablespace PCLUB_DATA 
+  pctfree 10 
+  initrans 1 
+  maxtrans 255 
+  storage 
+  ( 
+    initial 64K 
+    minextents 1 
+    maxextents unlimited 
+  ); 
+alter table PCLUB.ADMPT_IMP_CMBTIT_CC 
+  add constraint PK_ADMPT_IMP_CMBTIT_CC primary key (ADMPN_ID_FILA) 
+  using index  
+  tablespace PCLUB_DATA 
+  pctfree 10 
+  initrans 2 
+  maxtrans 255 
+  storage 
+  ( 
+    initial 64K 
+    minextents 1 
+    maxextents unlimited 
+  ); 
+ 
+ 
+  
+ 
+create table PCLUB.ADMPT_IMP_DEBITO_IB 
+( 
+  ADMPN_ID_FILA    NUMBER not null, 
+  ADMPV_COD_CLI    VARCHAR2(40), 
+  ADMPV_NUM_FACT   VARCHAR2(20), 
+  ADMPN_MONTO_FAC  NUMBER, 
+  ADMPN_MONTO_PAG  NUMBER, 
+  ADMPN_MONTO_DEB  NUMBER, 
+  ADMPD_FEC_OPER   DATE, 
+  ADMPV_NOM_ARCH   VARCHAR2(150), 
+  ADMPC_COD_ERROR  CHAR(3), 
+  ADMPV_MSJE_ERROR VARCHAR2(100) 
+) 
+tablespace PCLUB_DATA 
+  pctfree 10 
+  initrans 1 
+  maxtrans 255 
+  storage 
+  ( 
+    initial 64K 
+    minextents 1 
+    maxextents unlimited 
+  ); 
+alter table PCLUB.ADMPT_IMP_DEBITO_IB 
+  add constraint PK_ADMPT_IMP_DEBITO_IB primary key (ADMPN_ID_FILA) 
+  using index  
+  tablespace PCLUB_DATA 
+  pctfree 10 
+  initrans 2 
+  maxtrans 255 
+  storage 
+  ( 
+    initial 64K 
+    minextents 1 
+    maxextents unlimited 
+  ); 
+ 
+ 
+  
+ 
+create table PCLUB.ADMPT_IMP_FACADE_IB 
+( 
+  ADMPN_ID_FILA    NUMBER not null, 
+  ADMPC_COD_TRANS  CHAR(3), 
+  ADMPV_TIPO_DOC   VARCHAR2(20), 
+  ADMPV_NUM_DOC    VARCHAR2(20), 
+  ADMPC_SIGNO      CHAR(1), 
+  ADMPN_PUNTOS     NUMBER, 
+  ADMPV_NOM_CAMP   VARCHAR2(200), 
+  ADMPD_FEC_ACUM   DATE, 
+  ADMPD_FEC_OPER   DATE, 
+  ADMPV_NOM_ARCH   VARCHAR2(150), 
+  ADMPC_COD_ERROR  CHAR(3), 
+  ADMPV_MSJE_ERROR VARCHAR2(100) 
+) 
+tablespace PCLUB_DATA 
+  pctfree 10 
+  initrans 1 
+  maxtrans 255 
+  storage 
+  ( 
+    initial 64K 
+    minextents 1 
+    maxextents unlimited 
+  ); 
+alter table PCLUB.ADMPT_IMP_FACADE_IB 
+  add constraint PK_ADMPT_IMP_FACADE_IB primary key (ADMPN_ID_FILA) 
+  using index  
+  tablespace PCLUB_DATA 
+  pctfree 10 
+  initrans 2 
+  maxtrans 255 
+  storage 
+  ( 
+    initial 64K 
+    minextents 1 
+    maxextents unlimited 
+  ); 
+ 
+ 
+  
+ 
+create table PCLUB.ADMPT_IMP_NOFACT_CC 
+( 
+  ADMPN_ID_FILA  NUMBER not null, 
+  ADMPV_COD_CLI  VARCHAR2(40), 
+  ADMPD_FCH_PROC DATE, 
+  ADMPD_FEC_OPER DATE, 
+  ADMPV_NOM_ARCH VARCHAR2(150) 
+) 
+tablespace PCLUB_DATA 
+  pctfree 10 
+  initrans 1 
+  maxtrans 255 
+  storage 
+  ( 
+    initial 64K 
+    minextents 1 
+    maxextents unlimited 
+  ); 
+alter table PCLUB.ADMPT_IMP_NOFACT_CC 
+  add constraint PK_ADMPT_IMP_NOFACT_CC primary key (ADMPN_ID_FILA) 
+  using index  
+  tablespace PCLUB_DATA 
+  pctfree 10 
+  initrans 2 
+  maxtrans 255 
+  storage 
+  ( 
+    initial 64K 
+    minextents 1 
+    maxextents unlimited 
+  ); 
+ 
+ 
+  
+ 
+create table PCLUB.ADMPT_IMP_PAGO_CC 
+( 
+  ADMPN_ID_FILA    NUMBER not null, 
+  ADMPV_COD_CLI    VARCHAR2(40), 
+  ADMPV_PERIODO    VARCHAR2(6), 
+  ADMPN_DIAS_VENC  NUMBER, 
+  ADMPN_MNT_CGOFIJ NUMBER, 
+  ADMPN_MNT_ADIC   NUMBER, 
+  ADMPN_ACGOFIJ    NUMBER, 
+  ADMPC_SGACGOFIJ  CHAR(1), 
+  ADMPN_AJUADIC    NUMBER, 
+  ADMPC_SGAJUADI   CHAR(1), 
+  ADMPD_FEC_OPER   DATE, 
+  ADMPV_NOM_ARCH   VARCHAR2(150), 
+  ADMPN_PUNTOS     NUMBER 
+) 
+tablespace PCLUB_DATA 
+  pctfree 10 
+  initrans 1 
+  maxtrans 255 
+  storage 
+  ( 
+    initial 64K 
+    minextents 1 
+    maxextents unlimited 
+  ); 
+alter table PCLUB.ADMPT_IMP_PAGO_CC 
+  add constraint PK_ADMPT_IMP_PAGO_CC primary key (ADMPN_ID_FILA) 
+  using index  
+  tablespace PCLUB_DATA 
+  pctfree 10 
+  initrans 2 
+  maxtrans 255 
+  storage 
+  ( 
+    initial 64K 
+    minextents 1 
+    maxextents unlimited 
+  ); 
+ 
+ 
+  
+ 
+create table PCLUB.ADMPT_IMP_PROM 
+( 
+  ADMPN_ID_FILA    NUMBER not null, 
+  ADMPV_COD_CLI    VARCHAR2(40), 
+  ADMPV_NOM_PROM   VARCHAR2(150), 
+  ADMPV_PERIODO    VARCHAR2(6), 
+  ADMPN_CONTR      NUMBER, 
+  ADMPD_FEC_REG    DATE, 
+  ADMPV_HORAMIN    VARCHAR2(5), 
+  ADMPN_PUNTOS     NUMBER, 
+  ADMPD_FEC_OPER   DATE, 
+  ADMPV_NOM_ARCH   VARCHAR2(150), 
+  ADMPC_COD_ERROR  CHAR(2), 
+  ADMPV_MSJE_ERROR VARCHAR2(100) 
+) 
+tablespace PCLUB_DATA 
+  pctfree 10 
+  initrans 1 
+  maxtrans 255 
+  storage 
+  ( 
+    initial 64K 
+    minextents 1 
+    maxextents unlimited 
+  ); 
+alter table PCLUB.ADMPT_IMP_PROM 
+  add constraint PK_ADMPT_IMP_PROMON primary key (ADMPN_ID_FILA) 
+  using index  
+  tablespace PCLUB_DATA 
+  pctfree 10 
+  initrans 2 
+  maxtrans 255 
+  storage 
+  ( 
+    initial 64K 
+    minextents 1 
+    maxextents unlimited 
+  ); 
+ 
+ 
+  
+ 
+create table PCLUB.ADMPT_IMP_PRXRCON_CC 
+( 
+  ADMPN_ID_FILA   NUMBER not null, 
+  ADMPV_COD_CLI   VARCHAR2(40), 
+  ADMPC_TIPO      CHAR(1), 
+  ADMPN_COD_CONTR NUMBER(22), 
+  ADMPD_FEC_OPER  DATE, 
+  ADMPV_NOM_ARCH  VARCHAR2(150) 
+) 
+tablespace PCLUB_DATA 
+  pctfree 10 
+  initrans 1 
+  maxtrans 255 
+  storage 
+  ( 
+    initial 64K 
+    minextents 1 
+    maxextents unlimited 
+  ); 
+alter table PCLUB.ADMPT_IMP_PRXRCON_CC 
+  add constraint PK_ADMPT_IMP_PRXRCON_CC primary key (ADMPN_ID_FILA) 
+  using index  
+  tablespace PCLUB_DATA 
+  pctfree 10 
+  initrans 2 
+  maxtrans 255 
+  storage 
+  ( 
+    initial 64K 
+    minextents 1 
+    maxextents unlimited 
+  ); 
+ 
+ 
+  
+ 
+create table PCLUB.ADMPT_IMP_REGULARIZA 
+( 
+  ADMPN_ID_FILA    NUMBER not null, 
+  ADMPV_COD_CLI    VARCHAR2(40), 
+  ADMPV_NOM_REGUL  VARCHAR2(150), 
+  ADMPV_PERIODO    VARCHAR2(6), 
+  ADMPN_COD_CONTR  NUMBER(22), 
+  ADMPD_FEC_REG    DATE, 
+  ADMPV_HOR_MIN    VARCHAR2(5), 
+  ADMPN_PUNTOS     NUMBER, 
+  ADMPD_FEC_OPER   DATE, 
+  ADMPV_NOM_ARCH   VARCHAR2(150), 
+  ADMPC_COD_ERROR  CHAR(2), 
+  ADMPV_MSJE_ERROR VARCHAR2(100) 
+) 
+tablespace PCLUB_DATA 
+  pctfree 10 
+  initrans 1 
+  maxtrans 255 
+  storage 
+  ( 
+    initial 64K 
+    minextents 1 
+    maxextents unlimited 
+  ); 
+alter table PCLUB.ADMPT_IMP_REGULARIZA 
+  add constraint PK_ADMPT_IMP_REGULARIZA primary key (ADMPN_ID_FILA) 
+  using index  
+  tablespace PCLUB_DATA 
+  pctfree 10 
+  initrans 2 
+  maxtrans 255 
+  storage 
+  ( 
+    initial 64K 
+    minextents 1 
+    maxextents unlimited 
+  ); 
+ 
+ 
+  
+ 
+create table PCLUB.ADMPT_IMP_RENCONT_CC 
+( 
+  ADMPN_ID_FILA   NUMBER not null, 
+  ADMPV_COD_CLI   VARCHAR2(40), 
+  ADMPD_FEC_REN   DATE, 
+  ADMPV_NUM_LINEA VARCHAR2(20), 
+  ADMPN_COD_CONTR NUMBER(22), 
+  ADMPD_FEC_OPER  DATE, 
+  ADMPV_NOM_ARCH  VARCHAR2(150) 
+) 
+tablespace PCLUB_DATA 
+  pctfree 10 
+  initrans 1 
+  maxtrans 255 
+  storage 
+  ( 
+    initial 64K 
+    minextents 1 
+    maxextents unlimited 
+  ); 
+alter table PCLUB.ADMPT_IMP_RENCONT_CC 
+  add constraint PK_ADMPT_IMP_RENCONT_CC primary key (ADMPN_ID_FILA) 
+  using index  
+  tablespace PCLUB_DATA 
+  pctfree 10 
+  initrans 2 
+  maxtrans 255 
+  storage 
+  ( 
+    initial 64K 
+    minextents 1 
+    maxextents unlimited 
+  ); 
+ 
+ 
+  
+create table PCLUB.ADMPT_KARDEX 
+( 
+  ADMPN_ID_KARDEX  NUMBER not null, 
+  ADMPN_COD_CLI_IB NUMBER, 
+  ADMPV_COD_CLI    VARCHAR2(40), 
+  ADMPV_COD_CPTO   VARCHAR2(2), 
+  ADMPD_FEC_TRANS  DATE, 
+  ADMPN_PUNTOS     NUMBER, 
+  ADMPV_NOM_ARCH   VARCHAR2(150), 
+  ADMPC_TPO_OPER   CHAR(1), 
+  ADMPC_TPO_PUNTO  CHAR(1), 
+  ADMPN_SLD_PUNTO  NUMBER, 
+  ADMPC_ESTADO     CHAR(1) 
+) 
+tablespace PCLUB_DATA 
+  pctfree 10 
+  initrans 1 
+  maxtrans 255 
+  storage 
+  ( 
+    initial 64K 
+    minextents 1 
+    maxextents unlimited 
+  ); 
+alter table PCLUB.ADMPT_KARDEX 
+  add constraint PK_ADMPT_KARDEX primary key (ADMPN_ID_KARDEX) 
+  using index  
+  tablespace PCLUB_DATA 
+  pctfree 10 
+  initrans 2 
+  maxtrans 255 
+  storage 
+  ( 
+    initial 64K 
+    minextents 1 
+    maxextents unlimited 
+  ); 
+create index PCLUB.IX_ADMPT_KARDEX_001 on PCLUB.ADMPT_KARDEX (ADMPN_COD_CLI_IB) 
+  tablespace PCLUB_INDX 
+  pctfree 10 
+  initrans 2 
+  maxtrans 255 
+  storage 
+  ( 
+    initial 64K 
+    minextents 1 
+    maxextents unlimited 
+  ); 
+create index PCLUB.IX_ADMPT_KARDEX_002 on PCLUB.ADMPT_KARDEX (ADMPV_COD_CLI) 
+  tablespace PCLUB_INDX 
+  pctfree 10 
+  initrans 2 
+  maxtrans 255 
+  storage 
+  ( 
+    initial 64K 
+    minextents 1 
+    maxextents unlimited 
+  ); 
+ 
+ 
+  
+ 
+create table PCLUB.ADMPT_PARAMSIST 
+( 
+  ADMPC_COD_PARAM CHAR(3) not null, 
+  ADMPV_DESC      VARCHAR2(50), 
+  ADMPV_VALOR     VARCHAR2(50) 
+) 
+tablespace PCLUB_DATA 
+  pctfree 10 
+  initrans 1 
+  maxtrans 255 
+  storage 
+  ( 
+    initial 64K 
+    minextents 1 
+    maxextents unlimited 
+  ); 
+alter table PCLUB.ADMPT_PARAMSIST 
+  add constraint PK_ADMPT_PARAMSIST primary key (ADMPC_COD_PARAM) 
+  using index  
+  tablespace PCLUB_DATA 
+  pctfree 10 
+  initrans 2 
+  maxtrans 255 
+  storage 
+  ( 
+    initial 64K 
+    minextents 1 
+    maxextents unlimited 
+  ); 
+ 
+ 
+  
+ 
+create table PCLUB.ADMPT_PREMIO 
+( 
+  ADMPV_ID_PROCLA VARCHAR2(15) not null, 
+  ADMPV_COD_TPOPR VARCHAR2(2), 
+  ADMPV_COD_TPOCL VARCHAR2(2), 
+  ADMPV_DESC      VARCHAR2(50), 
+  ADMPN_PUNTOS    NUMBER, 
+  ADMPN_PAGO      NUMBER, 
+  ADMPC_ESTADO    CHAR(1), 
+  ADMPN_COD_SERVC NUMBER, 
+  ADMPN_MNT_RECAR NUMBER, 
+  ADMPC_APL_PUNTO CHAR(1) 
+) 
+tablespace PCLUB_DATA 
+  pctfree 10 
+  initrans 1 
+  maxtrans 255 
+  storage 
+  ( 
+    initial 64K 
+    minextents 1 
+    maxextents unlimited 
+  ); 
+alter table PCLUB.ADMPT_PREMIO 
+  add constraint PK_ADMPT_PREMIO primary key (ADMPV_ID_PROCLA) 
+  using index  
+  tablespace PCLUB_DATA 
+  pctfree 10 
+  initrans 2 
+  maxtrans 255 
+  storage 
+  ( 
+    initial 64K 
+    minextents 1 
+    maxextents unlimited 
+  ); 
+ 
+ 
+  
+ 
+create table PCLUB.ADMPT_SALDOS_CLIENTE 
+( 
+  ADMPN_ID_SALDO   NUMBER not null, 
+  ADMPV_COD_CLI    VARCHAR2(40), 
+  ADMPN_COD_CLI_IB NUMBER, 
+  ADMPN_SALDO_CC   NUMBER, 
+  ADMPN_SALDO_IB   NUMBER, 
+  ADMPC_ESTPTO_CC  CHAR(1), 
+  ADMPC_ESTPTO_IB  CHAR(1) 
+) 
+tablespace PCLUB_DATA 
+  pctfree 10 
+  initrans 1 
+  maxtrans 255 
+  storage 
+  ( 
+    initial 64K 
+    minextents 1 
+    maxextents unlimited 
+  ); 
+alter table PCLUB.ADMPT_SALDOS_CLIENTE 
+  add constraint PK_ADMPT_SALDOS_CLIENTE primary key (ADMPN_ID_SALDO) 
+  disable; 
+create index PCLUB.IX_ADMPT_SALDOS_CLIENTE_001 on PCLUB.ADMPT_SALDOS_CLIENTE (ADMPN_COD_CLI_IB) 
+  tablespace PCLUB_INDX 
+  pctfree 10 
+  initrans 2 
+  maxtrans 255 
+  storage 
+  ( 
+    initial 64K 
+    minextents 1 
+    maxextents unlimited 
+  ); 
+create index PCLUB.IX_ADMPT_SALDOS_CLIENTE_002 on PCLUB.ADMPT_SALDOS_CLIENTE (ADMPV_COD_CLI) 
+  tablespace PCLUB_INDX 
+  pctfree 10 
+  initrans 2 
+  maxtrans 255 
+  storage 
+  ( 
+    initial 64K 
+    minextents 1 
+    maxextents unlimited 
+  ); 
+ 
+ 
+  
+ 
+create table PCLUB.ADMPT_SEG_CLIENTE 
+( 
+  ADMPV_COD_SEGCLI VARCHAR2(2) not null, 
+  ADMPV_COD_TPOCL  VARCHAR2(2), 
+  ADMPV_DESC       VARCHAR2(50), 
+  ADMPC_ESTADO     CHAR(1) 
+) 
+tablespace PCLUB_DATA 
+  pctfree 10 
+  initrans 1 
+  maxtrans 255 
+  storage 
+  ( 
+    initial 64K 
+    minextents 1 
+    maxextents unlimited 
+  ); 
+alter table PCLUB.ADMPT_SEG_CLIENTE 
+  add constraint PK_ADMPT_SEG_CLIENTE primary key (ADMPV_COD_SEGCLI) 
+  using index  
+  tablespace PCLUB_DATA 
+  pctfree 10 
+  initrans 2 
+  maxtrans 255 
+  storage 
+  ( 
+    initial 64K 
+    minextents 1 
+    maxextents unlimited 
+  ); 
+ 
+ 
+  
+ 
+create table PCLUB.ADMPT_SEG_PREMIO 
+( 
+  ADMPV_COD_SEGCLI VARCHAR2(2) not null, 
+  ADMPV_ID_PROCLA  VARCHAR2(15) not null, 
+  ADMPN_MNT_DSCTO  NUMBER, 
+  ADMPN_PUNTOS     NUMBER, 
+  ADMPC_ESTADO     CHAR(1), 
+  ADMPN_PAGO       NUMBER 
+) 
+tablespace PCLUB_DATA 
+  pctfree 10 
+  initrans 1 
+  maxtrans 255 
+  storage 
+  ( 
+    initial 64K 
+    minextents 1 
+    maxextents unlimited 
+  ); 
+ 
+ 
+  
+ 
+create table PCLUB.ADMPT_TIPO_CLIENTE 
+( 
+  ADMPV_COD_TPOCL VARCHAR2(2) not null, 
+  ADMPV_DESC      VARCHAR2(50), 
+  ADMPC_ESTADO    CHAR(1) 
+) 
+tablespace PCLUB_DATA 
+  pctfree 10 
+  initrans 1 
+  maxtrans 255 
+  storage 
+  ( 
+    initial 64K 
+    minextents 1 
+    maxextents unlimited 
+  ); 
+alter table PCLUB.ADMPT_TIPO_CLIENTE 
+  add constraint PK_ADMPT_TIPO_CLIENTE primary key (ADMPV_COD_TPOCL) 
+  using index  
+  tablespace PCLUB_DATA 
+  pctfree 10 
+  initrans 2 
+  maxtrans 255 
+  storage 
+  ( 
+    initial 64K 
+    minextents 1 
+    maxextents unlimited 
+  ); 
+ 
+ 
+  
+ 
+create table PCLUB.ADMPT_TIPO_DOC 
+( 
+  ADMPV_COD_TPDOC VARCHAR2(20) not null, 
+  ADMPV_DSC_DOCUM VARCHAR2(30), 
+  ADMPV_COD_EQUIV CHAR(1) 
+) 
+tablespace PCLUB_DATA 
+  pctfree 10 
+  initrans 1 
+  maxtrans 255 
+  storage 
+  ( 
+    initial 64K 
+    minextents 1 
+    maxextents unlimited 
+  ); 
+alter table PCLUB.ADMPT_TIPO_DOC 
+  add constraint PK_ADMPT_TIPO_DOC primary key (ADMPV_COD_TPDOC) 
+  using index  
+  tablespace PCLUB_DATA 
+  pctfree 10 
+  initrans 2 
+  maxtrans 255 
+  storage 
+  ( 
+    initial 64K 
+    minextents 1 
+    maxextents unlimited 
+  ); 
+ 
+ 
+  
+ 
+create table PCLUB.ADMPT_TIPO_PLAN 
+( 
+  ADMPN_COD_PLAN NUMBER not null, 
+  ADMPV_DES_PLAN VARCHAR2(30), 
+  ADMPN_COD_SERV NUMBER, 
+  ADMPN_COD_PAQ  NUMBER 
+) 
+tablespace PCLUB_DATA 
+  pctfree 10 
+  initrans 1 
+  maxtrans 255 
+  storage 
+  ( 
+    initial 64K 
+    minextents 1 
+    maxextents unlimited 
+  ); 
+alter table PCLUB.ADMPT_TIPO_PLAN 
+  add constraint PK_ADMPT_TIPO_PLAN primary key (ADMPN_COD_PLAN) 
+  using index  
+  tablespace PCLUB_DATA 
+  pctfree 10 
+  initrans 2 
+  maxtrans 255 
+  storage 
+  ( 
+    initial 64K 
+    minextents 1 
+    maxextents unlimited 
+  ); 
+ 
+ 
+  
+create table PCLUB.ADMPT_TIPO_PREMIO 
+( 
+  ADMPV_COD_TPOPR VARCHAR2(2) not null, 
+  ADMPV_DESC      VARCHAR2(50), 
+  ADMPC_ESTADO    CHAR(1) 
+) 
+tablespace PCLUB_DATA 
+  pctfree 10 
+  initrans 1 
+  maxtrans 255 
+  storage 
+  ( 
+    initial 64K 
+    minextents 1 
+    maxextents unlimited 
+  ); 
+alter table PCLUB.ADMPT_TIPO_PREMIO 
+  add constraint PK_ADMPT_TIPO_PREMIO primary key (ADMPV_COD_TPOPR) 
+  using index  
+  tablespace PCLUB_DATA 
+  pctfree 10 
+  initrans 2 
+  maxtrans 255 
+  storage 
+  ( 
+    initial 64K 
+    minextents 1 
+    maxextents unlimited 
+  ); 
+ 
+ 
+  
+ 
+create table PCLUB.ADMPT_TMP_ACCAMO_IB 
+( 
+  ADMPC_COD_TRANS  CHAR(3), 
+  ADMPV_TIPO_DOC   VARCHAR2(20), 
+  ADMPV_NUM_DOC    VARCHAR2(20), 
+  ADMPV_NOM_PRI    VARCHAR2(20), 
+  ADMPV_NOM_SEG    VARCHAR2(20), 
+  ADMPV_APE_PAT    VARCHAR2(40), 
+  ADMPV_APE_MAT    VARCHAR2(40), 
+  ADMPV_NUM_LINEA  VARCHAR2(20), 
+  ADMPD_FEC_ACT    DATE, 
+  ADMPC_ACEP_BONO  CHAR(1), 
+  ADMPD_FEC_OPER   DATE, 
+  ADMPV_NOM_ARCH   VARCHAR2(150), 
+  ADMPC_COD_ERROR  CHAR(3), 
+  ADMPV_MSJE_ERROR VARCHAR2(250) 
+) 
+tablespace PCLUB_DATA 
+  pctfree 10 
+  initrans 1 
+  maxtrans 255 
+  storage 
+  ( 
+    initial 64K 
+    minextents 1 
+    maxextents unlimited 
+  ); 
+ 
+ 
+  
+ 
+create table PCLUB.ADMPT_TMP_ALTACLI_CC 
+( 
+  ADMPV_TIPO_DOC   VARCHAR2(20), 
+  ADMPV_NUM_DOC    VARCHAR2(20), 
+  ADMPV_NOM_CLI    VARCHAR2(30), 
+  ADMPV_APE_CLI    VARCHAR2(30), 
+  ADMPC_SEXO       CHAR(1), 
+  ADMPV_EST_CIVIL  VARCHAR2(20), 
+  ADMPV_COD_CLI    VARCHAR2(40), 
+  ADMPV_EMAIL      VARCHAR2(80), 
+  ADMPV_PROV       VARCHAR2(30), 
+  ADMPV_DEPA       VARCHAR2(40), 
+  ADMPV_DIST       VARCHAR2(200), 
+  ADMPD_FEC_ACT    DATE, 
+  ADMPV_CICL_FACT  VARCHAR2(2), 
+  ADMPD_FEC_OPER   DATE, 
+  ADMPV_NOM_ARCH   VARCHAR2(150), 
+  ADMPV_COD_ERROR  CHAR(3), 
+  ADMPV_MSJE_ERROR VARCHAR2(250) 
+) 
+tablespace PCLUB_DATA 
+  pctfree 10 
+  initrans 1 
+  maxtrans 255 
+  storage 
+  ( 
+    initial 64K 
+    minextents 1 
+    maxextents unlimited 
+  ); 
+ 
+ 
+  
+ 
+create table PCLUB.ADMPT_TMP_BONAC 
+( 
+  ADMPN_COD_BONAC  NUMBER, 
+  ADMPV_TIPO_DOC   VARCHAR2(20), 
+  ADMPV_NUM_DOC    VARCHAR2(20), 
+  ADMPV_NOM_CLI    VARCHAR2(40), 
+  ADMPV_APE_CLI    VARCHAR2(40), 
+  ADMPV_NUM_LINEA  VARCHAR2(20), 
+  ADMPV_COD_ERROR  VARCHAR2(3), 
+  ADMPV_MSJE_ERROR VARCHAR2(250), 
+  ADMPD_FEC_REG    DATE 
+) 
+tablespace PCLUB_DATA 
+  pctfree 10 
+  initrans 1 
+  maxtrans 255 
+  storage 
+  ( 
+    initial 64K 
+    minextents 1 
+    maxextents unlimited 
+  ); 
+ 
+ 
+  
+ 
+create table PCLUB.ADMPT_TMP_CMBTIT_CC 
+( 
+  ADMPV_TIPO_DOC   VARCHAR2(20), 
+  ADMPV_NUM_DOC    VARCHAR2(20), 
+  ADMPV_NOM_CLI    VARCHAR2(30), 
+  ADMPV_APE_CLI    VARCHAR2(30), 
+  ADMPC_SEXO       CHAR(1), 
+  ADMPV_EST_CIVIL  VARCHAR2(20), 
+  ADMPV_COD_CLI    VARCHAR2(40), 
+  ADMPV_EMAIL      VARCHAR2(80), 
+  ADMPV_PROV       VARCHAR2(30), 
+  ADMPV_DEPA       VARCHAR2(40), 
+  ADMPV_DIST       VARCHAR2(200), 
+  ADMPD_FEC_ACT    DATE, 
+  ADMPV_CICL_FACT  VARCHAR2(2), 
+  ADMPD_FEC_OPER   DATE, 
+  ADMPV_NOM_ARCH   VARCHAR2(150), 
+  ADMPC_COD_ERROR  CHAR(2), 
+  ADMPV_MSJE_ERROR VARCHAR2(100) 
+) 
+tablespace PCLUB_DATA 
+  pctfree 10 
+  initrans 1 
+  maxtrans 255 
+  storage 
+  ( 
+    initial 64K 
+    minextents 1 
+    maxextents unlimited 
+  ); 
+ 
+ 
+  
+ 
+create table PCLUB.ADMPT_TMP_DEBITO_IB 
+( 
+  ADMPV_COD_CLI    VARCHAR2(40), 
+  ADMPV_NUM_FACT   VARCHAR2(20), 
+  ADMPN_MONTO_FAC  NUMBER, 
+  ADMPN_MONTO_PAG  NUMBER, 
+  ADMPN_MONTO_DEB  NUMBER, 
+  ADMPD_FEC_OPER   DATE, 
+  ADMPV_NOM_ARCH   VARCHAR2(150), 
+  ADMPC_COD_ERROR  CHAR(3), 
+  ADMPV_MSJE_ERROR VARCHAR2(100) 
+) 
+tablespace PCLUB_DATA 
+  pctfree 10 
+  initrans 1 
+  maxtrans 255 
+  storage 
+  ( 
+    initial 64K 
+    minextents 1 
+    maxextents unlimited 
+  ); 
+ 
+ 
+  
+ 
+create table PCLUB.ADMPT_TMP_FACADE_IB 
+( 
+  ADMPC_COD_TRANS  CHAR(3), 
+  ADMPV_TIPO_DOC   VARCHAR2(20), 
+  ADMPV_NUM_DOC    VARCHAR2(20), 
+  ADMPC_SIGNO      CHAR(1), 
+  ADMPN_PUNTOS     NUMBER, 
+  ADMPV_NOM_CAMP   VARCHAR2(200), 
+  ADMPD_FEC_ACUM   DATE, 
+  ADMPD_FEC_OPER   DATE, 
+  ADMPV_NOM_ARCH   VARCHAR2(150), 
+  ADMPC_COD_ERROR  CHAR(3), 
+  ADMPV_MSJE_ERROR VARCHAR2(100) 
+) 
+tablespace PCLUB_DATA 
+  pctfree 10 
+  initrans 1 
+  maxtrans 255 
+  storage 
+  ( 
+    initial 64K 
+    minextents 1 
+    maxextents unlimited 
+  ); 
+ 
+ 
+  
+ 
+create table PCLUB.ADMPT_TMP_PAGO_CC 
+( 
+  ADMPV_COD_CLI    VARCHAR2(40), 
+  ADMPV_PERIODO    VARCHAR2(6), 
+  ADMPN_DIAS_VENC  NUMBER, 
+  ADMPN_MNT_CGOFIJ NUMBER, 
+  ADMPN_MNT_ADIC   NUMBER, 
+  ADMPN_ACGOFIJ    NUMBER, 
+  ADMPC_SGACGOFIJ  CHAR(1), 
+  ADMPN_AJUADIC    NUMBER, 
+  ADMPC_SGAJUADI   CHAR(1), 
+  ADMPD_FEC_OPER   DATE, 
+  ADMPV_NOM_ARCH   VARCHAR2(150), 
+  ADMPN_PUNTOS     NUMBER, 
+  ADMPC_COD_ERROR  CHAR(3), 
+  ADMPV_MSJE_ERROR VARCHAR2(250) 
+) 
+tablespace PCLUB_DATA 
+  pctfree 10 
+  initrans 1 
+  maxtrans 255 
+  storage 
+  ( 
+    initial 64K 
+    minextents 1 
+    maxextents unlimited 
+  ); 
+ 
+ 
+  
+ 
+create table PCLUB.ADMPT_TMP_PROM 
+( 
+  ADMPV_COD_CLI    VARCHAR2(40), 
+  ADMPV_NOM_PROM   VARCHAR2(150), 
+  ADMPV_PERIODO    VARCHAR2(6), 
+  ADMPN_CONTR      NUMBER, 
+  ADMPD_FEC_REG    DATE, 
+  ADMPV_HORAMIN    VARCHAR2(5), 
+  ADMPN_PUNTOS     NUMBER, 
+  ADMPD_FEC_OPER   DATE, 
+  ADMPV_NOM_ARCH   VARCHAR2(150), 
+  ADMPC_COD_ERROR  CHAR(2), 
+  ADMPV_MSJE_ERROR VARCHAR2(100) 
+) 
+tablespace PCLUB_DATA 
+  pctfree 10 
+  initrans 1 
+  maxtrans 255 
+  storage 
+  ( 
+    initial 64K 
+    minextents 1 
+    maxextents unlimited 
+  ); 
+ 
+ 
+  
+ 
+create table PCLUB.ADMPT_TMP_REGULARIZA 
+( 
+  ADMPV_COD_CLI    VARCHAR2(40), 
+  ADMPV_NOM_REGUL  VARCHAR2(150), 
+  ADMPV_PERIODO    VARCHAR2(6), 
+  ADMPN_COD_CONTR  NUMBER(22), 
+  ADMPD_FEC_REG    DATE, 
+  ADMPV_HOR_MIN    VARCHAR2(5), 
+  ADMPN_PUNTOS     NUMBER, 
+  ADMPD_FEC_OPER   DATE, 
+  ADMPV_NOM_ARCH   VARCHAR2(150), 
+  ADMPC_COD_ERROR  CHAR(2), 
+  ADMPV_MSJE_ERROR VARCHAR2(100) 
+) 
+tablespace PCLUB_DATA 
+  pctfree 10 
+  initrans 1 
+  maxtrans 255 
+  storage 
+  ( 
+    initial 64K 
+    minextents 1 
+    maxextents unlimited 
+  ); 
+ 
+ CREATE TABLE  PCLUB.ADMPT_TMP_REFINVEN(
+   ADMPV_NOMBRES  varchar2(80),
+   ADMPV_APELLIDOS  varchar2(80),
+   ADMPV_TIPO_DOC char(2),
+   ADMPV_NUM_DOC varchar2(20),
+   ADMPV_NUM_LINEA varchar2(20),
+   ADMPV_NUM_REFER varchar2(20),
+   ADMPC_COD_ERROR varchar2(5),
+   ADMPV_MSJE_ERROR varchar2(120)
+ )
+ tablespace PCLUB_DATA 
+   pctfree 10 
+   initrans 1 
+   maxtrans 255 
+   storage 
+   ( 
+     initial 64K 
+     minextents 1 
+     maxextents unlimited 
+  ); 
+  
+ 
+create sequence PCLUB.ADMPT_AACAMO_SQ 
+minvalue 1 
+maxvalue 999999999999999999999999999 
+start with 141 
+increment by 1 
+cache 20; 
+ 
+ 
+  
+ 
+create sequence PCLUB.ADMPT_AFACAD_SQ 
+minvalue 1 
+maxvalue 999999999999999999999999999 
+start with 301 
+increment by 1 
+cache 20; 
+ 
+ 
+  
+ 
+create sequence PCLUB.ADMPT_BONACT_SQ 
+minvalue 1 
+maxvalue 999999999999999999999999999 
+start with 21 
+increment by 1 
+cache 20; 
+ 
+ 
+  
+ 
+create sequence PCLUB.ADMPT_CLI_CC_SQ 
+minvalue 1 
+maxvalue 999999999999999999999999999 
+start with 1 
+increment by 1 
+cache 20; 
+ 
+ 
+  
+ 
+create sequence PCLUB.ADMPT_CLI_IB_SQ 
+minvalue 1 
+maxvalue 999999999999999999999999999 
+start with 201 
+increment by 1 
+cache 20; 
+ 
+ 
+  
+ 
+create sequence PCLUB.ADMPT_DEB_IB_SQ 
+minvalue 1 
+maxvalue 999999999999999999999999999 
+start with 1 
+increment by 1 
+cache 20; 
+ 
+ 
+  
+ 
+create sequence PCLUB.ADMPT_KARDEX_SQ 
+minvalue 1 
+maxvalue 999999999999999999999999999 
+start with 4981 
+increment by 1 
+cache 20; 
+ 
+ 
+  
+ 
+create sequence PCLUB.ADMPT_PROM_SQ 
+minvalue 1 
+maxvalue 999999999999999999999999999 
+start with 1 
+increment by 1 
+cache 20; 
+ 
+ 
+  
+ 
+create sequence PCLUB.ADMPT_REGULA_SQ 
+minvalue 1 
+maxvalue 999999999999999999999999999 
+start with 4801 
+increment by 1 
+cache 20; 
+ 
+ 
+  
+create sequence PCLUB.ADMPT_SLD_CL_SQ 
+minvalue 1 
+maxvalue 999999999999999999999999999 
+start with 141 
+increment by 1 
+cache 20; 
+ 
+ 
+  
+ 
+create sequence PCLUB.ADMPT_T_PLAN_SQ 
+minvalue 1 
+maxvalue 999999999999999999999999999 
+start with 1 
+increment by 1 
+cache 20; 
+ 
+ 
+
+create sequence PCLUB.ADMPT_SERV_PEN_SQ
+minvalue 1
+maxvalue 999999999999999999999999999
+start with 21
+increment by 1
+cache 20;
+ 

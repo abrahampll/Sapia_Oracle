@@ -1,0 +1,3 @@
+IT_OPERADOR=SoporteAplicacionesAtencionVirtual@claro.com.pe,carlos.bruno@claro.com.pe,drimas.everis@claro.com.pe,E700584@claro.com.pe,soportepostventafactory@claro.com.pe; export IT_OPERADOR
+IT_MAIL=SoporteAplicacionesAtencionVirtual@claro.com.pe,carlos.bruno@claro.com.pe,,E700584@claro.com.pe,soportepostventafactory@claro.com.pe; export IT_MAIL
+IT_SOAP=arles.melgarejo@claro.com.pe,carlos.bruno@claro.com.pe,E700584@claro.com.pe,soportepostventafactory@claro.com.pe; export IT_SOAP

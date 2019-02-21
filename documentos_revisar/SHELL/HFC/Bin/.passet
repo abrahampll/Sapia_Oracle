@@ -1,0 +1,7 @@
+USER_BD=usrpclub; export USER_BD
+CLAVE_BD=sqm4zL9p; export CLAVE_BD
+
+USER_BD_SGA=USRSGACCLUB; export USER_BD_SGA
+CLAVE_BD_SGA=W4Pz2hFg; export CLAVE_BD_SGA 
+
+

@@ -1,0 +1,6 @@
+-- Drop columns 
+alter table PCLUB.SYSFT_LATAM_CANJE_KM_CC drop column SYLCKCV_COD_RESP;
+alter table PCLUB.SYSFT_LATAM_CANJE_KM_CC drop column SYLCKCV_MSG_RESP;
+alter table PCLUB.SYSFT_LATAM_CANJE_KM_CC drop column SYLCKCV_ID_TRANS;
+alter table PCLUB.SYSFT_LATAM_CANJE_KM_CC drop column SYLCKCV_TIP_DOC;
+alter table PCLUB.SYSFT_LATAM_CANJE_KM_CC drop column SYLCKCV_NUM_DOC;

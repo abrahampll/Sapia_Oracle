@@ -1,0 +1,5 @@
+drop sequence PCLUB.ADMPT_ENCUESTA_SQ;
+drop sequence PCLUB.ADMPT_PREGUNTA_SQ;
+drop sequence PCLUB.ADMPT_RESPUESTA_SQ;
+drop sequence PCLUB.ADMPT_CABENCUESTA_SQ;
+drop sequence PCLUB.ADMPT_MOVENCUESTA_SQ;

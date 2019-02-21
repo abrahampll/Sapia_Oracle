@@ -1,0 +1,3 @@
+drop index PCLUB.IDX_ADMPT_TMP_VENC_PUNTOS_02;
+
+

@@ -1,0 +1,14 @@
+***********************************************************************************************************************
+TRANSACCION_20170719182028 - [INFO] - Inicio de proceso - 2017-07-19@18:20:28
+TRANSACCION_20170719182028 - [INFO] - Usuario : usrclaroclub 
+TRANSACCION_20170719182028 - [INFO] - Se lanza ejecucion: [DesafiliacionNoRecarga]...
+[ INFO] [19-07-2017 18:22:11.659] (AbstractApplicationContext.java:495) | Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@2c2f1921: startup date [Wed Jul 19 18:22:11 PET 2017]; root of context hierarchy
+[ INFO] [19-07-2017 18:22:11.874] (XmlBeanDefinitionReader.java:315) | Loading XML bean definitions from class path resource [spring/applicationContext.xml]
+[ INFO] [19-07-2017 18:22:12.360] (XmlBeanDefinitionReader.java:315) | Loading XML bean definitions from class path resource [spring/applicationDatasource.xml]
+[ INFO] [19-07-2017 18:22:12.435] (XmlBeanDefinitionReader.java:315) | Loading XML bean definitions from class path resource [spring/wsclients-config.xml]
+[ INFO] [19-07-2017 18:22:12.658] (PropertiesLoaderSupport.java:177) | Loading properties file from URL [file:/home/usrclaroclub/CLAROCLUB/Interno/Prepago/Jar/SH_DESAFILIACION_NO_RECARGA/DesafiliacionNoRecargaSHELL.properties]
+[ INFO] [19-07-2017 18:22:12.796] (DefaultListableBeanFactory.java:557) | Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@688a548b: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,claroClubDaoImpl,desafiliacionNoRecargaServiceImp,standaloneServiceImp,constantes,util,utilEAI,envioMailWSClientImpl,org.springframework.context.support.PropertySourcesPlaceholderConfigurer#0,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,dataSourceCLAROCLUBDB,jaxwsEnvioMailProperties,envioMailWS,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy
+[ INFO] [19-07-2017 18:22:13.207] (DriverManagerDataSource.java:153) | Loaded JDBC driver: oracle.jdbc.driver.OracleDriver
+[ INFO] [19-07-2017 18:22:13.286] (UtilAccesProperties.java:31) | Parametros cargados correctamente
+TRANSACCION_20170719182028 - [INFO] - Fin de proceso - 2017-07-19@18:27:17 
+ 

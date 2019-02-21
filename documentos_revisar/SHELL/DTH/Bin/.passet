@@ -1,0 +1,2 @@
+USER_BD=Pclub; export USER_BD
+CLAVE_BD=Pclub123+; export CLAVE_BD

@@ -1,0 +1,1 @@
+grant all on ADMPT_TMP_REFINVEN to USRPCLUB;

@@ -1,0 +1,1 @@
+GRANT EXECUTE ON PCLUB.pkg_cc_mantenimiento TO USREAIPCLUB;

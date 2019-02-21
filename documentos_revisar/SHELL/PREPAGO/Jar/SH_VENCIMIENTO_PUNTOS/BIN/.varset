@@ -1,0 +1,10 @@
+#*********************************************
+#                       VARSET
+#*********************************************
+HOME_SHELL=/home/usrclaroclub/CLAROCLUB/Interno/Prepago/Jar/SH_VENCIMIENTO_PUNTOS
+DIRLOG=$HOME_SHELL/LOG
+LOGNAME_SHELL=VencimientoPuntosSHELL
+RUTA_JAVA=/usr/java/jdk1.6.0_13/bin/
+RUTAPROPERTIES=$HOME_SHELL/VencimientoPuntosSHELL.properties
+JAVA_HOME=/usr/java/jdk1.6.0_13/
+export HOME_SHELL DIRLOG LOGNAME_SHELL RUTA_JAVA RUTAPROPERTIES JAVA_HOME

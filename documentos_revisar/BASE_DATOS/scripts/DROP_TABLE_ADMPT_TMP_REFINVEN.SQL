@@ -1,0 +1,1 @@
+drop table PCLUB.ADMPT_TMP_REFINVEN;

@@ -1,0 +1,2 @@
+DELETE FROM PCLUB.Admpt_paramsist where ADMPC_COD_PARAM = '250';
+COMMIT;

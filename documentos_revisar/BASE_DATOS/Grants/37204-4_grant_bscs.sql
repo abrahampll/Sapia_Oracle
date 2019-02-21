@@ -1,0 +1,1 @@
+grant execute on TIM.tfun029_register_service_sp to USRBSCSCLUB;

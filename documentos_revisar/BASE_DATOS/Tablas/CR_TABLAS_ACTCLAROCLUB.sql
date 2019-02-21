@@ -1,0 +1,56 @@
+-- TABLA POSTPAGO
+create table PCLUB.ADMPT_IMP_ACTCLIENTES_POST
+(
+  ADMPN_SEQ         NUMBER,
+  ADMPV_COD_CLIENTE VARCHAR2(50),
+  ADMPV_FIRST_NAME  VARCHAR2(30),
+  ADMPV_LAST_NAME   VARCHAR2(80),
+  ADMPV_TIPO_DOC    VARCHAR2(20),
+  ADMPV_TIPO_LINEA  VARCHAR2(40),
+  ADMPD_FEC_REG     DATE,
+  ADMPV_COD_ERROR   CHAR(3),
+  ADMPV_MSJE_ERROR  VARCHAR2(400),
+  ADMPV_NUM_DOC     VARCHAR2(20),
+	ADMPV_NUM_PHONE	  VARCHAR2(20)
+)
+tablespace PCLUB_DATA
+  pctfree 10
+  pctused 40
+  initrans 1
+  maxtrans 255
+  storage
+  (
+    initial 64K
+    next 1M
+    minextents 1
+    maxextents unlimited
+  );
+
+  
+--TABLA  PREPAGO
+create table PCLUB.ADMPT_IMP_ACTCLIENTES_PRE
+(
+  ADMPN_SEQ         NUMBER,
+  ADMPV_COD_CLIENTE VARCHAR2(20),
+  ADMPV_FIRST_NAME  VARCHAR2(20),
+  ADMPV_LAST_NAME   VARCHAR2(80),
+  ADMPV_TIPO_LINEA  VARCHAR2(40),
+  ADMPV_NUM_DOC     VARCHAR2(20),
+  ADMPV_TIPO_DOC    VARCHAR2(20),
+  ADMPD_FEC_REG     DATE,
+  ADMPV_COD_ERROR   CHAR(3),
+  ADMPV_MSJE_ERROR  VARCHAR2(400),
+	ADMPV_NUM_PHONE	  VARCHAR2(20)
+)
+tablespace PCLUB_DATA
+  pctfree 10
+  pctused 40
+  initrans 1
+  maxtrans 255
+  storage
+  (
+    initial 64K
+    next 1M
+    minextents 1
+    maxextents unlimited
+  );

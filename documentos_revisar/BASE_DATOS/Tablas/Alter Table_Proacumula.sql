@@ -1,0 +1,5 @@
+/************** ADMPT_CAT_CLIENTE **********************/
+ALTER TABLE pclub.ADMPT_CAT_CLIENTE ADD ADMPN_PTOANIV NUMBER;
+
+/************** ADMPT_TIPO_PLAN **********************/
+ALTER TABLE pclub.ADMPT_TIPO_PLAN ADD ADMPN_PTORENCON NUMBER;

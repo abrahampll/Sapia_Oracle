@@ -1,0 +1,193 @@
+-- Verificar los indices en produccion de la tabla ADMPT_CLIENTE
+
+/* ***** ADMPT_KARDEX ***** */
+
+create index PCLUB.IDX_ADMPT_KARDEX_01 on PCLUB.ADMPT_KARDEX (ADMPC_TPO_PUNTO, ADMPD_FEC_VCMTO, ADMPC_ESTADO)
+  tablespace PCLUB_INDX
+  pctfree 10
+  initrans 2
+  maxtrans 255
+  storage
+  (
+    initial 64K
+    next 1M
+    minextents 1
+    maxextents unlimited
+  );
+  
+/* ***** ADMPT_TMP_BONOFIDEL_PRE ****** */
+
+create index PCLUB.IDX_BONOFIDEL_PRE_01 on PCLUB.ADMPT_TMP_BONOFIDEL_PRE (ADMPV_CODERROR, ADMPC_TIPO_FIDEL, ADMPV_NOMARCHIVO)
+  tablespace PCLUB_INDX
+  pctfree 10
+  initrans 2
+  maxtrans 255
+  storage
+  (
+    initial 64K
+    next 1M
+    minextents 1
+    maxextents unlimited
+  );
+
+create index PCLUB.IDX_BONOFIDEL_PRE_02 on PCLUB.ADMPT_TMP_BONOFIDEL_PRE (ADMPN_SEC)
+  tablespace PCLUB_INDX
+  pctfree 10
+  initrans 2
+  maxtrans 255
+  storage
+  (
+    initial 64K
+    next 1M
+    minextents 1
+    maxextents unlimited
+  );
+
+/* ***** ADMPT_BONO_KARDEX ****** */
+
+create index PCLUB.IDX_ADMPT_BONO_KARDEX_01 on PCLUB.ADMPT_BONO_KARDEX (ADMPV_LINEA)
+  tablespace PCLUB_INDX
+  pctfree 10
+  initrans 2
+  maxtrans 255
+  storage
+  (
+    initial 64K
+    next 1M
+    minextents 1
+    maxextents unlimited
+  );
+  
+create index PCLUB.IDX_ADMPT_BONO_KARDEX_02 on PCLUB.ADMPT_BONO_KARDEX (ADMPV_TIPO_DOC, ADMPV_NUM_DOC)
+  tablespace PCLUB_INDX
+  pctfree 10
+  initrans 2
+  maxtrans 255
+  storage(
+		initial 64K
+		next 1M
+		minextents 1
+		maxextents unlimited
+		);
+
+/* ***** ADMPT_IMP_ALTA_XRECARGA_PRE ****** */
+  
+CREATE INDEX PCLUB.IDX_ADMPT_IMP_ALTA_XRECARGA_01 ON PCLUB.ADMPT_IMP_ALTA_XRECARGA_PRE (ADMPV_NOMARCHIVO, ADMPV_CODERROR, ADMPC_ESTADO)
+LOGGING
+TABLESPACE PCLUB_INDX
+PCTFREE    10
+INITRANS   2
+MAXTRANS   255
+STORAGE    (
+            INITIAL          64K
+            MINEXTENTS       1
+            MAXEXTENTS       UNLIMITED
+            PCTINCREASE      0
+            BUFFER_POOL      DEFAULT
+           )
+NOPARALLEL;
+
+
+CREATE INDEX PCLUB.IDX_ADMPT_IMP_ALTA_XRECARGA_02 ON PCLUB.ADMPT_IMP_ALTA_XRECARGA_PRE (ADMPN_SEQ)
+LOGGING
+TABLESPACE PCLUB_INDX
+PCTFREE    10
+INITRANS   2
+MAXTRANS   255
+STORAGE    (
+            INITIAL          64K
+            MINEXTENTS       1
+            MAXEXTENTS       UNLIMITED
+            PCTINCREASE      0
+            BUFFER_POOL      DEFAULT
+           )
+NOPARALLEL;
+
+/* **** ADMPT_IMP_BONOFIDEL_PRE ***** */
+
+CREATE INDEX PCLUB.IDX_ADMPT_IMP_BONOFIDEL_01 ON PCLUB.ADMPT_IMP_BONOFIDEL_PRE
+(ADMPC_TIPO_FIDEL, ADMPV_NOMARCHIVO, ADMPV_CODERROR, ADMPC_ESTADOSMS)
+LOGGING
+TABLESPACE PCLUB_INDX
+PCTFREE    10
+INITRANS   2
+MAXTRANS   255
+STORAGE    (
+            INITIAL          64K
+            MINEXTENTS       1
+            MAXEXTENTS       UNLIMITED
+            PCTINCREASE      0
+            BUFFER_POOL      DEFAULT
+           )
+NOPARALLEL;
+
+
+CREATE INDEX PCLUB.IDX_ADMPT_IMP_BONOFIDEL_02 ON PCLUB.ADMPT_IMP_BONOFIDEL_PRE
+(ADMPN_SEC)
+LOGGING
+TABLESPACE PCLUB_INDX
+PCTFREE    10
+INITRANS   2
+MAXTRANS   255
+STORAGE    (
+            INITIAL          64K
+            MINEXTENTS       1
+            MAXEXTENTS       UNLIMITED
+            PCTINCREASE      0
+            BUFFER_POOL      DEFAULT
+           )
+NOPARALLEL;
+
+
+/* **** ADMPT_SALDOS_BONO_CLIENTE ***** */
+
+CREATE INDEX PCLUB.IDX_ADMPT_SALDOS_BONO_01 ON PCLUB.ADMPT_SALDOS_BONO_CLIENTE (ADMPV_COD_CLI)
+LOGGING
+TABLESPACE PCLUB_INDX
+PCTFREE    10
+INITRANS   2
+MAXTRANS   255
+STORAGE    (
+            INITIAL          64K
+            MINEXTENTS       1
+            MAXEXTENTS       UNLIMITED
+            PCTINCREASE      0
+            BUFFER_POOL      DEFAULT
+           )
+NOPARALLEL;
+
+/* ADMPT_IMP_PRESINRECARGA */
+
+CREATE INDEX PCLUB.IDX_ADMPT_IMP_PRESINRECARGA_01 ON PCLUB.ADMPT_IMP_PRESINRECARGA
+(ADMPV_NOMARCHIVO, ADMPV_CODERROR)
+LOGGING
+TABLESPACE PCLUB_INDX
+PCTFREE    10
+INITRANS   2
+MAXTRANS   255
+STORAGE    (
+            INITIAL          64K
+            MINEXTENTS       1
+            MAXEXTENTS       UNLIMITED
+            PCTINCREASE      0
+            BUFFER_POOL      DEFAULT
+           )
+NOPARALLEL;
+
+/* ADMPT_TMP_PRESINRECARGA */
+
+CREATE INDEX PCLUB.IDX_ADMPT_TMP_PRESINRECARGA_01 ON PCLUB.ADMPT_TMP_PRESINRECARGA
+(ADMPV_NOMARCHIVO)
+LOGGING
+TABLESPACE PCLUB_INDX
+PCTFREE    10
+INITRANS   2
+MAXTRANS   255
+STORAGE    (
+            INITIAL          64K
+            MINEXTENTS       1
+            MAXEXTENTS       UNLIMITED
+            PCTINCREASE      0
+            BUFFER_POOL      DEFAULT
+           )
+NOPARALLEL;

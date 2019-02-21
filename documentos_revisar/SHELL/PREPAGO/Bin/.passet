@@ -1,0 +1,9 @@
+USER_BD=usrpclub; export USER_BD
+CLAVE_BD=sqm4zL9p; export CLAVE_BD
+
+USER_BD_CLFY=USRCCLUB; export USER_BD_CLFY
+CLAVE_BD_CLFY=q3TU69CK; export CLAVE_BD_CLFY
+SID_BD_CLFY=TIMPROD; export SID_BD_CLFY
+
+
+RUTAWS=http://172.19.67.70:7909/Messaging_Services/SMSC/Transaction/proxy_services/EnvioSms?WSDL; export RUTAWS

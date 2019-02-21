@@ -1,0 +1,31 @@
+CREATE INDEX PCLUB.IX_ALTACLI_TFI_01 ON PCLUB.ADMPT_AUX_ALTACLI_TFI(ADMPD_FEC_OPER, ADMPV_TIPO_CLI)
+TABLESPACE PCLUB_INDX
+PCTFREE    10
+INITRANS   2
+MAXTRANS   255
+STORAGE    (
+            INITIAL          64K
+            NEXT             1M
+            MINEXTENTS       1
+            MAXEXTENTS       UNLIMITED
+            PCTINCREASE      0
+            FREELISTS        1
+            FREELIST GROUPS  1
+            BUFFER_POOL      DEFAULT
+           );
+
+CREATE INDEX PCLUB.IX_ADMPT_TMP_ALTACLI_TFI_02 ON PCLUB.ADMPT_TMP_ALTACLI_TFI(ADMPV_COD_CLI, ADMPV_TIPO_CLI)
+TABLESPACE PCLUB_INDX
+PCTFREE    10
+INITRANS   2
+MAXTRANS   255
+STORAGE    (
+            INITIAL          64K
+            NEXT             1M
+            MINEXTENTS       1
+            MAXEXTENTS       UNLIMITED
+            PCTINCREASE      0
+            FREELISTS        1
+            FREELIST GROUPS  1
+            BUFFER_POOL      DEFAULT
+           );

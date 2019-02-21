@@ -1,0 +1,2 @@
+drop table PCLUB.ADMPT_CONF_HISTORICO;
+

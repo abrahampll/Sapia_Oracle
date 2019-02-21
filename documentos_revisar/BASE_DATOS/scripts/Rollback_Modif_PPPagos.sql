@@ -1,0 +1,32 @@
+--Regresar los valores anteriores para los costos por pronto pago
+DECLARE 
+
+BEGIN
+
+--elimina el registro nuevo insertado
+DELETE FROM PCLUB.ADMPT_CONCEPTO
+WHERE ADMPV_DESC='AFILIACION DEBITO';
+
+--actualiza los valores anteriores de costo por puntos
+UPDATE PCLUB.ADMPT_CAT_CLIENTE
+SET ADMPN_CXPT_PPAG=2.5
+WHERE ADMPN_COD_CATCLI = 2 AND ADMPV_COD_TPOCL IN (1,2);
+
+UPDATE PCLUB.ADMPT_CAT_CLIENTE
+SET ADMPN_CXPT_PPAG=2
+WHERE ADMPN_COD_CATCLI = 1 AND ADMPV_COD_TPOCL IN (1,2);
+
+--actusliza el valor anterior en dias de vencimiento
+UPDATE PCLUB.ADMPT_PARAMSIST 
+SET ADMPV_VALOR=5
+WHERE ADMPV_DESC='DIAS_VENCIMIENTO_PAGO_CC';
+
+  COMMIT;
+  DBMS_OUTPUT.put_line('EXITO!!!!');
+EXCEPTION
+  WHEN OTHERS THEN
+    ROLLBACK;
+    DBMS_OUTPUT.put_line('ERROR!!!!');    
+
+END;
+/

@@ -1,0 +1,1 @@
+drop SYNONYM USRBSCSCLUB.tfun029_register_service_sp;

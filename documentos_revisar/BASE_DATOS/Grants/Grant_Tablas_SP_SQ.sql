@@ -1,0 +1,1 @@
+grant all on PCLUB.ADMPT_TMP_REFINVEN to USRPCLUB;

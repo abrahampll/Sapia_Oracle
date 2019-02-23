@@ -1,0 +1,17 @@
+
+DECLARE
+vidEmpleado   hr.employees.employee_id%TYPE := &CODIGO_PROFESOR;
+
+NOM_AREA CHAR(55);
+DEPTO CHAR(3); 
+
+BEGIN  
+  IF (vidempleado < 118) THEN
+  DBMS_OUTPUT.PUT_LINE('EL idEmpleado Existe');
+  ELSIF   (vidempleado = 120) THEN
+    DBMS_OUTPUT.PUT_LINE('EL idEmpleado  NO EXISTE, INGRESE UNO VALIDO');    
+   -- NOM_AREA := '&NOMBRE_AREA';
+   -- DEPTO := '&DEPARTAMENTO';
+    DBMS_OUTPUT.PUT_LINE('AHORA ENVIANDO DATOS...');
+  END IF;
+END;

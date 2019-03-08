@@ -1,0 +1,40 @@
+
+PL/SQL procedure successfully completed.
+
+Elapsed: 00:00:00.02
+old  27: and to_char (s.entry_date, 'YYYYMM') = '&1'
+new  27: and to_char (s.entry_date, 'YYYYMM') = '201810'
+
+Table created.
+
+Elapsed: 00:00:50.07
+old  36: and to_char (s.entry_date, 'YYYYMM') = '&1'
+new  36: and to_char (s.entry_date, 'YYYYMM') = '201810'
+
+Table created.
+
+Elapsed: 00:01:05.44
+
+105422 rows created.
+
+Elapsed: 00:00:00.83
+
+Commit complete.
+
+Elapsed: 00:00:00.01
+
+61529 rows created.
+
+Elapsed: 00:00:00.31
+
+Commit complete.
+
+Elapsed: 00:00:00.00
+
+Table dropped.
+
+Elapsed: 00:00:00.15
+
+Table dropped.
+
+Elapsed: 00:00:00.16

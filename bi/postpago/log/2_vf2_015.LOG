@@ -1,0 +1,30 @@
+
+PL/SQL procedure successfully completed.
+
+Elapsed: 00:00:00.01
+
+Session altered.
+
+Elapsed: 00:00:00.01
+old   3: SELECT '&1' AS PERIODO, B.TELEFONO AS MSISDN, B.DESCUENTO AS VF2_015,
+new   3: SELECT '201810' AS PERIODO, B.TELEFONO AS MSISDN, B.DESCUENTO AS VF2_015,
+old   9: AND TO_CHAR (V.FECHA_VENTA, 'YYYYMM') < '&1'
+new   9: AND TO_CHAR (V.FECHA_VENTA, 'YYYYMM') < '201810'
+old  14: AND MES = '&1'))
+new  14: AND MES = '201810'))
+
+Table created.
+
+Elapsed: 00:00:55.46
+
+1758987 rows created.
+
+Elapsed: 00:00:06.33
+
+Commit complete.
+
+Elapsed: 00:00:00.00
+
+Table dropped.
+
+Elapsed: 00:00:00.32

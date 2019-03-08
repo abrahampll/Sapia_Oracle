@@ -1,0 +1,32 @@
+
+PL/SQL procedure successfully completed.
+
+Elapsed: 00:00:00.19
+old   8: WHERE B.MES = '&1'
+new   8: WHERE B.MES = '20181'
+
+Table created.
+
+Elapsed: 00:00:00.22
+old   1: DELETE FROM DWM.DW_SA_BASE_BAJAS_3G_2 WHERE MES='&1'
+new   1: DELETE FROM DWM.DW_SA_BASE_BAJAS_3G_2 WHERE MES='20181'
+
+0 rows deleted.
+
+Elapsed: 00:00:00.60
+
+Commit complete.
+
+Elapsed: 00:00:00.00
+
+0 rows created.
+
+Elapsed: 00:00:00.04
+
+Commit complete.
+
+Elapsed: 00:00:00.00
+
+Table dropped.
+
+Elapsed: 00:00:00.08

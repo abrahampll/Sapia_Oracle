@@ -1,0 +1,80 @@
+
+PL/SQL procedure successfully completed.
+
+Elapsed: 00:00:00.06
+old   6: AND EXISTS (SELECT 1 FROM dwm.dw_maestra_postpago B WHERE B.CO_ID=CA.CO_ID AND B.MES = '&1')
+new   6: AND EXISTS (SELECT 1 FROM dwm.dw_maestra_postpago B WHERE B.CO_ID=CA.CO_ID AND B.MES = '201810')
+
+Table created.
+
+Elapsed: 00:00:11.45
+
+Table created.
+
+Elapsed: 00:00:33.36
+
+Table created.
+
+Elapsed: 01:12:35.02
+
+Table created.
+
+Elapsed: 00:00:57.06
+old   5: WHERE	M.STATUS='ACTIVO' AND M.FCH_ACTIVACION IS NOT NULL and m.mes = '&1'
+new   5: WHERE	M.STATUS='ACTIVO' AND M.FCH_ACTIVACION IS NOT NULL and m.mes = '201810'
+
+Table created.
+
+Elapsed: 00:00:10.24
+
+Table created.
+
+Elapsed: 00:00:15.44
+
+Table created.
+
+Elapsed: 00:00:18.31
+
+3396074 rows created.
+
+Elapsed: 00:00:10.65
+
+Commit complete.
+
+Elapsed: 00:00:00.01
+
+3279087 rows created.
+
+Elapsed: 00:00:09.08
+
+Commit complete.
+
+Elapsed: 00:00:00.00
+
+Table dropped.
+
+Elapsed: 00:00:00.13
+
+Table dropped.
+
+Elapsed: 00:00:00.15
+
+Table dropped.
+
+Elapsed: 00:00:00.12
+
+Table dropped.
+
+Elapsed: 00:00:00.23
+
+Table dropped.
+
+Elapsed: 00:00:00.17
+
+Table dropped.
+
+Elapsed: 00:00:00.14
+
+Table dropped.
+
+Elapsed: 00:00:00.19

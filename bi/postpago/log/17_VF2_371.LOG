@@ -1,0 +1,12 @@
+
+PL/SQL procedure successfully completed.
+
+Elapsed: 00:00:00.20
+old  15: where SA.PERIOD = '&1'
+new  15: where SA.PERIOD = '20181'
+FROM DM.SA_TEMP_TAG_1460_SPSS2 SA
+        *
+ERROR at line 14:
+ORA-00942: table or view does not exist
+
+

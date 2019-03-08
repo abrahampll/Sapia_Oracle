@@ -1,0 +1,32 @@
+
+PL/SQL procedure successfully completed.
+
+Elapsed: 00:00:00.02
+old  21: WHERE PERIOD='&1'
+new  21: WHERE PERIOD='201810'
+
+Table created.
+
+Elapsed: 00:03:26.64
+old   1: DELETE FROM DWM.DW_SPSS2_TRAFICO_PLAN_2 WHERE PERIOD='&1'
+new   1: DELETE FROM DWM.DW_SPSS2_TRAFICO_PLAN_2 WHERE PERIOD='201810'
+
+0 rows deleted.
+
+Elapsed: 00:00:01.85
+
+Commit complete.
+
+Elapsed: 00:00:00.00
+
+3482129 rows created.
+
+Elapsed: 00:00:19.11
+
+Commit complete.
+
+Elapsed: 00:00:00.02
+
+Table dropped.
+
+Elapsed: 00:00:00.14

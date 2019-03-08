@@ -1,0 +1,13 @@
+
+PL/SQL procedure successfully completed.
+
+Elapsed: 00:00:00.05
+old  16: WHERE to_char(FCH_TRANSACCION, 'yyyymm') = '&1'
+new  16: WHERE to_char(FCH_TRANSACCION, 'yyyymm') = '201810'
+group by  msisdn, mes
+                  *
+ERROR at line 19:
+ORA-01013: user requested cancel of current operation
+ORA-02063: preceding line from DBL_DWM
+
+

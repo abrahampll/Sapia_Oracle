@@ -1,0 +1,27 @@
+
+PL/SQL procedure successfully completed.
+
+Elapsed: 00:00:17.77
+
+Table created.
+
+Elapsed: 00:00:07.77
+DW_TABLON_POSTPAGO_C_TP0: 649810
+
+PL/SQL procedure successfully completed.
+
+Elapsed: 00:00:00.54
+
+Table created.
+
+Elapsed: 00:00:05.10
+
+Table created.
+
+Elapsed: 00:00:04.26
+LEFT JOIN DM.DW_BAJAS_4G_HP_POST F ON A.MSISDN=F.TIM_NUMBER AND A.MES=F.MES
+             *
+ERROR at line 9:
+ORA-00942: table or view does not exist
+
+

@@ -1,0 +1,40 @@
+
+PL/SQL procedure successfully completed.
+
+Elapsed: 00:00:00.01
+old   3: where mes ='&1'
+new   3: where mes ='20181'
+
+Table created.
+
+Elapsed: 00:00:01.11
+old   9: WHERE A.MES = '&1'
+new   9: WHERE A.MES = '20181'
+old  10: AND B.MES = '&1'
+new  10: AND B.MES = '20181'
+
+Table created.
+
+Elapsed: 00:00:00.13
+old   2: WHERE MES='&1'
+new   2: WHERE MES='20181'
+
+0 rows deleted.
+
+Elapsed: 00:00:00.95
+
+Commit complete.
+
+Elapsed: 00:00:00.01
+
+0 rows created.
+
+Elapsed: 00:00:00.11
+
+Commit complete.
+
+Elapsed: 00:00:00.00
+
+PL/SQL procedure successfully completed.
+
+Elapsed: 00:00:00.18

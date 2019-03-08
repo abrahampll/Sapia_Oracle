@@ -1,0 +1,30 @@
+
+PL/SQL procedure successfully completed.
+
+Elapsed: 00:00:00.05
+old  10: where substr (a.invoicenumber, 11,6) = SUBSTR('&1',5,2)||SUBSTR('&1',1,4)
+new  10: where substr (a.invoicenumber, 11,6) = SUBSTR('20181',5,2)||SUBSTR('20181',1,4)
+
+Table created.
+
+Elapsed: 00:00:01.25
+
+Table created.
+
+Elapsed: 00:00:00.10
+
+0 rows created.
+
+Elapsed: 00:00:00.07
+
+Commit complete.
+
+Elapsed: 00:00:00.00
+
+Table dropped.
+
+Elapsed: 00:00:00.08
+
+Table dropped.
+
+Elapsed: 00:00:00.09

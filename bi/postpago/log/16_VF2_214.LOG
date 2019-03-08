@@ -1,0 +1,42 @@
+
+PL/SQL procedure successfully completed.
+
+Elapsed: 00:00:00.17
+old   3: '&1' AS PERIODO,
+new   3: '20181' AS PERIODO,
+
+Table created.
+
+Elapsed: 00:00:00.49
+old   3: SELECT '&1' AS PERIODO, RUC, VF2_214,
+new   3: SELECT '20181' AS PERIODO, RUC, VF2_214,
+
+Table created.
+
+Elapsed: 00:00:00.23
+old   1: DELETE FROM DWM.DW_SPSS2_VF2_214 WHERE PERIODO='&1'
+new   1: DELETE FROM DWM.DW_SPSS2_VF2_214 WHERE PERIODO='20181'
+
+0 rows deleted.
+
+Elapsed: 00:00:00.05
+
+Commit complete.
+
+Elapsed: 00:00:00.00
+
+35129 rows created.
+
+Elapsed: 00:00:00.12
+
+Commit complete.
+
+Elapsed: 00:00:00.00
+
+Table dropped.
+
+Elapsed: 00:00:00.09
+
+Table dropped.
+
+Elapsed: 00:00:00.08

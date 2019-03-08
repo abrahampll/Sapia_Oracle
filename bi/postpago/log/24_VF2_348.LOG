@@ -1,0 +1,24 @@
+
+PL/SQL procedure successfully completed.
+
+Elapsed: 00:00:00.09
+
+Table created.
+
+Elapsed: 00:00:00.05
+
+Table created.
+
+Elapsed: 00:00:00.03
+old  17:     SELECT '&1' INTO V_PERIODO FROM DUAL;
+new  17:     SELECT '20181' INTO V_PERIODO FROM DUAL;
+
+PL/SQL procedure successfully completed.
+
+Elapsed: 00:50:47.43
+from DM.SA_TEMP_TAG_1460_SPSS2 t1
+        *
+ERROR at line 34:
+ORA-00942: table or view does not exist
+
+

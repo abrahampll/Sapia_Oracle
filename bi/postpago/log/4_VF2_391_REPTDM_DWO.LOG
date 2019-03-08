@@ -1,0 +1,22 @@
+
+Table created.
+
+Elapsed: 00:00:15.11
+
+7994658 rows created.
+
+Elapsed: 00:00:38.51
+
+Commit complete.
+
+Elapsed: 00:00:00.02
+
+Table dropped.
+
+Elapsed: 00:00:00.17
+DROP TABLE DM.SA_TEMP_TAG_1460_SPSS2 PURGE
+              *
+ERROR at line 1:
+ORA-00942: table or view does not exist
+
+

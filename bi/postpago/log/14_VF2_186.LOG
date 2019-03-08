@@ -1,0 +1,32 @@
+
+PL/SQL procedure successfully completed.
+
+Elapsed: 00:00:00.16
+old  14: AND D.MES = '&1'
+new  14: AND D.MES = '20181'
+
+Table created.
+
+Elapsed: 00:00:00.36
+old   1: DELETE FROM DWM.DW_SPSS2_VF2_186 WHERE MES='&1'
+new   1: DELETE FROM DWM.DW_SPSS2_VF2_186 WHERE MES='20181'
+
+0 rows deleted.
+
+Elapsed: 00:00:00.33
+
+Commit complete.
+
+Elapsed: 00:00:00.01
+
+0 rows created.
+
+Elapsed: 00:00:00.01
+
+Commit complete.
+
+Elapsed: 00:00:00.01
+
+Table dropped.
+
+Elapsed: 00:00:00.07

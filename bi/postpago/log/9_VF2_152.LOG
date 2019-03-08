@@ -1,0 +1,22 @@
+
+PL/SQL procedure successfully completed.
+
+Elapsed: 00:00:00.01
+old   5: OR S_REASON_2 LIKE '%INFORMACIÓN%') AND TO_CHAR(CREATE_DATE,'YYYYMM')	= '&1'
+new   5: OR S_REASON_2 LIKE '%INFORMACIÓN%') AND TO_CHAR(CREATE_DATE,'YYYYMM')	= '201810'
+
+Table created.
+
+Elapsed: 00:00:35.79
+
+654612 rows created.
+
+Elapsed: 00:00:00.43
+
+Commit complete.
+
+Elapsed: 00:00:00.01
+
+Table dropped.
+
+Elapsed: 00:00:00.19

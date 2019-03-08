@@ -1,0 +1,25 @@
+#===============================================================
+#                      VARIABLES DE ENTORNO
+#===============================================================
+
+HOME=/infa/workspace/bicc/dwh/shell/BI25982/sql
+DIR_PRE_LOG=${HOME}/Prepago/log                                        export DIR_PRE_LOG
+DIR_PRE_SHELL=${HOME}/Prepago/shell                                    export DIR_PRE_SHELL
+DIR_PRE_SQL=${HOME}/Prepago/sql                                        export DIR_PRE_SQL
+
+DIR_POST_LOG=${HOME}/Postpago/log                                        export DIR_POST_LOG
+DIR_POST_SHELL=${HOME}/Postpago/shell                                    export DIR_POST_SHELL
+DIR_POST_SQL=${HOME}/Postpago/sql                                        export DIR_POST_SQL
+
+DIR_HFC_LOG=${HOME}/HFC/log                                        export DIR_HFC_LOG
+DIR_HFC_SHELL=${HOME}/HFC/shell                                    export DIR_HFC_SHELL
+DIR_HFC_SQL=${HOME}/HFC/sql                                        export DIR_HFC_SQL
+
+DIR_TFI_LOG=${HOME}/TFI/log                                        export DIR_TFI_LOG
+DIR_TFI_SHELL=${HOME}/TFI/shell                                    export DIR_TFI_SHELL
+DIR_TFI_SQL=${HOME}/TFI/sql                                        export DIR_TFI_SQL
+
+DIR_INGRESOS_LOG=${HOME}/Ingresos/log                                        export DIR_INGRESOS_LOG
+DIR_INGRESOS_SHELL=${HOME}/Ingresos/shell                                    export DIR_INGRESOS_SHELL
+DIR_INGRESOS_SQL=${HOME}/Ingresos/sql                                        export DIR_INGRESOS_SQL
+

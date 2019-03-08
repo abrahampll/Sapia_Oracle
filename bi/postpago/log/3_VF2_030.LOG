@@ -1,0 +1,34 @@
+
+PL/SQL procedure successfully completed.
+
+Elapsed: 00:00:00.02
+
+Session altered.
+
+Elapsed: 00:00:00.01
+old   8: WHERE TO_CHAR(A.CREATED_DATE, 'YYYYMM') = '&1'
+new   8: WHERE TO_CHAR(A.CREATED_DATE, 'YYYYMM') = '201810'
+
+Table created.
+
+Elapsed: 00:00:14.15
+
+Table created.
+
+Elapsed: 00:00:24.46
+
+765575 rows created.
+
+Elapsed: 00:00:01.00
+
+Commit complete.
+
+Elapsed: 00:00:00.00
+
+Table dropped.
+
+Elapsed: 00:00:00.12
+
+Table dropped.
+
+Elapsed: 00:00:00.12

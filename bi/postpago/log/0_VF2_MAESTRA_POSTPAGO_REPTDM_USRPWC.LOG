@@ -1,0 +1,18 @@
+
+4162474 rows deleted.
+
+Elapsed: 00:01:46.35
+
+Commit complete.
+
+Elapsed: 00:00:00.09
+old  26: WHERE MES='&1'
+new  26: WHERE MES='20181'
+
+0 rows created.
+
+Elapsed: 00:00:13.63
+
+Commit complete.
+
+Elapsed: 00:00:00.01

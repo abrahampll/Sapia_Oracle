@@ -1,0 +1,66 @@
+
+Session altered.
+
+Elapsed: 00:00:00.00
+
+PL/SQL procedure successfully completed.
+
+Elapsed: 00:00:00.05
+old   9: and to_char(created_date, 'yyyymm')='&1'
+new   9: and to_char(created_date, 'yyyymm')='201810'
+
+Table created.
+
+Elapsed: 00:00:10.07
+
+Table altered.
+
+Elapsed: 00:00:00.03
+
+Table created.
+
+Elapsed: 00:00:00.94
+
+Table altered.
+
+Elapsed: 00:00:00.03
+old   5: where base.mes= '&1'
+new   5: where base.mes= '201810'
+
+Table created.
+
+Elapsed: 00:00:05.35
+
+Table altered.
+
+Elapsed: 00:00:00.03
+old   1: DELETE FROM DWM.dw_flag_bloqueos_periodo_spss WHERE MES='&1'
+new   1: DELETE FROM DWM.dw_flag_bloqueos_periodo_spss WHERE MES='201810'
+
+0 rows deleted.
+
+Elapsed: 00:00:00.51
+
+Commit complete.
+
+Elapsed: 00:00:00.00
+
+4180064 rows created.
+
+Elapsed: 00:00:10.68
+
+Commit complete.
+
+Elapsed: 00:00:00.00
+
+Table dropped.
+
+Elapsed: 00:00:00.13
+
+Table dropped.
+
+Elapsed: 00:00:00.12
+
+Table dropped.
+
+Elapsed: 00:00:00.09

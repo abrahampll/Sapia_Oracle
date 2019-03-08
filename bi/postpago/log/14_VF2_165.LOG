@@ -1,0 +1,52 @@
+
+PL/SQL procedure successfully completed.
+
+Elapsed: 00:00:00.03
+old   4: WHERE MES = '&1'
+new   4: WHERE MES = '201810'
+
+Table created.
+
+Elapsed: 00:00:09.35
+old   5: WHERE EXISTS(SELECT 1 FROM DM.DW_spss_mae_post_agg_cust m WHERE m.customer_id=b.cust_account AND m.mes= '&1')
+new   5: WHERE EXISTS(SELECT 1 FROM DM.DW_spss_mae_post_agg_cust m WHERE m.customer_id=b.cust_account AND m.mes= '201810')
+
+Table created.
+
+Elapsed: 00:00:18.02
+old   7: WHERE period = '&1'
+new   7: WHERE period = '201810'
+
+Table created.
+
+Elapsed: 00:00:16.11
+old   8: SELECT DISTINCT '&1' period
+new   8: SELECT DISTINCT '201810' period
+
+Table created.
+
+Elapsed: 00:00:12.18
+
+3600979 rows created.
+
+Elapsed: 00:00:12.67
+
+Commit complete.
+
+Elapsed: 00:00:00.01
+
+Table dropped.
+
+Elapsed: 00:00:00.12
+
+Table dropped.
+
+Elapsed: 00:00:00.12
+
+Table dropped.
+
+Elapsed: 00:00:00.13
+
+Table dropped.
+
+Elapsed: 00:00:00.13

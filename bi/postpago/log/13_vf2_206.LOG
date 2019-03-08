@@ -1,0 +1,48 @@
+
+Session altered.
+
+Elapsed: 00:00:00.00
+
+PL/SQL procedure successfully completed.
+
+Elapsed: 00:00:00.03
+old  13: WHERE TO_CHAR(FECHA_VENTA, 'YYYYMM') = '&1'
+new  13: WHERE TO_CHAR(FECHA_VENTA, 'YYYYMM') = '201810'
+
+Table created.
+
+Elapsed: 00:00:08.69
+
+Table created.
+
+Elapsed: 00:00:00.34
+old   6: AND MP.MES = '&1'
+new   6: AND MP.MES = '201810'
+
+Table created.
+
+Elapsed: 00:00:08.20
+
+Table altered.
+
+Elapsed: 00:00:00.03
+
+4165465 rows created.
+
+Elapsed: 00:00:03.34
+
+Commit complete.
+
+Elapsed: 00:00:00.02
+
+Table dropped.
+
+Elapsed: 00:00:00.14
+
+Table dropped.
+
+Elapsed: 00:00:00.12
+
+Table dropped.
+
+Elapsed: 00:00:00.11

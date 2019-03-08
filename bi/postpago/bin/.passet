@@ -1,0 +1,36 @@
+#===============================================================
+#                      SERVIDORES
+#===============================================================
+
+IP_TF1=172.19.3.102;         export IP_TF1
+USER_TF1_SRS=usrfscl;        export USER_TF1_SRS
+PASS_TF1_SRS=true9sw;        export PASS_TF1_SRS
+
+USER_TF1_CCLUB=usrfscl;      export USER_TF1_CCLUB
+PASS_TF1_CCLUB=true9sw;      export PASS_TF1_CCLUB
+
+
+IP_PROCPP=172.19.72.78;      export IP_PROCPP
+USER_PROCPP=ppftp;           export USER_PROCPP
+PASS_PROCPP=06ftpPP;         export PASS_PROCPP
+
+
+IP_FTP_HLR=172.19.101.245;   export IP_FTP_HLR
+USER_FTP_HLR=USRSBXDWH;      export USER_FTP_HLR
+PASS_FTP_HLR=GpPr8MZTSUn;    export PASS_FTP_HLR
+
+#===============================================================
+#                      BASE DE DATOS
+#===============================================================
+
+REPTDMBD=Reptdm;                        export REPTDMBD
+REPTDMID=dm;                            export REPTDMID
+REPTDMPS=vdh9gn7k;                      export REPTDMPS
+
+USRPWCBD=DWO;                           export USRPWCBD
+USRPWCID=USRPWC;                        export USRPWCID
+USRPWCPS=USRPWC;                        export USRPWCPS
+
+DWOBD=DWO;                              export DWOBD;
+DWOID=DM;                         	export DWOID;
+DWOPS=DM;                   	  	export DWOPS; 

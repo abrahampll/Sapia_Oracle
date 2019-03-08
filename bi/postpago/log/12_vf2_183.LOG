@@ -1,0 +1,30 @@
+
+Session altered.
+
+Elapsed: 00:00:00.01
+
+PL/SQL procedure successfully completed.
+
+Elapsed: 00:00:00.01
+old  10: AND A.PERIOD = '&1'
+new  10: AND A.PERIOD = '201810'
+old  11: AND B.MES = '&1'
+new  11: AND B.MES = '201810'
+old  13: AND C.DATE_VALUE = last_day(to_date('&1','YYYYMM'))
+new  13: AND C.DATE_VALUE = last_day(to_date('201810','YYYYMM'))
+
+Table created.
+
+Elapsed: 00:00:58.06
+
+3993179 rows created.
+
+Elapsed: 00:00:09.51
+
+Commit complete.
+
+Elapsed: 00:00:00.01
+
+Table dropped.
+
+Elapsed: 00:00:00.18

@@ -1,0 +1,34 @@
+
+PL/SQL procedure successfully completed.
+
+Elapsed: 00:00:00.23
+old  11: '&1' AS PERIODO,
+new  11: '20181' AS PERIODO,
+old  26: WHERE TRUNC(SOLID_FEC_REG) < ADD_MONTHS(TO_DATE('&1','YYYYMM'),1)
+new  26: WHERE TRUNC(SOLID_FEC_REG) < ADD_MONTHS(TO_DATE('20181','YYYYMM'),1)
+
+Table created.
+
+Elapsed: 00:01:14.80
+old   1: DELETE FROM DWM.DW_SPSS2_VF2_139_F WHERE PERIODO='&1'
+new   1: DELETE FROM DWM.DW_SPSS2_VF2_139_F WHERE PERIODO='20181'
+
+0 rows deleted.
+
+Elapsed: 00:00:00.31
+
+Commit complete.
+
+Elapsed: 00:00:00.00
+
+10027923 rows created.
+
+Elapsed: 00:00:10.79
+
+Commit complete.
+
+Elapsed: 00:00:00.01
+
+Table dropped.
+
+Elapsed: 00:00:00.12

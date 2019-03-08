@@ -1,0 +1,88 @@
+
+PL/SQL procedure successfully completed.
+
+Elapsed: 00:00:00.07
+old   4: where mes = '&1'
+new   4: where mes = '20181'
+
+Table created.
+
+Elapsed: 00:00:00.38
+
+Table created.
+
+Elapsed: 00:00:00.16
+
+Table created.
+
+Elapsed: 00:00:00.04
+
+Table created.
+
+Elapsed: 00:00:00.07
+
+0 rows merged.
+
+Elapsed: 00:00:00.04
+
+Commit complete.
+
+Elapsed: 00:00:00.00
+
+Table created.
+
+Elapsed: 00:00:00.07
+
+0 rows merged.
+
+Elapsed: 00:00:00.03
+
+Commit complete.
+
+Elapsed: 00:00:00.00
+
+Table created.
+
+Elapsed: 00:00:00.05
+old   1: DELETE FROM DWM.dw_postpago_fact_ubi_F WHERE MES='&1'
+new   1: DELETE FROM DWM.dw_postpago_fact_ubi_F WHERE MES='20181'
+
+0 rows deleted.
+
+Elapsed: 00:00:00.58
+
+Commit complete.
+
+Elapsed: 00:00:00.01
+
+0 rows created.
+
+Elapsed: 00:00:00.03
+
+Commit complete.
+
+Elapsed: 00:00:00.00
+
+Table dropped.
+
+Elapsed: 00:00:00.08
+
+Table dropped.
+
+Elapsed: 00:00:00.08
+
+Table dropped.
+
+Elapsed: 00:00:00.08
+
+Table dropped.
+
+Elapsed: 00:00:00.09
+
+Table dropped.
+
+Elapsed: 00:00:00.08
+
+Table dropped.
+
+Elapsed: 00:00:00.08

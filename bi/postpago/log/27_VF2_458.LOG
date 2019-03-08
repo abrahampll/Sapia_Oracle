@@ -1,0 +1,22 @@
+
+PL/SQL procedure successfully completed.
+
+Elapsed: 00:00:00.04
+old   4: WHERE TO_CHAR(TO_DATE(A.FH_INI,'YYYY-MM-DD HH24:MI:SS'),'YYYYMM')='&1'
+new   4: WHERE TO_CHAR(TO_DATE(A.FH_INI,'YYYY-MM-DD HH24:MI:SS'),'YYYYMM')='20181'
+
+Table created.
+
+Elapsed: 00:00:03.60
+
+0 rows created.
+
+Elapsed: 00:00:00.02
+
+Commit complete.
+
+Elapsed: 00:00:00.01
+
+Table dropped.
+
+Elapsed: 00:00:00.07

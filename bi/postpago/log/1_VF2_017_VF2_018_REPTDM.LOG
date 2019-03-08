@@ -1,0 +1,6 @@
+old  14: SELECT '&1' INTO V_PERIODO FROM DUAL;
+new  14: SELECT '201810' INTO V_PERIODO FROM DUAL;
+
+PL/SQL procedure successfully completed.
+
+Elapsed: 00:05:54.69

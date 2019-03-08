@@ -1,0 +1,52 @@
+
+PL/SQL procedure successfully completed.
+
+Elapsed: 00:00:00.06
+old   9: where TO_CHAR(ohrefdate, 'YYYYMM') = '&1'
+new   9: where TO_CHAR(ohrefdate, 'YYYYMM') = '20181'
+
+Table created.
+
+Elapsed: 00:00:10.69
+old  28:   on traf.invoicenumber=t11.invoicenumber and traf.period='&1'
+new  28:   on traf.invoicenumber=t11.invoicenumber and traf.period='20181'
+old  29:  where t11.periodo = '&1'
+new  29:  where t11.periodo = '20181'
+
+Table created.
+
+Elapsed: 00:00:00.28
+old  31:   a.periodo='&1'
+new  31:   a.periodo='20181'
+
+Table created.
+
+Elapsed: 00:00:00.30
+
+Table created.
+
+Elapsed: 00:00:00.17
+
+0 rows created.
+
+Elapsed: 00:00:00.04
+
+Commit complete.
+
+Elapsed: 00:00:00.00
+
+Table dropped.
+
+Elapsed: 00:00:00.09
+
+Table dropped.
+
+Elapsed: 00:00:00.08
+
+Table dropped.
+
+Elapsed: 00:00:00.10
+
+Table dropped.
+
+Elapsed: 00:00:00.12

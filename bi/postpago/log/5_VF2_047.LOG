@@ -1,0 +1,26 @@
+
+PL/SQL procedure successfully completed.
+
+Elapsed: 00:00:00.05
+
+Session altered.
+
+Elapsed: 00:00:00.00
+old   8: WHERE B.MES = '&1'
+new   8: WHERE B.MES = '201810'
+
+Table created.
+
+Elapsed: 00:00:43.26
+
+2476193 rows created.
+
+Elapsed: 00:00:07.75
+
+Commit complete.
+
+Elapsed: 00:00:00.00
+
+Table dropped.
+
+Elapsed: 00:00:00.21

@@ -1,0 +1,26 @@
+
+Session altered.
+
+Elapsed: 00:00:00.01
+
+PL/SQL procedure successfully completed.
+
+Elapsed: 00:00:00.17
+old   5: WHERE EXISTS(SELECT 1 FROM DwM.DW_maestra_postpago m WHERE m.customer_id=b.cust_account AND m.mes='&1')
+new   5: WHERE EXISTS(SELECT 1 FROM DwM.DW_maestra_postpago m WHERE m.customer_id=b.cust_account AND m.mes='201810')
+
+Table created.
+
+Elapsed: 00:00:17.72
+old   3: case when (last_day(to_date('&1','yyyymm')) - due_date)<0 then 0 else (last_day(to_date('&1', 'YYYYMM'))) - due_date) end  as vf2_160 from
+new   3: case when (last_day(to_date('201810','yyyymm')) - due_date)<0 then 0 else (last_day(to_date('201810', 'YYYYMM'))) - due_date) end  as vf2_160 from
+old   5: select '&1' as periodo, a.cust_account as customer_id, b.due_date,b.bill_id,
+new   5: select '201810' as periodo, a.cust_account as customer_id, b.due_date,b.bill_id,
+old   8: where bill_type_id=9716 and status_id in (1019,281601,1016,1014)  and period_debt>='201401' and period_debt<='&1')
+new   8: where bill_type_id=9716 and status_id in (1019,281601,1016,1014)  and period_debt>='201401' and period_debt<='201810')
+case when (last_day(to_date('201810','yyyymm')) - due_date)<0 then 0 else (last_day(to_date('201810', 'YYYYMM'))) - due_date) end  as vf2_160 from
+                                                                                                                            *
+ERROR at line 3:
+ORA-00905: missing keyword
+
+

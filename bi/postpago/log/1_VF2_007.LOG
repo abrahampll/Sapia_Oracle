@@ -1,0 +1,22 @@
+
+PL/SQL procedure successfully completed.
+
+Elapsed: 00:00:00.26
+old   9: AND B.MES = '&1'
+new   9: AND B.MES = '20181'
+
+Table created.
+
+Elapsed: 00:00:01.34
+
+0 rows created.
+
+Elapsed: 00:00:00.03
+
+Commit complete.
+
+Elapsed: 00:00:00.01
+
+Table dropped.
+
+Elapsed: 00:00:00.07

@@ -1,0 +1,68 @@
+
+PL/SQL procedure successfully completed.
+
+Elapsed: 00:00:00.03
+old  16: FROM (SELECT '&1' AS PERIODO,
+new  16: FROM (SELECT '201810' AS PERIODO,
+old  22: to_date('&1', 'yyyymm') - C.FEC_BLOQ,
+new  22: to_date('201810', 'yyyymm') - C.FEC_BLOQ,
+old  27: and TO_CHAR(FECHA_VENC, 'YYYYMM') < '&1'
+new  27: and TO_CHAR(FECHA_VENC, 'YYYYMM') < '201810'
+old  29: ADD_MONTHS(TO_DATE('&1', 'YYYYMM'), (-1) * 6)
+new  29: ADD_MONTHS(TO_DATE('201810', 'YYYYMM'), (-1) * 6)
+
+Table created.
+
+Elapsed: 00:01:22.42
+old  17: FROM (SELECT '&1' AS PERIODO2,
+new  17: FROM (SELECT '201810' AS PERIODO2,
+old  21: to_date('&1', 'yyyymm') - C.FEC_BLOQ,
+new  21: to_date('201810', 'yyyymm') - C.FEC_BLOQ,
+old  25: and TO_CHAR(FECHA_VENC, 'YYYYMM') < '&1'
+new  25: and TO_CHAR(FECHA_VENC, 'YYYYMM') < '201810'
+old  27: ADD_MONTHS(TO_DATE('&1', 'YYYYMM'), (-1) * 12)
+new  27: ADD_MONTHS(TO_DATE('201810', 'YYYYMM'), (-1) * 12)
+
+Table created.
+
+Elapsed: 00:02:53.76
+
+Table created.
+
+Elapsed: 00:00:17.00
+
+Table created.
+
+Elapsed: 00:00:11.86
+
+Table created.
+
+Elapsed: 00:00:10.61
+
+4300305 rows created.
+
+Elapsed: 00:00:08.08
+
+Commit complete.
+
+Elapsed: 00:00:00.00
+
+Table dropped.
+
+Elapsed: 00:00:00.18
+
+Table dropped.
+
+Elapsed: 00:00:00.16
+
+Table dropped.
+
+Elapsed: 00:00:00.29
+
+Table dropped.
+
+Elapsed: 00:00:00.45
+
+Table dropped.
+
+Elapsed: 00:00:00.18

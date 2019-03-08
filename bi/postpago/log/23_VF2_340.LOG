@@ -1,0 +1,30 @@
+
+PL/SQL procedure successfully completed.
+
+Elapsed: 00:00:00.02
+
+Table created.
+
+Elapsed: 00:00:00.04
+
+Table created.
+
+Elapsed: 00:00:00.03
+old  17: 	select '&1' into V_PERIODO from dual;
+new  17: 	select '20181' into V_PERIODO from dual;
+
+PL/SQL procedure successfully completed.
+
+Elapsed: 02:16:49.38
+
+536406 rows created.
+
+Elapsed: 00:00:01.76
+
+Commit complete.
+
+Elapsed: 00:00:00.00
+
+Table dropped.
+
+Elapsed: 00:00:00.15

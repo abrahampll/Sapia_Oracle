@@ -1,0 +1,244 @@
+
+PL/SQL procedure successfully completed.
+
+Elapsed: 00:00:11.78
+
+Table created.
+
+Elapsed: 00:00:07.52
+
+Table created.
+
+Elapsed: 00:00:07.65
+DW_TABLON_POSTPAGO_M_TP1: 3469057
+
+PL/SQL procedure successfully completed.
+
+Elapsed: 00:00:05.53
+
+Table created.
+
+Elapsed: 00:00:02.68
+
+Table created.
+
+Elapsed: 00:00:06.60
+
+Table created.
+
+Elapsed: 00:00:14.97
+
+Table created.
+
+Elapsed: 00:00:18.50
+
+Table created.
+
+Elapsed: 00:00:01.69
+
+Table created.
+
+Elapsed: 00:00:15.60
+
+Table created.
+
+Elapsed: 00:00:01.52
+
+Table created.
+
+Elapsed: 00:00:14.00
+DW_TABLON_POSTPAGO_M_TP5: 3469057
+
+PL/SQL procedure successfully completed.
+
+Elapsed: 00:00:06.04
+
+Table created.
+
+Elapsed: 00:00:13.68
+
+Table created.
+
+Elapsed: 00:00:05.80
+
+Table created.
+
+Elapsed: 00:00:01.14
+
+Table created.
+
+Elapsed: 00:00:14.22
+
+Table created.
+
+Elapsed: 00:00:02.28
+
+Table created.
+
+Elapsed: 00:00:13.50
+
+Table created.
+
+Elapsed: 00:00:05.81
+
+Table created.
+
+Elapsed: 00:00:16.11
+
+Table created.
+
+Elapsed: 00:00:00.33
+
+Table created.
+
+Elapsed: 00:00:15.55
+DW_TABLON_POSTPAGO_M_TP10: 3469057
+
+PL/SQL procedure successfully completed.
+
+Elapsed: 00:00:08.56
+
+Table created.
+
+Elapsed: 00:00:07.02
+
+Table created.
+
+Elapsed: 00:00:11.54
+
+Table created.
+
+Elapsed: 00:00:00.40
+
+Table created.
+
+Elapsed: 00:00:15.86
+
+Table created.
+
+Elapsed: 00:00:14.37
+
+Table created.
+
+Elapsed: 00:00:19.54
+
+Table created.
+
+Elapsed: 00:00:13.46
+
+Table created.
+
+Elapsed: 00:00:18.07
+
+Table created.
+
+Elapsed: 00:00:09.65
+
+Table created.
+
+Elapsed: 00:00:20.85
+DW_TABLON_POSTPAGO_M_TP15: 3469057
+
+PL/SQL procedure successfully completed.
+
+Elapsed: 00:00:08.92
+
+Table created.
+
+Elapsed: 00:00:08.21
+
+Table created.
+
+Elapsed: 00:00:13.19
+
+Table created.
+
+Elapsed: 00:00:10.10
+
+Table created.
+
+Elapsed: 00:00:21.10
+
+Table created.
+
+Elapsed: 00:00:10.73
+
+Table created.
+
+Elapsed: 00:00:23.02
+
+Table created.
+
+Elapsed: 00:00:12.44
+
+Table created.
+
+Elapsed: 00:00:25.73
+
+Table created.
+
+Elapsed: 00:00:15.21
+
+Table created.
+
+Elapsed: 00:00:25.84
+DW_TABLON_POSTPAGO_M_TP20: 3469057
+
+PL/SQL procedure successfully completed.
+
+Elapsed: 00:00:08.94
+
+Table created.
+
+Elapsed: 00:00:18.90
+
+Table created.
+
+Elapsed: 00:00:00.05
+
+Table created.
+
+Elapsed: 00:00:24.00
+
+Table created.
+
+Elapsed: 00:00:00.87
+
+Table created.
+
+Elapsed: 00:00:25.51
+
+Table created.
+
+Elapsed: 00:00:01.84
+
+Table created.
+
+Elapsed: 00:00:29.90
+
+Table created.
+
+Elapsed: 00:00:35.19
+
+Table created.
+
+Elapsed: 00:00:37.13
+DW_TABLON_POSTPAGO_M_TP25: 3469057
+
+PL/SQL procedure successfully completed.
+
+Elapsed: 00:00:11.74
+
+Table created.
+
+Elapsed: 00:00:10.98
+
+Table created.
+
+Elapsed: 00:00:23.86
+FROM DM.DW_SPSS2_CALL_COMPETENCIA
+        *
+ERROR at line 6:
+ORA-00942: table or view does not exist
+
+

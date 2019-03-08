@@ -1,0 +1,96 @@
+
+PL/SQL procedure successfully completed.
+
+Elapsed: 00:00:00.05
+old   3: from dwm.dw_maestra_postpago where mes = '&1' group by mes,customer_id,to_char(customer_id)
+new   3: from dwm.dw_maestra_postpago where mes = '201810' group by mes,customer_id,to_char(customer_id)
+
+Table created.
+
+Elapsed: 00:00:03.04
+
+Table created.
+
+Elapsed: 00:00:04.09
+
+Table created.
+
+Elapsed: 00:00:54.61
+
+Table created.
+
+Elapsed: 00:00:28.67
+
+Table created.
+
+Elapsed: 00:00:02.96
+
+Table created.
+
+Elapsed: 00:00:51.79
+
+Table created.
+
+Elapsed: 00:02:39.43
+
+Table created.
+
+Elapsed: 00:00:37.62
+
+Table created.
+
+Elapsed: 00:00:35.49
+old   6: and  mes = '&1'
+new   6: and  mes = '201810'
+
+Table created.
+
+Elapsed: 00:00:07.74
+
+2665767 rows created.
+
+Elapsed: 00:00:05.38
+
+Commit complete.
+
+Elapsed: 00:00:00.00
+
+Table dropped.
+
+Elapsed: 00:00:00.14
+
+Table dropped.
+
+Elapsed: 00:00:00.10
+
+Table dropped.
+
+Elapsed: 00:00:00.10
+
+Table dropped.
+
+Elapsed: 00:00:00.13
+
+Table dropped.
+
+Elapsed: 00:00:00.21
+
+Table dropped.
+
+Elapsed: 00:00:00.20
+
+Table dropped.
+
+Elapsed: 00:00:00.22
+
+Table dropped.
+
+Elapsed: 00:00:00.23
+
+Table dropped.
+
+Elapsed: 00:00:00.18
+
+Table dropped.
+
+Elapsed: 00:00:00.15
